@@ -1,0 +1,50 @@
+table {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #56B4F3;
+}
+
+.header{
+            text-align: center;
+            background-color: rgb(136, 185, 229);
+            height: 70px;
+            line-height: 70px;
+}
+
+.chart{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: thin black;
+  color: #dddddd;
+  padding: 12px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.side-layout {
+    display: flex;
+    justify-content: space-between;
+}

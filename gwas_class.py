@@ -12,7 +12,8 @@ class GwasData:
         :param phecode: phecode of interest
         :param connection: sqlalchemy connection (should be imported)
         """
-        self.phecode = phecode.replace('.', '_')
+        self.phecode = phecode
+
         self.connection = connection
         self.mh_query = f"""SELECT v.*, g.MAF, g.EFFECTSIZE, g.SE, g.LOG10P
                             FROM private_dash.TM90K_LOGP_gt2 g 
@@ -66,3 +67,14 @@ class GwasData:
                       line=dict(color='LightSeaGreen', width=2, dash='dot'))
         fig.update_layout(showlegend=False)
         return fig
+
+    def pheno_info(self):
+        df = pd.read_sql(f"""SELECT phenotype, PHECODE, cases, controls, category
+                                         FROM private_dash.TM90K_phenotypes 
+                                         WHERE PHECODE = '{self.phecode}'""",
+                                     self.connection)
+        test = df.to_dict('records')[0]
+        test['phenotype'] = test['phenotype'].title()
+        test['PHECODE'] = test['PHECODE'].replace('_', '.')
+        test['category'] = test['category'].title()
+        return test

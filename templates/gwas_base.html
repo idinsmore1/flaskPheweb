@@ -1,8 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mirshahi Pheweb</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 </head>
@@ -15,39 +17,51 @@
         </h2>
     </div>
 
-    <div id="chart" class="chart">
+    <div>
+        <h1>{{ phecode }}: {{phenotype}}</h1>
+        <b>{{ cases }}</b> cases, <b>{{ controls }}</b> controls <br>
+        Category: <b>{{ category }}</b>
     </div>
 
+    <div id="chart" class="chart">
+        <script type="text/javascript">
+
+            var graphs = {{graphJSON | safe}};
+
+            Plotly.plot('chart',graphs,{});
+
+        </script>
+    </div>
+    <div id="topresults">
+        <div id="table-header" class="side-layout">
+            <h2>Top Results</h2>
+            <span><button class="btn"><i class="fa fa-download"></i> Download</button></span>
+        </div>
+        <table>
+            <tr>
+                {% for col in column_names %}
+                <th>{{col}}</th>
+                {% endfor %}
+            </tr>
+            {% for row in row_data %}
+            <tr>
+                {% for col, row_ in zip(column_names, row) %}
+                {% if col == link_column %}
+                <td>
+                    <button type="submit" value={{ row_ }} name="VAR_ID">
+                        {{ row_ }}
+                    </button>
+                </td>
+                {% else %}
+                <td>{{row_}}</td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
 </body>
 
-    <script type="text/javascript">
 
-        var graphs = {{graphJSON | safe}};
-
-        Plotly.plot('chart',graphs,{});
-
-    </script>
-    <table>
-        <tr>
-            {% for col in column_names %}
-            <th>{{col}}</th>
-            {% endfor %}
-        </tr>
-        {% for row in row_data %}
-        <tr>
-            {% for col, row_ in zip(column_names, row) %}
-            {% if col == link_column %}
-            <td>
-                <button type="submit" value={{ row_ }} name="VAR_ID">
-                    {{ row_ }}
-                </button>
-            </td>
-            {% else %}
-            <td>{{row_}}</td>
-            {% endif %}
-            {% endfor %}
-        </tr>
-        {% endfor %}
-
-    </table>
 </html>
