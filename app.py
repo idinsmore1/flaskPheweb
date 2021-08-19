@@ -34,6 +34,11 @@ def test():
     return rendered_html
 
 
+@app.route('/nav')
+def nav():
+    return render_template('navbar.html')
+
+
 # @app.route('/<phenotype>')
 # def pheno_page(phenotype):
 #     return render_template(f'X{phenotype}.html')

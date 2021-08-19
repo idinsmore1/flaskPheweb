@@ -28,14 +28,14 @@ class GwasData:
 
         # Top Results Table
         self.top_results = self.data.query('LOG10P > 5').loc[:,
-                           ['VAR_ID', 'GENE', 'IMPACT', 'EFFECT', 'HGVS_c', 'HGVS_p', 'MAF', 'LOG10P',
-                            'EFFECTSIZE(SE)']]
-        self.top_results['P-value'] = 10 ** -self.top_results['LOG10P']
-        self.top_results.rename(columns={'EFFECTSIZE(SE)': 'EffectSize(SE)', 'GENE': 'Gene', 'VAR_ID': 'VarID'},
+                           ['VAR_ID', 'GENE', 'IMPACT', 'EFFECT', 'HGVS_c', 'MAF', 'LOG10P',
+                            'EFFECTSIZE(SE)']].sort_values('LOG10P', ascending=False).reset_index(drop=True)
+        self.top_results['P-value'] = ['%.2e' % x for x in 10 ** -self.top_results['LOG10P']]
+        self.top_results.rename(columns={'HGVS_c': 'HGVSc', 'EFFECTSIZE(SE)': 'EffectSize(SE)', 'GENE': 'Gene', 'VAR_ID': 'VarID'},
                                 inplace=True)
+        self.top_results['MAF'] = round(self.top_results['MAF'], 5)
         self.top_results = self.top_results[
-            ['VarID', 'Gene', 'IMPACT', 'EFFECT', 'HGVS_c', 'HGVS_p', 'MAF', 'P-value', 'EffectSize(SE)']].sort_values(
-            'P-value').reset_index(drop=True)
+            ['VarID', 'Gene', 'IMPACT', 'EFFECT', 'HGVSc', 'MAF', 'P-value', 'EffectSize(SE)']]
 
         # Manhattan plot information
         self.nChr = len(np.unique(self.data['CHR']))
@@ -72,7 +72,7 @@ class GwasData:
         df = pd.read_sql(f"""SELECT phenotype, PHECODE, cases, controls, category
                                          FROM private_dash.TM90K_phenotypes 
                                          WHERE PHECODE = '{self.phecode}'""",
-                                     self.connection)
+                         self.connection)
         test = df.to_dict('records')[0]
         test['phenotype'] = test['phenotype'].title()
         test['PHECODE'] = test['PHECODE'].replace('_', '.')

@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mynavbar.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mirshahi Pheweb</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -11,11 +12,13 @@
 
 <body>
 
-    <div class="header">
-        <h2>
-            Plotly Chart Demo
-        </h2>
+    <nav class="navbar navbar-default" style="background: white;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/" style="color: #333; font-weight: bold; float: left; font-size: 15px;">PheWeb</a>
+        </div>
     </div>
+    </nav>
 
     <div>
         <h1>{{ phecode }}: {{phenotype}}</h1>
