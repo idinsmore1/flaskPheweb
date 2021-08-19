@@ -14,7 +14,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/')
+@app.route('/test')
 def test():
     conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
     data = GwasData('250_2', conn)
@@ -38,10 +38,13 @@ def test():
 def nav():
     return render_template('navbar.html')
 
+@app.route('/')
+def nav2():
+    return render_template('navbar2.html')
 
-# @app.route('/<phenotype>')
-# def pheno_page(phenotype):
-#     return render_template(f'X{phenotype}.html')
+@app.route('/<phenotype>')
+def pheno_page(phenotype):
+    return render_template(f'X{phenotype}.html')
 
 
 if __name__ == '__main__':

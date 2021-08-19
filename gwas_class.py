@@ -39,7 +39,7 @@ class GwasData:
 
         # Manhattan plot information
         self.nChr = len(np.unique(self.data['CHR']))
-        self.colors = ['#3498DB', '#3445DB']
+        self.colors = ['#0093D4', '#0029D4']
         self.plt_ticks = self.data.groupby('CHR').median().loc[:, 'REL_POS'].to_numpy()
         self.hovertemplate = '<br>'.join([
             'VAR_ID: %{customdata[0]}',

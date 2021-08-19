@@ -1,20 +1,24 @@
-table {
+.pheno-info{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.top-results table {
     font-family: arial, sans-serif;
     font-size: 13px;
     border-collapse: collapse;
-    width: 80vw;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
 }
 
-td, th {
+.top-results td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 3px 5px;
 }
 
 tr:nth-child(even) {
-    background-color: #56B4F3;
+    background-color: #0093d4;
 }
 
 .header{
@@ -44,7 +48,15 @@ tr:nth-child(even) {
   background-color: RoyalBlue;
 }
 
-.side-layout {
+.table-header {
     display: flex;
     justify-content: space-between;
+}
+.table-header h2 {
+    margin-left: 4vw;
+    font-size: 30px;
+}
+.table-header button {
+    margin-right: 4vw;
+    margin-bottom: 3px;
 }

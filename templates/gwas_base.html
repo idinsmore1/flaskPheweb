@@ -3,8 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mynavbar.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
     <title>Mirshahi Pheweb</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
@@ -12,15 +12,13 @@
 
 <body>
 
-    <nav class="navbar navbar-default" style="background: white;">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/" style="color: #333; font-weight: bold; float: left; font-size: 15px;">PheWeb</a>
-        </div>
+    <div class="topnav">
+      <input type="search" placeholder="Search.." name="q" id="sitesearch">
+      <a class="active" href="#home">About</a>
+      <a href="#about">Phenotypes</a>
+      <a href="#contact">Top Results</a>
     </div>
-    </nav>
-
-    <div>
+    <div class="pheno-info">
         <h1>{{ phecode }}: {{phenotype}}</h1>
         <b>{{ cases }}</b> cases, <b>{{ controls }}</b> controls <br>
         Category: <b>{{ category }}</b>
@@ -35,8 +33,8 @@
 
         </script>
     </div>
-    <div id="topresults">
-        <div id="table-header" class="side-layout">
+    <div class="top-results">
+        <div id="table-header" class="table-header">
             <h2>Top Results</h2>
             <span><button class="btn"><i class="fa fa-download"></i> Download</button></span>
         </div>
@@ -51,9 +49,7 @@
                 {% for col, row_ in zip(column_names, row) %}
                 {% if col == link_column %}
                 <td>
-                    <button type="submit" value={{ row_ }} name="VAR_ID">
-                        {{ row_ }}
-                    </button>
+                    {{ row_ }}
                 </td>
                 {% else %}
                 <td>{{row_}}</td>
