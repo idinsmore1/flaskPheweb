@@ -13,13 +13,13 @@ class GwasData:
         :param connection: sqlalchemy connection (should be imported)
         """
         self.phecode = phecode
-
         self.connection = connection
         self.mh_query = f"""SELECT v.*, g.MAF, g.EFFECTSIZE, g.SE, g.LOG10P
                             FROM private_dash.TM90K_LOGP_gt2 g 
                             INNER JOIN private_dash.TM90K_variants v
                             USING(VAR_ID)
                             WHERE PHECODE = '{self.phecode}'"""
+
         # Dataframe setup operations
         self.data = pd.read_sql(self.mh_query, self.connection).sort_values(['CHR', 'POS']).reset_index(
             drop=True).reset_index().rename(columns={'index': 'REL_POS'})
@@ -31,8 +31,9 @@ class GwasData:
                            ['VAR_ID', 'GENE', 'IMPACT', 'EFFECT', 'HGVS_c', 'MAF', 'LOG10P',
                             'EFFECTSIZE(SE)']].sort_values('LOG10P', ascending=False).reset_index(drop=True)
         self.top_results['P-value'] = ['%.2e' % x for x in 10 ** -self.top_results['LOG10P']]
-        self.top_results.rename(columns={'HGVS_c': 'HGVSc', 'EFFECTSIZE(SE)': 'EffectSize(SE)', 'GENE': 'Gene', 'VAR_ID': 'VarID'},
-                                inplace=True)
+        self.top_results.rename(
+            columns={'HGVS_c': 'HGVSc', 'EFFECTSIZE(SE)': 'EffectSize(SE)', 'GENE': 'Gene', 'VAR_ID': 'VarID'},
+            inplace=True)
         self.top_results['MAF'] = round(self.top_results['MAF'], 5)
         self.top_results = self.top_results[
             ['VarID', 'Gene', 'IMPACT', 'EFFECT', 'HGVSc', 'MAF', 'P-value', 'EffectSize(SE)']]
@@ -73,8 +74,12 @@ class GwasData:
                                          FROM private_dash.TM90K_phenotypes 
                                          WHERE PHECODE = '{self.phecode}'""",
                          self.connection)
-        test = df.to_dict('records')[0]
+        test = df.to_dict('records').pop()
+
         test['phenotype'] = test['phenotype'].title()
         test['PHECODE'] = test['PHECODE'].replace('_', '.')
         test['category'] = test['category'].title()
         return test
+
+    def html_table(self):
+        return self.top_results.to_html()

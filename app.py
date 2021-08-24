@@ -1,23 +1,23 @@
-from flask import Flask, render_template, url_for
-from gwas_class import GwasData
-import MySQLdb
 import json
-import plotly
 
-import numpy as np
+import MySQLdb
+import plotly
+from flask import Flask, render_template
+
+from gwas_class import GwasData
 
 app = Flask(__name__)
+conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
 
 
-@app.route('/index')
+@app.route('/')
 def index():
     return render_template('index.html')
 
 
-@app.route('/test')
-def test():
-    conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
-    data = GwasData('250_2', conn)
+@app.route('/pheno/<pheno>')
+def phenotype(pheno):
+    data = GwasData(f'{pheno}', conn)
     fig = data.manhattan_plot()
     df = data.top_results
     pheno_info = data.pheno_info()
@@ -29,22 +29,32 @@ def test():
                                     controls=pheno_info['controls'],
                                     category=pheno_info['category'],
                                     graphJSON=graphjson,
-                                    column_names=df.columns.values, row_data=list(df.values.tolist()),
-                                    link_column='VAR_ID', zip=zip)
+                                    column_names=df.columns.values,
+                                    row_data=list(df.values.tolist()),
+                                    id_col='VarID',
+                                    gene_col='Gene',
+                                    zip=zip)
     return rendered_html
 
 
-@app.route('/nav')
-def nav():
-    return render_template('navbar.html')
+@app.route('/test/table')
+def table():
+    data = GwasData(f'250_2', conn)
+    df = data.top_results
+    return render_template('table_structure.html', column_names=df.columns.values,
+                           row_data=list(df.values.tolist()),
+                           id_col='VarID',
+                           gene_col='Gene',
+                           zip=zip)
 
-@app.route('/')
-def nav2():
-    return render_template('navbar2.html')
 
-@app.route('/<phenotype>')
-def pheno_page(phenotype):
-    return render_template(f'X{phenotype}.html')
+@app.route('/variant/<variant>')
+def variant(variant):
+    return f'{variant}'
+
+@app.route('/gene/<gene>')
+def gene(gene):
+    return f'{gene}'
 
 
 if __name__ == '__main__':

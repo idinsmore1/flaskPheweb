@@ -18,7 +18,7 @@
 }
 
 tr:nth-child(even) {
-    background-color: #0093d4;
+    background-color: #87DBFF;
 }
 
 .header{
@@ -59,4 +59,21 @@ tr:nth-child(even) {
 .table-header button {
     margin-right: 4vw;
     margin-bottom: 3px;
+}
+
+/* Pagination Styling */
+.pagination-page-info {
+    padding: .6em;
+    padding-left: 0;
+    width: 40em;
+    margin: .5em;
+    margin-left: 0;
+    font-size: 12px;
+}
+.pagination-page-info b {
+    color: black;
+    background: #6aa6ed;
+    padding-left: 2px;
+    padding: .1em .25em;
+    font-size: 150%;
 }

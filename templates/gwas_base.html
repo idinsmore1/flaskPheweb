@@ -13,10 +13,13 @@
 <body>
 
     <div class="topnav">
-      <input type="search" placeholder="Search.." name="q" id="sitesearch">
-      <a class="active" href="#home">About</a>
-      <a href="#about">Phenotypes</a>
-      <a href="#contact">Top Results</a>
+        <a href="/" style="float: left">Home</a>
+        <form >
+            <input type="search" placeholder="Search.." name="navigator" id="sitesearch">
+        </form>
+        <a href="#about ">About</a>
+        <a href="#about">Phenotypes</a>
+        <a href="#contact">Top Results</a>
     </div>
     <div class="pheno-info">
         <h1>{{ phecode }}: {{phenotype}}</h1>
@@ -47,17 +50,16 @@
             {% for row in row_data %}
             <tr>
                 {% for col, row_ in zip(column_names, row) %}
-                {% if col == link_column %}
-                <td>
-                    {{ row_ }}
-                </td>
-                {% else %}
-                <td>{{row_}}</td>
-                {% endif %}
+                  {% if col == id_col %}
+                    <td> <a href="/variant/{{ row_ }}">{{ row_ }}</a></td>
+                  {% elif col == gene_col %}
+                    <td> <a href="/gene/{{ row_ }}">{{ row_ }}</a></td>
+                  {% else %}
+                    <td> {{ row_ }}</td>
+                  {% endif %}
                 {% endfor %}
             </tr>
             {% endfor %}
-
         </table>
     </div>
 </body>
