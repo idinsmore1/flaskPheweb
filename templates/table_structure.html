@@ -6,7 +6,11 @@
   </head>
   <body>
     <div class="top-results">
-      <table>
+        <div id="table-header" class="table-header">
+            <h2>Top Results</h2>
+            <span><button class="btn"><i class="fa fa-download"></i> Download</button></span>
+        </div>
+        <table>
             <tr>
                 {% for col in column_names %}
                 <th>{{col}}</th>
@@ -25,8 +29,9 @@
                 {% endfor %}
             </tr>
             {% endfor %}
-
         </table>
     </div>
+    </div>
+
   </body>
 </html>

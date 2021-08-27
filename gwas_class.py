@@ -48,7 +48,8 @@ class GwasData:
             'Beta: %{customdata[5]}',
             'Gene: %{customdata[1]}',
             'Impact: %{customdata[2]}',
-            'Effect: %{customdata[3]}'
+            'Effect: %{customdata[3]}',
+            '<extra></extra>'
         ])
         self.custom_data = ['VAR_ID', 'GENE', 'IMPACT', 'EFFECT', 'MAF', 'EFFECTSIZE(SE)']
 
