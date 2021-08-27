@@ -4,6 +4,13 @@ import plotly.express as px
 from itertools import cycle
 
 
+# Function to give the x-axis text color matching its group
+def color_string(color, text):
+    # color: hexadecimal
+    s = "<span style='color:" + str(color) + "'>" + str(text) + "</span>"
+    return s
+
+
 class PhewasData:
 
     def __init__(self, variant, connection):
@@ -18,6 +25,7 @@ class PhewasData:
                                        g.PHECODE,
                                        g.MAF,
                                        g.EFFECTSIZE,
+                                       g.SE,
                                        g.LOG10P,
                                        p.cases,
                                        p.controls,
@@ -30,32 +38,58 @@ class PhewasData:
                                 WHERE g.VAR_ID = '{self.variant}'"""
         self.data = pd.read_sql(self.phewas_query, connection)
         self.data['Pvalue'] = 10 ** -self.data.LOG10P
-        self.data['phenoGroup'] = self.data['phenoGroup'].fillna('injuries & poisoning')
+        self.data['phenoGroup'] = self.data['phenoGroup'].apply(lambda x: x.replace('Other', 'injuries & poisonings'))
 
-        self.top_results = self.data.sort_values(['LOG10P'], ascending=False)
+        self.categories = ['infectious diseases',
+                           'neoplasms',
+                           'endocrine/metabolic',
+                           'hematopoietic',
+                           'mental disorders',
+                           'neurological',
+                           'symptoms',
+                           'sense organs',
+                           'circulatory system',
+                           'respiratory',
+                           'digestive',
+                           'genitourinary',
+                           'injuries & poisonings',
+                           'pregnancy complications',
+                           'dermatologic',
+                           'musculoskeletal',
+                           'congenital anomalies']
+        self.plot_colors = ['#1F77B4',
+                            '#FF7F0E',
+                            '#2CA02C',
+                            '#D62728',
+                            '#9467BD',
+                            '#8C564B',
+                            '#E377C2',
+                            '#7F7F7F',
+                            '#BCBD22',
+                            '#17BECF']
+        self.color_keys = dict(zip(self.categories, cycle(self.plot_colors)))
+        self.data['colorGroup'] = [color_string(self.color_keys[x], x) for x in self.data['phenoGroup']]
+
+        self.top_results = self.data.loc[:,
+                           ['colorGroup', 'phenotype', 'LOG10P', 'EFFECTSIZE', 'SE', 'cases', 'controls', 'Pvalue']
+                           ].sort_values(['LOG10P'], ascending=False)
+        self.top_results['Pvalue'] = [np.format_float_scientific(x, precision=2)
+                                      for x in self.top_results['Pvalue']]
+        self.top_results['EFFECTSIZE(SE)'] = round(self.top_results['EFFECTSIZE'], 3).astype(str) + \
+                                             '(' + \
+                                             round(self.top_results['SE'], 3).astype(str) + ')'
+        self.top_results['Cases/Controls'] = self.top_results['cases'].astype(str) + \
+                                             '/' + self.top_results['controls'].astype(str)
+        self.top_results = self.top_results[['colorGroup', 'phenotype', 'Pvalue', 'EFFECTSIZE(SE)', 'Cases/Controls']]
+        self.phecode_dict = dict(zip(self.data['phenotype'], self.data['PHECODE'].apply(lambda x: x.replace('_', '-'))))
 
     # Function to create the 'manhattan' plot for the Phewas
     def phewas_plot(self):
         phenos = self.data
-
+        categories = self.categories
+        plot_colors = self.plot_colors
+        keys = self.color_keys
         # Set the phenotype category to be a categorical variable
-        categories = ['infectious diseases',
-                      'neoplasms',
-                      'endocrine/metabolic',
-                      'hematopoietic',
-                      'mental disorders',
-                      'neurological',
-                      'symptoms',
-                      'sense organs',
-                      'circulatory system',
-                      'respiratory',
-                      'digestive',
-                      'genitourinary',
-                      'injuries & poisonings',
-                      'pregnancy complications',
-                      'dermatologic',
-                      'musculoskeletal',
-                      'congenital anomalies']
         pheno_cat = pd.CategoricalDtype(categories, ordered=True)
         phenos.phenoGroup = phenos.phenoGroup.astype(pheno_cat)
         phenos['phenoGroup'] = phenos['phenoGroup'].fillna('injuries & poisonings')
@@ -76,28 +110,11 @@ class PhewasData:
         grouped['symbol'] = [symbols[x.MarkerGroup] for x in grouped.itertuples(index=False)]
 
         # Create labels that match the plot colors
-        plot_colors = ['#1F77B4',
-                       '#FF7F0E',
-                       '#2CA02C',
-                       '#D62728',
-                       '#9467BD',
-                       '#8C564B',
-                       '#E377C2',
-                       '#7F7F7F',
-                       '#BCBD22',
-                       '#17BECF']
-
-        # Function to give the x-axis text color matching its group
-        def color_string(color, text):
-            # color: hexadecimal
-            s = "<span style='color:" + str(color) + "'>" + str(text) + "</span>"
-            return s
 
         # Set up the extraneous information for the phewas plot
         x_vals = [x.RELPOS for x in grouped.itertuples(index=False) if any(x.LOG10P >= grouped.LOG10P.nlargest(3))]
         y_vals = [y.LOG10P for y in grouped.itertuples(index=False) if any(y.LOG10P >= grouped.LOG10P.nlargest(3))]
         text = [x.phenotype for x in grouped.itertuples(index=False) if any(x.LOG10P >= grouped.LOG10P.nlargest(3))]
-        keys = dict(zip(categories, cycle(plot_colors)))
         plt_ticks = grouped.loc[:, ['phenoGroup', 'RELPOS']].groupby('phenoGroup').min().RELPOS.to_numpy()
         ticktext = [color_string(v, k) for k, v in keys.items()]
 
@@ -118,8 +135,14 @@ class PhewasData:
                          symbol=grouped.MarkerGroup,
                          symbol_sequence=symbols,
                          custom_data=custom_data)
-
+        fig.add_shape(type='line',
+                      x0=0,
+                      x1=grouped['RELPOS'].max(),
+                      y0=-np.log10(0.05 / 1131.0),
+                      y1=-np.log10(0.05 / 1131.0),
+                      line=dict(color='LightSeaGreen', width=2, dash='dot'))
         fig.update_traces(marker=dict(size=10, opacity=0.9, line=dict(width=1, color='Black')))
+        fig.update_yaxes(title='-log10(p-value)')
         fig.update_traces(hovertemplate=hovertemplate)
         fig.update_layout(showlegend=False)
         for x, y, text in zip(x_vals, y_vals, text):

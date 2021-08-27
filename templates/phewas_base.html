@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="topnav">
         <a href="/" style="float: left">Home</a>
         <form >
@@ -21,11 +20,13 @@
         <a href="#about">Phenotypes</a>
         <a href="#contact">Top Results</a>
     </div>
-{#    <div class="pheno-info">#}
-{#        <h1>{{ phecode }}: {{phenotype}}</h1>#}
-{#        <b>{{ cases }}</b> cases, <b>{{ controls }}</b> controls <br>#}
-{#        Category: <b>{{ category }}</b>#}
-{#    </div>#}
+
+    <div class="pheno-info">
+        <h1> {{ variant }} </h1>
+        Nearest Gene: <b> {{ gene }} </b><br>
+        Impact: <b> {{ impact.title() }} </b><br>
+        Consequence: <b> {{ effect.replace('_', ' ').title() }}</b>
+    </div>
 
     <div id="chart" class="chart">
         <script type="text/javascript">
@@ -35,6 +36,28 @@
             Plotly.plot('chart',graphs,{});
 
         </script>
+    </div>
+    <div class="top-results">
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Phenotype</th>
+          <th>P-value</th>
+          <th>Effectsize(SE)</th>
+          <th>Cases/Controls</th>
+        </tr>
+        {% for row in row_data %}
+        <tr>
+            {% for col, row_ in zip(column_names, row) %}
+              {% if col == pheno_col %}
+                <td> <a href="/pheno/{{ pheno_dict[row_] }}">{{ row_ }}</a></td>
+              {% else %}
+                <td> {{ row_ | safe}}</td>
+              {% endif %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </table>
     </div>
 </body>
 

@@ -39,12 +39,23 @@ def phenotype(pheno):
 
 
 @app.route('/variant/<variant>')
-def variant(variant):
+def variation(variant):
     var = PhewasData(f'{variant}', conn)
     fig = var.phewas_plot()
+    info = var.variant_info
+    df = var.top_results
     graphjson = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     return render_template('phewas_base.html',
-                           graphJSON=graphjson)
+                           variant=info['VAR_ID'],
+                           gene=info['GENE'],
+                           impact=info['IMPACT'],
+                           effect=info['EFFECT'],
+                           graphJSON=graphjson,
+                           column_names=df.columns.values,
+                           row_data=list(df.values.tolist()),
+                           pheno_col='phenotype',
+                           pheno_dict=var.phecode_dict,
+                           zip=zip)
 
 
 @app.route('/test/table')
