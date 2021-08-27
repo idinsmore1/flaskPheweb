@@ -1,0 +1,10 @@
+name: flaskPheweb
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - flask
+  - mysqlclient
+  - pandas
+  - plotly
+prefix: /Users/irdinsmore1/opt/miniconda3/envs/flaskPheweb
