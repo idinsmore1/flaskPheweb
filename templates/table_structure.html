@@ -3,34 +3,60 @@
   <head>
     <title>Table Testing</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta content="initial-scale=1, maximum-scale=1,
+        user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Datatable plugin CSS file -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.0/css/jquery.dataTables.min.css" />
+
+     <!-- jQuery library file -->
+     <script type="text/javascript"
+     src="https://code.jquery.com/jquery-3.5.1.js">
+     </script>
+
+      <!-- Datatable plugin JS library file -->
+     <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
   </head>
   <body>
-    <div class="top-results">
-        <div id="table-header" class="table-header">
-            <h2>Top Results</h2>
-            <span><button class="btn"><i class="fa fa-download"></i> Download</button></span>
-        </div>
-        <table>
-            <tr>
-                {% for col in column_names %}
-                <th>{{col}}</th>
-                {% endfor %}
-            </tr>
-            {% for row in row_data %}
-            <tr>
-                {% for col, row_ in zip(column_names, row) %}
-                  {% if col == id_col %}
-                    <td> <a href="/variant/{{ row_ }}">{{ row_ }}</a></td>
-                  {% elif col == gene_col %}
-                    <td> <a href="/gene/{{ row_ }}">{{ row_ }}</a></td>
-                  {% else %}
-                    <td> {{ row_ }}</td>
-                  {% endif %}
-                {% endfor %}
-            </tr>
+    <div class="">
+      <div id="table-header" class="table-header">
+        <h2>Top Results</h2>
+        <span><button class="btn"><i class="fa fa-download"></i> Test Reload</button></span>
+      </div>
+      <table id="tableID" class="display" style="width:100%">
+        <thead>
+          <tr>
+            {% for col in column_names %}
+            <th>{{col}}</th>
             {% endfor %}
-        </table>
-    </div>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in row_data %}
+          <tr>
+              {% for col, row_ in zip(column_names, row) %}
+                {% if col == id_col %}
+                  <td> <a href="/variant/{{ row_ }}">{{ row_ }}</a></td>
+                {% elif col == gene_col %}
+                  <td> <a href="/gene/{{ row_ }}">{{ row_ }}</a></td>
+                {% else %}
+                  <td> {{ row_ }}</td>
+                {% endif %}
+              {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <script>
+
+          /* Initialization of datatable */
+          $(document).ready(function() {
+              $('#tableID').DataTable({
+                  "order": [[6, 'asc']]
+              });
+          });
+      </script>
     </div>
 
   </body>

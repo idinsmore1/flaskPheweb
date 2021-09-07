@@ -11,9 +11,9 @@ app = Flask(__name__)
 conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
 
 
 @app.route('/pheno/<pheno>')
@@ -58,21 +58,22 @@ def variation(variant):
                            zip=zip)
 
 
-@app.route('/test/table')
+@app.route('/')
 def table():
-    data = GwasData(f'250_2', conn)
+    data = GwasData(f'571', conn)
     df = data.top_results
-    return render_template('table_structure.html', column_names=df.columns.values,
+    return render_template('table_structure.html',
+                           column_names=df.columns.values,
                            row_data=list(df.values.tolist()),
                            id_col='VarID',
                            gene_col='Gene',
                            zip=zip)
 
 
-@app.route('/gene/<gene>')
-def gene(gene):
-    return f'{gene}'
+# @app.route('/gene/<gene>')
+# def gene(gene):
+#     return f'{gene}'
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

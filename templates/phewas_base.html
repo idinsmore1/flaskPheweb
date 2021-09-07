@@ -2,12 +2,23 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
-    <title>Mirshahi Pheweb</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}"/>
+  <title>Mirshahi Pheweb</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <meta content="initial-scale=1, maximum-scale=1,
+    user-scalable=0" name="viewport" /><meta name="viewport" content="width=device-width" />
+
+  <!-- Datatable plugin CSS file -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+
+   <!-- jQuery library file -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+      <!-- Datatable plugin JS library file -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
@@ -38,16 +49,19 @@
         </script>
     </div>
     <div class="top-results">
-      <table>
-        <tr>
-          <th>Category</th>
-          <th>Phenotype</th>
-          <th>P-value</th>
-          <th>Effectsize(SE)</th>
-          <th>Cases/Controls</th>
-        </tr>
-        {% for row in row_data %}
-        <tr>
+      <table id="phewasTable" class="cell-border stripe">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Phenotype</th>
+            <th>P-value</th>
+            <th>Effectsize(SE)</th>
+            <th>Cases/Controls</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in row_data %}
+          <tr>
             {% for col, row_ in zip(column_names, row) %}
               {% if col == pheno_col %}
                 <td> <a href="/pheno/{{ pheno_dict[row_] }}">{{ row_ }}</a></td>
@@ -55,9 +69,18 @@
                 <td> {{ row_ | safe}}</td>
               {% endif %}
             {% endfor %}
-        </tr>
-        {% endfor %}
-        </table>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <script>
+          /* Initialization of datatable */
+          $(document).ready(function() {
+              $('#phewasTable').DataTable({
+                  "order": [[2, 'asc']]
+              });
+          });
+      </script>
     </div>
 </body>
 

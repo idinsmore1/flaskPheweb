@@ -1,41 +1,25 @@
 .pheno-info{
     margin-top: 10px;
     margin-left: 10px;
-}
-.top-results table {
-    font-family: arial, sans-serif;
-    font-size: 13px;
-    border-collapse: collapse;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: sans-serif;
 }
 
-.top-results td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 3px 5px;
-}
-
-tr:nth-child(even) {
-    background-color: #87DBFF;
-}
 
 .header{
-            text-align: center;
-            background-color: rgb(136, 185, 229);
-            height: 70px;
-            line-height: 70px;
+    text-align: center;
+    background-color: #0068B1;
+    height: 70px;
+    line-height: 70px;
 }
 
 .chart{
-    margin-top: 30px;
+    margin-top: 0px;
     text-align: center;
 }
 
 /* Style buttons */
 .btn {
-  background-color: DodgerBlue;
+  background-color: #0068B1;
   border: thin black;
   color: #dddddd;
   padding: 12px 12px;
@@ -45,7 +29,7 @@ tr:nth-child(even) {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: #1D00B1;
 }
 
 .table-header {
@@ -53,11 +37,46 @@ tr:nth-child(even) {
     justify-content: space-between;
 }
 .table-header h2 {
-    margin-left: 4vw;
+    margin: 0 auto;
     font-size: 30px;
 }
 .table-header button {
-    margin-right: 4vw;
-    margin-bottom: 3px;
+    margin: 0 auto;
 }
 
+/* this should all be taken care of by jquery Datatable*/
+/*.top-results table {*/
+/*    font-family: arial, sans-serif;*/
+/*    font-size: 13px;*/
+/*    border-collapse: collapse;*/
+/*    width: 90vw;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*.top-results td, th {*/
+/*    border: 1px solid #dddddd;*/
+/*    text-align: left;*/
+/*    padding: 3px 5px;*/
+/*}*/
+
+/*tr:nth-child(even) {*/
+/*    background-color: #87DBFF;*/
+/*}*/
+
+/*Data Table Stuff*/
+.dataTables_wrapper {
+    width: 95vw;
+    margin: 0px auto;
+}
+.dataTable a:link {
+    text-decoration: none;
+    color: black;
+}
+.dataTable a:visited {
+    text-decoration: none;
+    color: black
+}
+.dataTable a:hover {
+    text-decoration: underline;
+}

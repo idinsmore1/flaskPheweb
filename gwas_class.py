@@ -35,8 +35,9 @@ class GwasData:
             columns={'HGVS_c': 'HGVSc', 'EFFECTSIZE(SE)': 'EffectSize(SE)', 'GENE': 'Gene', 'VAR_ID': 'VarID'},
             inplace=True)
         self.top_results['MAF'] = round(self.top_results['MAF'], 5)
-        self.top_results = self.top_results[
-            ['VarID', 'Gene', 'IMPACT', 'EFFECT', 'HGVSc', 'MAF', 'P-value', 'EffectSize(SE)']]
+        self.top_results = self.top_results.sort_values('LOG10P', ascending=False)[
+                ['VarID', 'Gene', 'IMPACT', 'EFFECT', 'HGVSc', 'MAF', 'P-value', 'EffectSize(SE)']
+            ].reset_index(drop=True)
 
         # Manhattan plot information
         self.nChr = len(np.unique(self.data['CHR']))
