@@ -80,9 +80,16 @@ class GwasData:
                                          WHERE PHECODE = '{self.phecode}'""",
                          self.connection)
         test = df.to_dict('records').pop()
-
-        test['phenotype'] = test['phenotype'].title()
+        STAGE_CODES = ['585.4', '585.33', '585.34']
         test['PHECODE'] = test['PHECODE'].replace('_', '.')
+        if test['PHECODE'] in STAGE_CODES:
+            if test['PHECODE'] == '584.4':
+                test['phenotype'] = 'Chronic Kidney Disease, Stage I or II'
+            else:
+                test['phenotype'] = test['phenotype']
+        else:
+            test['phenotype'] = test['phenotype'].title()
+
         test['category'] = test['category'].title()
         return test
 

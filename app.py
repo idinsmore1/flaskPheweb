@@ -6,10 +6,16 @@ from flask import Flask, render_template, request, Response, redirect
 
 from gwas_class import GwasData
 from phewas import PhewasData
+from autocompletion import Autocompleter
 
 app = Flask(__name__)
 conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
 cursor = conn.cursor()
+cursor.execute('SELECT DISTINCT PHECODE, phenotype FROM private_dash.TM90K_phenotypes')
+phenos = {item[0].replace('_', '.'): {'phenostring': item[1]} for item in cursor.fetchall()}
+cursor.close()
+
+autocompleter = Autocompleter(phenos)
 
 
 def relative_redirect(url: str) -> Response:
@@ -23,26 +29,19 @@ class RelativeResponse(Response):
 @app.route('/go')
 def go():
     query = request.args.get('query', None)
-    if query == 'pheno':
-        return relative_redirect(f'/pheno/571')
-    elif query == 'variant':
-        return relative_redirect(f'/variant/22:43945024:C:T')
-    else:
-        return relative_redirect('/')
+    best_suggestion = autocompleter.get_best_completion(query)
+    if best_suggestion:
+        return relative_redirect(best_suggestion['url'])
 
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    if request.method == "GET":
-        languages = ["C++", "Python", "PHP", "Java", "C", "Ruby",
-                     "R", "C#", "Dart", "Fortran", "Pascal", "Javascript"]
-
-        return render_template("navbar2.html", languages=languages)
+    return render_template('index.html')
 
 
 @app.route('/pheno/<pheno>')
-def phenotype(pheno):
-    pheno = pheno.replace('-', '_')
+def phenotype_page(pheno):
+    pheno = pheno.replace('.', '_').replace('-', '_')
     data = GwasData(f'{pheno}', conn)
     fig = data.manhattan_plot()
     df = data.top_results

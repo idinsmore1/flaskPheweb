@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <title>Pheweb</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  <link rel="script" href="{{ url_for('static', filename='js/autocomplete.js') }}">
 </head>
 <body>
   <div class="topnav">
-    <a href="#home" style="float: left">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <input type="search" placeholder="Search..">
-
+    <a href="/" style="float: left">Home</a>
+    <form action="{{ url_for('.go') }}" role="search">
+        <input type="search" placeholder="Search for phenotype or variant..." name="query" id="navbar-search-input" autocomplete="off">
+    </form>
+    <a href="#about ">About</a>
+    <a href="#about">Phenotypes</a>
+    <a href="#contact">Top Results</a>
   </div>
 </body>
 </html>
