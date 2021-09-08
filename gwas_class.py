@@ -35,8 +35,10 @@ class GwasData:
             columns={'HGVS_c': 'HGVSc', 'EFFECTSIZE(SE)': 'EffectSize(SE)', 'GENE': 'Gene', 'VAR_ID': 'VarID'},
             inplace=True)
         self.top_results['MAF'] = round(self.top_results['MAF'], 5)
+        self.top_results['Effect'] = [x.replace('_', ' ').title() for x in self.top_results['EFFECT']]
+        self.top_results['Impact'] = [x.title() for x in self.top_results['IMPACT']]
         self.top_results = self.top_results.sort_values('LOG10P', ascending=False)[
-                ['VarID', 'Gene', 'IMPACT', 'EFFECT', 'HGVSc', 'MAF', 'P-value', 'EffectSize(SE)']
+                ['VarID', 'Gene', 'Impact', 'Effect', 'HGVSc', 'MAF', 'P-value', 'EffectSize(SE)']
             ].reset_index(drop=True)
 
         # Manhattan plot information
@@ -61,6 +63,7 @@ class GwasData:
         fig.update_xaxes(title='Chromosome', tickvals=self.plt_ticks,
                          ticktext=np.array(range(1, self.nChr + 1)).astype(str),
                          tickangle=0)
+        fig.update_yaxes(title='-log10(p-value)')
         fig.update_traces(hovertemplate=self.hovertemplate)
         fig.add_shape(type='line',
                       x0=0,

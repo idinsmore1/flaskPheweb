@@ -4,7 +4,6 @@
 <head>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
   <title>Mirshahi Pheweb</title>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
@@ -43,18 +42,20 @@
   <div id="chart" class="chart">
     <script type="text/javascript">
 
-        var graphs = {{graphJSON | safe}};
+      var graphs = {{graphJSON | safe}};
 
-        Plotly.plot('chart',graphs,{});
+      Plotly.plot('chart', graphs, {}, {displaylogo: false});
 
     </script>
   </div>
   <div class="top-results">
     <div id="table-header" class="table-header">
-        <h2>Top Results</h2>
-        <span><button class="btn"><i class="fa fa-download"></i> Download</button></span>
+      <p><b>Top Results</b></p>
+      <span>
+        <button class="btn"><i class="fa fa-download"></i><a href="/download/{{ phecode.replace('.', '-') }}">Download</a></button>
+      </span>
     </div>
-    <table id="gwasTable" class="cell-border stripe">
+    <table id="gwasTable" class="cell-border stripe hover">
       <thead>
         <tr>
           {% for col in column_names %}

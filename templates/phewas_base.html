@@ -4,7 +4,6 @@
 <head>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}"/>
   <title>Mirshahi Pheweb</title>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
@@ -22,66 +21,70 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="/" style="float: left">Home</a>
-        <form >
-            <input type="search" placeholder="Search.." name="navigator" id="sitesearch">
-        </form>
-        <a href="#about ">About</a>
-        <a href="#about">Phenotypes</a>
-        <a href="#contact">Top Results</a>
+  <div class="topnav">
+    <a href="/" style="float: left">Home</a>
+    <form >
+      <input type="search" placeholder="Search.." name="navigator" id="sitesearch">
+    </form>
+    <a href="#about ">About</a>
+    <a href="#about">Phenotypes</a>
+    <a href="#contact">Top Results</a>
+  </div>
+
+  <div class="pheno-info">
+    <h1> {{ variant }} </h1>
+    Nearest Gene: <b> {{ gene }} </b><br>
+    Impact: <b> {{ impact.title() }} </b><br>
+    Consequence: <b> {{ effect.replace('_', ' ').title() }}</b>
+  </div>
+
+  <div id="chart" class="chart">
+    <script type="text/javascript">
+
+      var graphs = {{graphJSON | safe}};
+
+      Plotly.plot('chart', graphs, {});
+
+    </script>
+  </div>
+  <div class="top-results">
+    <div id="table-header" class="table-header">
+        <p><b>Top Phenotypes</b></p>
+        <span><button class="btn"><i class="fa fa-download"></i> Download</button></span>
     </div>
-
-    <div class="pheno-info">
-        <h1> {{ variant }} </h1>
-        Nearest Gene: <b> {{ gene }} </b><br>
-        Impact: <b> {{ impact.title() }} </b><br>
-        Consequence: <b> {{ effect.replace('_', ' ').title() }}</b>
-    </div>
-
-    <div id="chart" class="chart">
-        <script type="text/javascript">
-
-            var graphs = {{graphJSON | safe}};
-
-            Plotly.plot('chart',graphs,{});
-
-        </script>
-    </div>
-    <div class="top-results">
-      <table id="phewasTable" class="cell-border stripe">
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Phenotype</th>
-            <th>P-value</th>
-            <th>Effectsize(SE)</th>
-            <th>Cases/Controls</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for row in row_data %}
-          <tr>
-            {% for col, row_ in zip(column_names, row) %}
-              {% if col == pheno_col %}
-                <td> <a href="/pheno/{{ pheno_dict[row_] }}">{{ row_ }}</a></td>
-              {% else %}
-                <td> {{ row_ | safe}}</td>
-              {% endif %}
-            {% endfor %}
-          </tr>
+    <table id="phewasTable" class="cell-border stripe hover">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Phenotype</th>
+          <th>P-value</th>
+          <th>Effectsize(SE)</th>
+          <th>Cases/Controls</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in row_data %}
+        <tr>
+          {% for col, row_ in zip(column_names, row) %}
+            {% if col == pheno_col %}
+              <td> <a href="/pheno/{{ pheno_dict[row_] }}">{{ row_ }}</a></td>
+            {% else %}
+              <td> {{ row_ | safe}}</td>
+            {% endif %}
           {% endfor %}
-        </tbody>
-      </table>
-      <script>
-          /* Initialization of datatable */
-          $(document).ready(function() {
-              $('#phewasTable').DataTable({
-                  "order": [[2, 'asc']]
-              });
-          });
-      </script>
-    </div>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <script>
+      /* Initialization of datatable */
+      $(document).ready(function() {
+        $('#phewasTable').DataTable({
+            "order": [[2, 'asc']]
+        });
+      });
+    </script>
+  </div>
 </body>
 
 

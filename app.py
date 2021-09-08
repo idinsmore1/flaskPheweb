@@ -1,19 +1,24 @@
 import json
-
+import csv
 import MySQLdb
 import plotly
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, request
 
 from gwas_class import GwasData
 from phewas import PhewasData
 
 app = Flask(__name__)
 conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
+cursor = conn.cursor()
 
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
+@app.route('/', methods=['POST', 'GET'])
+def index():
+    if request.method == "GET":
+        languages = ["C++", "Python", "PHP", "Java", "C", "Ruby",
+                     "R", "C#", "Dart", "Fortran", "Pascal", "Javascript"]
+
+        return render_template("navbar2.html", languages=languages)
 
 
 @app.route('/pheno/<pheno>')
@@ -58,22 +63,55 @@ def variation(variant):
                            zip=zip)
 
 
-@app.route('/')
-def table():
-    data = GwasData(f'571', conn)
-    df = data.top_results
-    return render_template('table_structure.html',
-                           column_names=df.columns.values,
-                           row_data=list(df.values.tolist()),
-                           id_col='VarID',
-                           gene_col='Gene',
-                           zip=zip)
+# @app.route('/')
+# def table():
+#     data = GwasData(f'571', conn)
+#     df = data.top_results
+#     return render_template('table_structure.html',
+#                            column_names=df.columns.values,
+#                            row_data=list(df.values.tolist()),
+#                            id_col='VarID',
+#                            gene_col='Gene',
+#                            zip=zip)
 
 
-# @app.route('/gene/<gene>')
-# def gene(gene):
-#     return f'{gene}'
-
+# @app.route('/download/<pheno>', methods=['GET'])
+# def download(pheno):
+#     pheno = pheno.replace('-', '.')
+#     query = f"""SELECT v.*, g.MAF, g.EFFECTSIZE, g.SE, g.LOG10P
+#                             FROM private_dash.TM90K_LOGP_gt2 g
+#                             INNER JOIN private_dash.TM90K_variants v
+#                             USING(VAR_ID)
+#                             WHERE PHECODE = '{pheno}'"""
+#     data = cursor.execute(query)
+#     (file_basename, server_path, file_size) = create_csv(data, pheno)
+#
+#     return_file = open(server_path + file_basename, 'r')
+#     response = make_response(return_file, 200)
+#     response.headers['Content-Description'] = 'File Transfer'
+#     response.headers['Cache-Control'] = 'no-cache'
+#     response.headers['Content-Type'] = 'text/csv'
+#     response.headers['Content-Disposition'] = 'attachment; filename=%s' % file_basename
+#     response.headers['Content-Length'] = file_size
+#     return response
+#
+#
+# def create_csv(data, name):
+#     """ returns (file_basename, server_path, file_size) """
+#     file_basename = f'{name}_download.csv'
+#     server_path = '/directory/subdirectory'
+#     w_file = open(server_path + file_basename, 'w')
+#     w_file.write('your data headers separated by commas \n')
+#
+#     for row in data:
+#         row_as_string = str(row)
+#         w_file.write(row_as_string[1:-1] + '\n')  ## row_as_string[1:-1] because row is a tuple
+#
+#     w_file.close()
+#
+#     w_file = open(server_path + file_basename, 'r')
+#     file_size = len(w_file.read())
+#     return file_basename, server_path, file_size
 
 if __name__ == '__main__':
     app.run(debug=True)
