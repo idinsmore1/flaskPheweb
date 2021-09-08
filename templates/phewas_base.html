@@ -23,8 +23,8 @@
 <body>
   <div class="topnav">
     <a href="/" style="float: left">Home</a>
-    <form >
-      <input type="search" placeholder="Search.." name="navigator" id="sitesearch">
+    <form action="{{ url_for('.go') }}" role="search">
+        <input type="search" placeholder="Search.." name="query" id="navbar-search-input" autocomplete="off">
     </form>
     <a href="#about ">About</a>
     <a href="#about">Phenotypes</a>

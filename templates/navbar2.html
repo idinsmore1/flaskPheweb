@@ -1,32 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>AutoComplete</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
-    </script>
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Autocomplete functionality</title>
+      <link rel=""
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">
-    </script>
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            var availableTutorials  =  [
+               "ActionScript",
+               "Bootstrap",
+               "C",
+               "C++",
+            ];
+            $( "#automplete-1" ).autocomplete({
+               source: availableTutorials
+            });
+         });
+      </script>
+   </head>
 
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
-        rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <h1>Welcome to GFG</h1>
-    <input type="text" id="tags">
-
-    <script>
-  $( function() {
-    var availableTags = [
-        {% for language in languages %}
-            "{{language}}",
-        {% endfor %}
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-  </script>
-
-</body>
+   <body>
+      <form autocomplete="off" action="/action_page.php">
+      <div class="autocomplete" style="width:300px;">
+        <input id="myInput" type="text" name="myCountry" placeholder="Country">
+      </div>
+        <input type="submit">
+      </form>
+   </body>
 </html>

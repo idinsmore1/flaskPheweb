@@ -2,7 +2,7 @@ import json
 import csv
 import MySQLdb
 import plotly
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response, redirect
 
 from gwas_class import GwasData
 from phewas import PhewasData
@@ -10,6 +10,25 @@ from phewas import PhewasData
 app = Flask(__name__)
 conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
 cursor = conn.cursor()
+
+
+def relative_redirect(url: str) -> Response:
+    return redirect(url, Response=RelativeResponse)
+
+
+class RelativeResponse(Response):
+    autocorrect_location_header = False
+
+
+@app.route('/go')
+def go():
+    query = request.args.get('query', None)
+    if query == 'pheno':
+        return relative_redirect(f'/pheno/571')
+    elif query == 'variant':
+        return relative_redirect(f'/variant/22:43945024:C:T')
+    else:
+        return relative_redirect('/')
 
 
 @app.route('/', methods=['POST', 'GET'])
@@ -94,24 +113,7 @@ def variation(variant):
 #     response.headers['Content-Disposition'] = 'attachment; filename=%s' % file_basename
 #     response.headers['Content-Length'] = file_size
 #     return response
-#
-#
-# def create_csv(data, name):
-#     """ returns (file_basename, server_path, file_size) """
-#     file_basename = f'{name}_download.csv'
-#     server_path = '/directory/subdirectory'
-#     w_file = open(server_path + file_basename, 'w')
-#     w_file.write('your data headers separated by commas \n')
-#
-#     for row in data:
-#         row_as_string = str(row)
-#         w_file.write(row_as_string[1:-1] + '\n')  ## row_as_string[1:-1] because row is a tuple
-#
-#     w_file.close()
-#
-#     w_file = open(server_path + file_basename, 'r')
-#     file_size = len(w_file.read())
-#     return file_basename, server_path, file_size
+
 
 if __name__ == '__main__':
     app.run(debug=True)
