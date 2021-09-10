@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pheweb</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <title>Pheweb</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/typeahead.bundle.js') }}"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        // Sonstructs the suggestion engine
+        var phenotypes = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.whitespace,
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            // The url points to a json file that contains an array of country names
+            prefetch: "{{ url_for('static', filename='data/phenotypes.json') }}"
+        });
+
+        // Initializing the typeahead with remote dataset
+        $('.typeahead').typeahead(null, {
+            name: 'phenotypes',
+            source: phenotypes,
+            limit: 10 /* Specify maximum number of suggestions to be displayed */
+        }).on('typeahead:selected', function(e){
+            e.target.form.submit();
+        });
+    });
+    </script>
 </head>
 <body>
-  <div class="topnav">
-    <a href="/" style="float: left">Home</a>
-    <form action="{{ url_for('.go') }}" role="search">
-        <input type="search" placeholder="Search for phenotype or variant..." name="query" id="navbar-search-input" autocomplete="off">
-    </form>
-    <a href="#about ">About</a>
-    <a href="#about">Phenotypes</a>
-    <a href="#contact">Top Results</a>
-  </div>
+    <div class="navbar-flex">
+        <div class="navlink home"><a href="/">Home</a></div>
+        <div class="navsearch">
+            <form action="{{ url_for('.go') }}">
+                    <input name="query" class="typeahead tt-query" autocomplete="off" type="text" placeholder="Search for a variant, gene, or phenotype" spellcheck="false">
+            </form>
+        </div>
+        <div class="right-bar">
+            <div class="navlink topres"><a href="#TopRes">Top Results</a></div>
+            <div class="navlink pheno"><a href="#TopRes">Phenotypes</a></div>
+            <div class="navlink about"><a href="#TopRes">About</a></div>
+        </div>
+    </div>
+
 </body>
 </html>

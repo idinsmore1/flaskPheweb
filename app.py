@@ -1,8 +1,10 @@
 import json
 import csv
+import traceback
+
 import MySQLdb
 import plotly
-from flask import Flask, render_template, request, Response, redirect
+from flask import Flask, render_template, request, Response, redirect, flash, abort
 
 from gwas_class import GwasData
 from phewas import PhewasData
@@ -18,6 +20,15 @@ cursor.close()
 autocompleter = Autocompleter(phenos)
 
 
+# def end(message='no message', exception=None):
+#     if exception is not None:
+#         print('Exception:', exception)
+#         traceback.print_exc()
+#     print(message, flush=True)
+#     flash(message)
+#     abort(404)
+
+
 def relative_redirect(url: str) -> Response:
     return redirect(url, Response=RelativeResponse)
 
@@ -29,9 +40,12 @@ class RelativeResponse(Response):
 @app.route('/go')
 def go():
     query = request.args.get('query', None)
+    # if query is None:
+    #     end('You\'ve submitted a null query, please try again.')
     best_suggestion = autocompleter.get_best_completion(query)
     if best_suggestion:
         return relative_redirect(best_suggestion['url'])
+    # end(f"Couldn't find page for {query}")
 
 
 @app.route('/', methods=['POST', 'GET'])

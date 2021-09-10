@@ -2,92 +2,117 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Mirshahi Pheweb</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-  <meta content="initial-scale=1, maximum-scale=1,
-        user-scalable=0" name="viewport" /><meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mirshahi Pheweb</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <meta content="initial-scale=1, maximum-scale=1,
+    user-scalable=0" name="viewport" /><meta name="viewport" content="width=device-width" />
 
     <!-- Datatable plugin CSS file -->
     <link rel="stylesheet" href=
-"https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    "https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
 
-     <!-- jQuery library file -->
-     <script type="text/javascript"
-     src="https://code.jquery.com/jquery-3.5.1.js">
-     </script>
+    <!-- jQuery library file -->
+    <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
 
-      <!-- Datatable plugin JS library file -->
-     <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <!-- Datatable plugin JS library file -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/typeahead.bundle.js') }}"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        // Sonstructs the suggestion engine
+        var phenotypes = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.whitespace,
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            // The url points to a json file that contains an array of country names
+            prefetch: "{{ url_for('static', filename='data/phenotypes.json') }}"
+        });
+
+        // Initializing the typeahead with remote dataset
+        $('.typeahead').typeahead(null, {
+            name: 'phenotypes',
+            source: phenotypes,
+            limit: 10 /* Specify maximum number of suggestions to be displayed */
+        }).on('typeahead:selected', function(e){
+            e.target.form.submit();
+        });
+    });
+    </script>
 </head>
 
 <body>
-  <div class="topnav">
-    <a href="/" style="float: left">Home</a>
-    <form action="{{ url_for('.go') }}" role="search">
-        <input type="search" placeholder="Search for phenotype or variant..." name="query" id="navbar-search-input" autocomplete="off">
-    </form>
-    <a href="#about ">About</a>
-    <a href="#about">Phenotypes</a>
-    <a href="#contact">Top Results</a>
-  </div>
-  <div class="pheno-info">
-    <h1>{{ phecode }}: {{phenotype}}</h1>
-    <b>{{ cases }}</b> cases, <b>{{ controls }}</b> controls <br>
-    Category: <b>{{ category }}</b>
-  </div>
-
-  <div id="chart" class="chart">
-    <script type="text/javascript">
-
-      var graphs = {{graphJSON | safe}};
-
-      Plotly.plot('chart', graphs, {}, {displaylogo: false});
-
-    </script>
-  </div>
-  <div class="top-results">
-    <div id="table-header" class="table-header">
-      <p><b>Top Results</b></p>
-      <span>
-        <button class="btn"><i class="fa fa-download"></i><a href="/download/{{ phecode.replace('.', '-') }}">Download</a></button>
-      </span>
+    <div class="navbar-flex">
+        <div class="navlink home"><a href="/">Home</a></div>
+        <div class="navsearch">
+            <form action="{{ url_for('.go') }}">
+                    <input name="query" class="typeahead tt-query" autocomplete="off" type="text" placeholder="Search for a variant, gene, or phenotype" spellcheck="false">
+            </form>
+        </div>
+        <div class="right-bar">
+            <div class="navlink topres"><a href="#TopRes">Top Results</a></div>
+            <div class="navlink pheno"><a href="#TopRes">Phenotypes</a></div>
+            <div class="navlink about"><a href="#TopRes">About</a></div>
+        </div>
     </div>
-    <table id="gwasTable" class="cell-border stripe hover">
-      <thead>
-        <tr>
-          {% for col in column_names %}
-          <th>{{col}}</th>
-          {% endfor %}
-        </tr>
-      </thead>
-      <tbody>
-        {% for row in row_data %}
-        <tr>
-          {% for col, row_ in zip(column_names, row) %}
-            {% if col == id_col %}
-              <td> <a href="/variant/{{ row_ }}">{{ row_ }}</a></td>
-            {% elif col == gene_col %}
-              <td> <a href="/gene/{{ row_ }}">{{ row_ }}</a></td>
-            {% else %}
-              <td> {{ row_ }}</td>
-            {% endif %}
-          {% endfor %}
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
-    <script>
-          /* Initialization of datatable */
-          $(document).ready(function() {
-              $('#gwasTable').DataTable({
-                  "order": [[6, 'asc']]
-              });
-          });
-    </script>
-  </div>
+    <div class="pheno-info">
+        <h1>{{ phecode }}: {{phenotype}}</h1>
+        <b>{{ cases }}</b> cases, <b>{{ controls }}</b> controls <br>
+        Category: <b>{{ category }}</b>
+    </div>
+
+    <div id="chart" class="chart">
+        <script type="text/javascript">
+
+            var graphs = {{graphJSON | safe}};
+
+            Plotly.plot('chart', graphs, {}, {displaylogo: false});
+
+        </script>
+        </div>
+            <div class="top-results">
+            <div id="table-header" class="table-header">
+                <p><b>Top Results</b></p>
+                <span>
+                    <button class="btn"><i class="fa fa-download"></i><a href="/download/{{ phecode.replace('.', '-') }}">Download</a></button>
+                </span>
+        </div>
+            <table id="gwasTable" class="cell-border stripe hover">
+                <thead>
+                    <tr>
+                        {% for col in column_names %}
+                        <th>{{col}}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in row_data %}
+                    <tr>
+                    {% for col, row_ in zip(column_names, row) %}
+                        {% if col == id_col %}
+                            <td> <a href="/variant/{{ row_ }}">{{ row_ }}</a></td>
+                        {% elif col == gene_col %}
+                            <td> <a href="/gene/{{ row_ }}">{{ row_ }}</a></td>
+                        {% else %}
+                            <td> {{ row_ }}</td>
+                        {% endif %}
+                    {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <script>
+                /* Initialization of datatable */
+                $(document).ready(function() {
+                    $('#gwasTable').DataTable({
+                      "order": [[6, 'asc']]
+                    });
+                });
+            </script>
+    </div>
 </body>
 
 

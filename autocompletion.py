@@ -9,6 +9,7 @@ class Autocompleter(object):
     def __init__(self, phenos):
         """
         :param phenos: a dictionary of phecodes to phenotypes
+        :param variants: a tuple of
         """
         self._phenos = copy.deepcopy(phenos)
         self._preprocess_phenos()
@@ -75,3 +76,8 @@ class Autocompleter(object):
                     "display": "{} ({})".format(pheno['phenostring'], phenocode),
                     "url": url_for('.phenotype_page', pheno=phenocode),
                 }
+
+    def _autocomplete_variant(self, query: str):
+        query = query.replace('-', ':')
+        split_query = query.split(':')
+        chrom, pos, ref, alt = [split_query[i] for i in range(0, 4)]
