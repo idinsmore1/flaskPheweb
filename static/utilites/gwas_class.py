@@ -32,7 +32,10 @@ class GwasData:
                             'EFFECTSIZE(SE)']].sort_values('LOG10P', ascending=False).reset_index(drop=True)
         self.top_results['P-value'] = ['%.2e' % x for x in 10 ** -self.top_results['LOG10P']]
         self.top_results.rename(
-            columns={'HGVS_c': 'HGVSc', 'EFFECTSIZE(SE)': 'EffectSize(SE)', 'GENE': 'Gene', 'VAR_ID': 'VarID'},
+            columns={'HGVS_c': 'HGVSc',
+                     'EFFECTSIZE(SE)': 'EffectSize(SE)',
+                     'GENE': 'Gene',
+                     'VAR_ID': 'VarID'},
             inplace=True)
         self.top_results['MAF'] = round(self.top_results['MAF'], 5)
         self.top_results['Effect'] = [x.replace('_', ' ').title() for x in self.top_results['EFFECT']]
