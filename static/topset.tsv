@@ -1,0 +1,1132 @@
+Phecode	Phenotype	Top Variant	Pvalue	Category	Cases	Controls
+008	Intestinal infection	1:224892068:A:G	6.252e-07	infectious diseases	428	34935
+008.5	Bacterial enteritis	12:40704484:A:T	2.158e-06	infectious diseases	281	34935
+008.52	Intestinal infection due to C. difficile	12:40704484:A:T	2.606e-06	infectious diseases	266	34935
+038	Septicemia	2:73346296:T:C	2.992e-08	infectious diseases	715	31002
+038.3	Bacteremia	11:125425772:T:C	2.535e-05	infectious diseases	65	31002
+041	Bacterial infection NOS	21:19528948:T:A	7.727e-07	infectious diseases	714	31002
+041.1	Staphylococcus infections	6:141417131:G:T	4.325e-06	infectious diseases	128	31002
+041.12	Methicillin resistant Staphylococcus aureus	8:86895328:A:G	3.311e-06	infectious diseases	83	31002
+041.8	H. pylori	7:86029327:G:A	1.390e-05	infectious diseases	83	31002
+053	Herpes zoster	11:22355329:A:G	1.052e-06	infectious diseases	536	22131
+053.1	Herpes zoster with nervous system complications	10:112107637:G:A	1.977e-05	infectious diseases	133	22131
+054	Herpes simplex	2:67759750:C:T	9.528e-07	infectious diseases	580	22131
+070	Viral hepatitis	4:24089389:G:A	5.781e-07	infectious diseases	668	22131
+070.3	Viral hepatitis C	2:204574736:A:C	6.266e-07	infectious diseases	625	22131
+070.4	Chronic hepatitis	3:8538044:G:A	2.851e-06	infectious diseases	91	22131
+070.9	Hepatitis NOS	2:20415721:A:G	2.339e-05	infectious diseases	92	22131
+071	Human immunodeficiency virus [HIV] disease	3:93938462:G:A	1.079e-05	infectious diseases	85	22131
+071.1	HIV infection, symptomatic	3:93938462:G:A	7.727e-06	infectious diseases	80	22131
+078	Viral warts & HPV	4:41178465:G:A	1.045e-07	infectious diseases	1045	22131
+079	Viral infection	14:78563396:G:A	4.074e-08	infectious diseases	1435	22131
+080	Postoperative infection	9:29003595:G:A	2.089e-06	infectious diseases	291	36360
+081	Infection/inflammation of internal prosthetic device; implant; and graft	21:45343427:G:T	1.419e-06	infectious diseases	160	36360
+1002	Symptoms concerning nutrition, metabolism, and development	7:36182593:A:G	7.031e-07	Other	252	36340
+1010	Other tests	6:80727303:C:G	3.069e-08	Other	11035	16468
+1013	Asphyxia and hypoxemia	17:358545:A:G	7.328e-06	Other	127	37205
+1015	Effects of other external causes	13:74337002:T:C	2.399e-06	Other	231	35882
+110	Dermatophytosis / Dermatomycosis	8:10007567:A:C	2.761e-07	infectious diseases	2858	24380
+110.1	Dermatophytosis	10:111392748:C:A	4.732e-08	infectious diseases	2676	24380
+110.11	Dermatophytosis of nail	2:77381291:T:C	8.299e-07	infectious diseases	1721	24380
+110.12	Althete's foot	1:55265137:C:T	5.272e-08	infectious diseases	364	24380
+110.13	Dermatophytosis of the body	5:79040265:G:A	1.652e-06	infectious diseases	376	24380
+110.2	Dermatomycoses	18:29751420:C:A	5.358e-06	infectious diseases	108	24380
+112	Candidiasis	3:185474209:C:T	8.433e-08	infectious diseases	1845	24380
+112.3	Candidiasis of skin and nails	12:82140951:G:C	5.984e-07	infectious diseases	317	24380
+117	Mycoses	10:44412449:C:T	6.339e-06	infectious diseases	97	24380
+130	Spirochetal infection	5:59119544:C:T	4.315e-06	infectious diseases	150	35246
+130.1	Lyme disease	5:59119544:C:T	2.355e-06	infectious diseases	146	35246
+136	Other infectious and parasitic diseases	3:143382471:C:T	3.581e-06	infectious diseases	134	35246
+145.2	Cancer of tongue	10:93139377:C:T	3.020e-05	neoplasms	59	37593
+149	Cancer of larynx, pharynx, nasal cavities	10:9812982:T:C	6.427e-06	neoplasms	116	37593
+153	Colorectal cancer	4:101753996:T:C	6.486e-07	neoplasms	565	31618
+153.2	Colon cancer	5:39511095:T:C	9.954e-07	neoplasms	468	31618
+153.3	Malignant neoplasm of rectum, rectosigmoid junction, and anus	6:112984737:A:C	3.112e-06	neoplasms	140	31618
+155	Cancer of liver and intrahepatic bile duct	12:66411168:G:A	1.977e-05	neoplasms	86	35975
+155.1	Malignant neoplasm of liver, primary	8:5196710:T:C	4.539e-06	neoplasms	72	35975
+159	Malignant neoplasm of other and ill-defined sites within the digestive organs and peritoneum	11:57894497:G:A	3.048e-06	neoplasms	80	35975
+165	Cancer within the respiratory system	2:55835337:G:A	5.346e-07	neoplasms	517	37411
+165.1	Cancer of bronchus; lung	2:55835337:G:A	5.794e-07	neoplasms	512	37411
+170	Cancer of bone and connective tissue	13:41887468:T:C	3.041e-06	neoplasms	86	37982
+170.2	Cancer of connective tissue	8:33677542:C:A	2.028e-05	neoplasms	58	37982
+172	Skin cancer	6:396321:C:T	5.754e-25	neoplasms	3376	27890
+172.1	Melanomas of skin, dx or hx	20:34077942:A:G	6.353e-07	neoplasms	666	27890
+172.11	Melanomas of skin	5:137722920:C:T	1.393e-06	neoplasms	399	27890
+172.2	Other non-epithelial cancer of skin	6:396321:C:T	3.491e-28	neoplasms	2815	27890
+172.21	Basal cell carcinoma	6:396321:C:T	3.475e-15	neoplasms	482	27890
+172.22	Squamous cell carcinoma	6:396321:C:T	6.039e-09	neoplasms	235	27890
+172.3	Carcinoma in situ of skin	6:396321:C:T	8.472e-07	neoplasms	205	27890
+173	Neoplasm of uncertain behavior of skin	6:396321:C:T	4.416e-12	neoplasms	2364	27890
+174	Breast cancer	13:105326909:A:G	2.432e-08	neoplasms	1207	33662
+174.1	Breast cancer [female]	13:105326909:A:G	3.076e-08	neoplasms	1190	33662
+174.11	Malignant neoplasm of female breast	10:121574483:C:T	5.768e-07	neoplasms	1139	33662
+174.3	Neoplasm of uncertain behavior of breast	2:56499786:T:A	7.145e-05	neoplasms	53	33662
+175	Acquired absence of breast	17:9240676:C:T	2.716e-06	neoplasms	151	31060
+180	Cervical cancer and dysplasia	11:39565062:G:A	4.295e-07	neoplasms	358	33139
+180.3	Cervical intraepithelial neoplasia [CIN] [Cervical dysplasia]	11:72722791:C:T	4.055e-07	neoplasms	280	33139
+182	Malignant neoplasm of uterus	8:129744059:C:G	6.792e-07	neoplasms	388	34084
+184	Cancer of other female genital organs	3:165415163:A:G	2.767e-06	neoplasms	195	35001
+184.1	Malignant neoplasm of ovary and other uterine adnexa	4:98899781:T:C	5.260e-06	neoplasms	132	35001
+184.11	Malignant neoplasm of ovary	4:98899781:T:C	1.069e-05	neoplasms	123	35001
+185	Cancer of prostate	8:127091872:A:G	9.954e-11	neoplasms	1234	30466
+189	Cancer of urinary organs (incl. kidney and bladder)	6:19212848:A:G	3.581e-07	neoplasms	750	37195
+189.1	Cancer of kidney and renal pelvis	10:22602190:C:T	2.710e-07	neoplasms	308	37195
+189.11	Malignant neoplasm of kidney, except pelvis	10:22602190:C:T	5.176e-06	neoplasms	278	37195
+189.2	Cancer of bladder	5:55863002:A:G	2.218e-07	neoplasms	459	37195
+189.21	Malignant neoplasm of bladder	2:236979977:A:G	8.091e-08	neoplasms	412	37195
+191	Manlignant and unknown neoplasms of brain and nervous system	1:120488128:A:T	9.954e-09	neoplasms	155	36995
+191.1	Cancer of brain and nervous system	17:49119453:C:T	1.007e-05	neoplasms	93	36995
+191.11	Cancer of brain	1:186984683:T:C	5.957e-06	neoplasms	87	36995
+193	Thyroid cancer	9:97772541:A:T	7.762e-11	neoplasms	452	36668
+195	Cancer, suspected or other	6:148116021:G:A	8.872e-07	neoplasms	455	24351
+195.1	Malignant neoplasm, other	6:148116021:G:A	8.204e-07	neoplasms	251	24351
+196	Radiotherapy	15:81792647:G:A	1.991e-07	neoplasms	1556	24351
+197	Chemotherapy	6:88218177:T:C	2.018e-07	neoplasms	2250	24351
+198	Secondary malignant neoplasm	12:94434319:A:G	5.420e-07	neoplasms	723	24351
+198.1	Secondary malignancy of lymph nodes	7:137267440:G:A	4.498e-06	neoplasms	126	24351
+198.2	Secondary malignancy of respiratory organs	6:55514931:G:A	2.004e-06	neoplasms	130	24351
+198.4	Secondary malignant neoplasm of liver	11:68421152:G:A	9.120e-06	neoplasms	142	24351
+198.5	Secondary malignancy of brain/spine	11:5419473:G:C	2.612e-06	neoplasms	116	24351
+198.6	Secondary malignancy of bone	8:89540772:A:G	4.519e-06	neoplasms	228	24351
+199	Neoplasm of uncertain behavior	6:396321:C:T	5.164e-11	neoplasms	1460	24351
+200	Myeloproliferative disease	3:104467202:G:A	2.793e-06	neoplasms	315	36730
+201	Hodgkin's disease	3:83488713:T:C	1.871e-05	neoplasms	57	36730
+202	Cancer of other lymphoid, histiocytic tissue	1:66309323:T:C	7.447e-07	neoplasms	350	36730
+202.2	Non-Hodgkins lymphoma	3:181569256:A:G	2.178e-07	neoplasms	335	36730
+202.22	Reticulosarcoma	6:19651143:A:T	5.058e-06	neoplasms	66	36730
+204	Leukemia	18:58944245:G:A	2.891e-06	neoplasms	338	36730
+204.1	Lymphoid leukemia	19:14042481:T:C	1.803e-06	neoplasms	154	36730
+204.12	Lymphoid leukemia, chronic	1:163561428:C:A	6.871e-06	neoplasms	127	36730
+204.2	Myeloid leukemia	11:43432267:A:C	1.271e-05	neoplasms	69	36730
+204.4	Multiple myeloma	18:58857392:T:C	1.991e-05	neoplasms	102	36730
+208	Benign neoplasm of colon	15:93284112:T:G	1.064e-07	neoplasms	2124	32138
+210	Benign neoplasm of lip, oral cavity, and pharynx	3:20974671:G:T	3.055e-06	neoplasms	61	37593
+212	Benign neoplasm of respiratory and intrathoracic organs	5:168264234:G:A	3.027e-05	neoplasms	62	38004
+214	Lipoma	2:59094090:A:G	3.311e-07	neoplasms	398	35905
+214.1	Lipoma of skin and subcutaneous tissue	17:74930003:C:T	1.250e-06	neoplasms	187	35905
+215	Other benign neoplasm of connective and other soft tissue	2:24261110:C:G	1.910e-06	neoplasms	80	35905
+216	Benign neoplasm of skin	9:73951169:A:G	1.026e-09	neoplasms	2339	26873
+216.1	Screening for malignant neoplasms of the skin	5:134940435:T:A	7.780e-07	neoplasms	441	26873
+217	Vascular hamartomas and non-neoplastic nevi	11:42116884:C:T	4.699e-07	neoplasms	117	26873
+217.1	Nevus, non-neoplastic	11:42116884:C:T	1.377e-06	neoplasms	96	26873
+218	Benign neoplasm of uterus	11:56135111:T:C	8.531e-07	neoplasms	459	33726
+218.1	Uterine leiomyoma	5:53486160:G:T	7.780e-07	neoplasms	453	33726
+224	Benign neoplasm of eye	2:169720476:C:T	6.383e-07	neoplasms	223	36995
+224.1	Benign neoplasm of eye, uveal	10:59746364:G:A	1.982e-06	neoplasms	199	36995
+225	Benign neoplasm of brain and other parts of nervous system	2:122655403:C:G	4.276e-07	neoplasms	292	36995
+225.1	Benign neoplasm of brain, cranial nerves, meninges	3:8711532:C:G	2.606e-07	neoplasms	275	36995
+227	Benign neoplasm of other endocrine glands and related structures	20:10083979:G:A	1.435e-06	neoplasms	389	36668
+227.1	Benign neoplasm of adrenal gland	11:28228408:C:T	2.193e-06	neoplasms	132	36668
+227.3	Benign neoplasm of pituitary gland and craniopharyngeal duct (pouch)	18:32451114:C:T	3.083e-06	neoplasms	223	36668
+228	Hemangioma and lymphangioma, any site	12:126907950:A:T	1.445e-06	neoplasms	156	36847
+240	Simple and unspecified goiter	6:74170703:C:T	1.884e-07	endocrine/metabolic	358	25895
+241	Nontoxic nodular goiter	15:49222870:C:G	3.334e-11	endocrine/metabolic	1544	25895
+241.1	Nontoxic uninodular goiter	5:74188951:A:G	2.588e-07	endocrine/metabolic	809	25895
+241.2	Nontoxic multinodular goiter	6:127734608:C:A	5.675e-07	endocrine/metabolic	677	25895
+242	Thyrotoxicosis with or without goiter	6:32684504:T:C	5.070e-07	endocrine/metabolic	717	25895
+242.1	Graves' disease	6:2958061:G:A	4.539e-08	endocrine/metabolic	378	25895
+244	Hypothyroidism	9:97772541:A:T	2.767e-21	endocrine/metabolic	7462	25895
+244.1	Secondary hypothyroidism	1:120151524:G:C	7.328e-08	endocrine/metabolic	926	25895
+244.2	Acquired hypothyroidism	9:97823224:G:A	4.909e-15	endocrine/metabolic	1991	25895
+244.4	Hypothyroidism NOS	9:97772541:A:T	3.199e-26	endocrine/metabolic	6640	25895
+245	Thyroiditis	10:71119808:A:G	1.040e-07	endocrine/metabolic	551	25895
+245.2	Chronic thyroiditis	10:71119808:A:G	9.183e-08	endocrine/metabolic	462	25895
+245.21	Chronic lymphocytic thyroiditis	10:71119808:A:G	2.307e-07	endocrine/metabolic	440	25895
+246	Other disorders of thyroid	16:35250954:G:A	1.778e-09	endocrine/metabolic	528	25895
+246.7	Abnormal results of function study of thyroid	15:57462654:C:T	6.427e-06	endocrine/metabolic	207	25895
+249	Secondary diabetes mellitus	16:14152008:C:T	1.432e-07	endocrine/metabolic	364	20537
+250	Diabetes mellitus	16:53773852:A:G	3.273e-14	endocrine/metabolic	11166	20537
+250.1	Type 1 diabetes	6:32692062:G:A	4.027e-52	endocrine/metabolic	947	20537
+250.11	Type 1 diabetes with ketoacidosis	6:32692062:G:A	4.467e-08	endocrine/metabolic	75	20537
+250.12	Type 1 diabetes with renal manifestations	6:32687953:A:G	1.496e-16	endocrine/metabolic	134	20537
+250.13	Type 1 diabetes with ophthalmic manifestations	6:32692062:G:A	1.306e-22	endocrine/metabolic	146	20537
+250.14	Type 1 diabetes with neurological manifestations	6:32692062:G:A	1.026e-21	endocrine/metabolic	178	20537
+250.2	Type 2 diabetes	10:113061768:A:G	9.141e-15	endocrine/metabolic	10919	20537
+250.22	Type 2 diabetes with renal manifestations	12:11608524:T:G	7.907e-08	endocrine/metabolic	2798	20537
+250.23	Type 2 diabetes with ophthalmic manifestations	18:37394279:C:A	5.470e-08	endocrine/metabolic	1053	20537
+250.24	Type 2 diabetes with neurological manifestations	17:41811784:C:T	3.776e-08	endocrine/metabolic	2316	20537
+250.25	Diabetes type 2 with peripheral circulatory disorders	17:48970810:A:G	8.610e-07	endocrine/metabolic	438	20537
+250.3	Insulin pump user	6:32441753:G:A	3.864e-09	endocrine/metabolic	1636	20537
+250.4	Abnormal glucose	6:30533125:G:T	7.727e-08	endocrine/metabolic	3223	20537
+250.41	Impaired fasting glucose	5:113316056:G:C	4.169e-07	endocrine/metabolic	1030	20537
+250.42	Other abnormal glucose	11:21086297:T:C	8.222e-08	endocrine/metabolic	2155	20537
+250.6	Polyneuropathy in diabetes	4:40890472:A:T	3.451e-07	endocrine/metabolic	1957	20537
+250.7	Diabetic retinopathy	6:32692062:G:A	3.741e-13	endocrine/metabolic	1035	28834
+251.1	Hypoglycemia	12:25164687:C:A	6.607e-08	endocrine/metabolic	729	17925
+252	Disorders of parathyroid gland	6:90883339:G:T	3.192e-07	endocrine/metabolic	724	31619
+252.1	Hyperparathyroidism	3:10359615:G:A	8.610e-07	endocrine/metabolic	643	31619
+252.2	Hypoparathyroidism	18:59433005:C:G	5.508e-05	endocrine/metabolic	59	31619
+253	Disorders of the pituitary gland and its hypothalamic control	7:140100156:G:A	5.346e-07	endocrine/metabolic	365	31619
+253.1	Pituitary hyperfunction	18:59078916:C:T	1.340e-05	endocrine/metabolic	112	31619
+253.2	Pituitary hypofunction	3:55096259:G:C	1.866e-05	endocrine/metabolic	93	31619
+255	Disorders of adrenal glands	7:4577154:G:A	8.492e-08	endocrine/metabolic	342	31619
+255.1	Adrenal hyperfunction	13:21302608:T:C	1.199e-05	endocrine/metabolic	79	31619
+255.2	Adrenal hypofunction	10:61839904:G:A	2.891e-06	endocrine/metabolic	153	31619
+255.21	Glucocorticoid deficiency	10:61839904:G:A	2.051e-06	endocrine/metabolic	141	31619
+256	Ovarian dysfunction	8:5312049:A:G	3.936e-07	endocrine/metabolic	472	31619
+256.4	Polycystic ovaries	8:122200866:G:A	5.200e-07	endocrine/metabolic	464	31619
+257	Testicular dysfunction	2:175282584:T:C	5.636e-08	endocrine/metabolic	437	31619
+257.1	Testicular hypofunction	2:175282584:T:C	6.180e-08	endocrine/metabolic	434	31619
+259	Other endocrine disorders	3:26428269:A:G	6.622e-08	endocrine/metabolic	127	31619
+260	Protein-calorie malnutrition	7:158114214:G:A	9.354e-07	endocrine/metabolic	850	22587
+260.2	severe protein-calorie malnutrition	12:123836559:C:G	7.345e-07	endocrine/metabolic	267	22587
+260.22	Nutritional marasmus	10:91067448:A:G	5.916e-05	endocrine/metabolic	53	22587
+260.6	Anorexia	1:111942964:C:T	6.486e-06	endocrine/metabolic	89	22587
+261	Vitamin deficiency	11:14839971:T:G	1.718e-09	endocrine/metabolic	6914	22587
+261.2	Vitamin B-complex deficiencies	2:115173034:A:G	3.069e-07	endocrine/metabolic	722	22587
+261.4	Vitamin D deficiency	11:14839971:T:G	3.126e-10	endocrine/metabolic	6202	22587
+262	Mineral deficiency NEC	6:135095373:A:C	2.931e-05	endocrine/metabolic	69	22587
+263	Other nutritional deficiency	12:69769730:T:C	4.130e-06	endocrine/metabolic	166	22587
+264	Lack of normal physiological development	7:135286589:C:T	5.623e-07	endocrine/metabolic	112	22587
+269	Proteinuria	10:8968688:T:A	4.457e-07	endocrine/metabolic	1022	34401
+270	Disorders of protein plasma/amino-acid transport and metabolism	11:130632127:C:T	5.093e-08	endocrine/metabolic	662	34401
+270.1	Disturbances of amino-acid transport	1:11943220:T:C	1.854e-07	endocrine/metabolic	200	34401
+270.11	Disturbances of sulphur-bearing amino-acid metabolism	1:11943220:T:C	2.028e-07	endocrine/metabolic	192	34401
+270.3	Disorders of plasma protein metabolism	7:15661649:G:T	3.837e-07	endocrine/metabolic	433	34401
+270.32	Paraproteinemia	5:121858131:C:T	7.129e-07	endocrine/metabolic	377	34401
+271	Disorders of carbohydrate transport and metabolism	12:72652923:G:C	1.858e-07	endocrine/metabolic	1218	34806
+271.3	Intestinal disaccharidase deficiencies and disaccharide malabsorption	7:43291220:C:T	5.470e-07	endocrine/metabolic	1199	34806
+272	Disorders of lipoid metabolism	19:44879418:G:A	5.370e-17	endocrine/metabolic	21614	12087
+272.1	Hyperlipidemia	19:44879418:G:A	5.559e-17	endocrine/metabolic	21608	12087
+272.11	Hypercholesterolemia	19:44879418:G:A	2.564e-18	endocrine/metabolic	13474	12087
+272.12	Hyperglyceridemia	11:116780399:C:T	4.550e-15	endocrine/metabolic	836	12087
+272.13	Mixed hyperlipidemia	16:88322593:A:G	8.318e-08	endocrine/metabolic	3376	12087
+274	Gout and other crystal arthropathies	4:9918723:T:C	6.561e-24	endocrine/metabolic	1998	34694
+274.1	Gout	4:9918723:T:C	8.995e-24	endocrine/metabolic	1919	34694
+274.11	Gouty arthropathy	4:88124179:A:G	2.133e-14	endocrine/metabolic	881	34694
+275	Disorders of mineral metabolism	6:26092913:G:A	4.634e-22	endocrine/metabolic	932	34716
+275.1	Disorders of iron metabolism	6:26092913:G:A	1.770e-44	hematopoietic	174	34716
+275.3	Disorders of magnesium metabolism	9:132721790:G:T	2.979e-06	endocrine/metabolic	128	34716
+275.5	Disorders of calcium/phosphorus metabolism	14:27680058:T:C	5.358e-06	endocrine/metabolic	245	34716
+275.51	Hypocalcemia	18:30658624:T:C	1.782e-05	endocrine/metabolic	100	34716
+275.53	Disorders of phosphorus metabolism	2:229688867:T:C	1.510e-05	endocrine/metabolic	62	34716
+275.6	Hypercalcemia	22:26018814:G:A	4.207e-07	endocrine/metabolic	367	34716
+276	Disorders of fluid, electrolyte, and acid-base balance	21:45157788:G:A	4.178e-07	endocrine/metabolic	3390	26145
+276.1	Electrolyte imbalance	1:120112889:T:C	3.972e-08	endocrine/metabolic	2594	26145
+276.12	Hyposmolality and/or hyponatremia	5:7960488:A:G	3.516e-07	endocrine/metabolic	430	26145
+276.13	Hyperpotassemia	5:180563879:T:C	7.464e-07	endocrine/metabolic	381	26145
+276.14	Hypopotassemia	9:504880:C:T	1.928e-07	endocrine/metabolic	1132	26145
+276.4	Acid-base balance disorder	5:103941364:C:T	1.469e-06	endocrine/metabolic	302	26145
+276.41	Acidosis	12:116940:G:A	2.312e-07	endocrine/metabolic	269	26145
+276.5	Hypovolemia	9:14005454:A:T	2.931e-06	endocrine/metabolic	349	26145
+276.6	Fluid overload	17:48882163:G:A	2.864e-07	endocrine/metabolic	197	26145
+277	Other disorders of metabolism	7:132296507:C:T	9.462e-07	endocrine/metabolic	234	34764
+277.5	Other disorders of lipoid metabolism	7:118464260:T:G	1.122e-06	endocrine/metabolic	266	34764
+277.51	Lipoprotein disorders	10:50244206:T:C	4.325e-06	endocrine/metabolic	237	34764
+277.7	Dysmetabolic syndrome X	8:52962306:C:T	6.950e-07	endocrine/metabolic	367	34764
+278	Overweight, obesity and other hyperalimentation	16:53773852:A:G	1.324e-18	endocrine/metabolic	15481	15077
+278.1	Obesity	16:53773852:A:G	1.285e-21	endocrine/metabolic	13561	15077
+278.11	Morbid obesity	16:53773852:A:G	4.819e-26	endocrine/metabolic	8876	15077
+278.3	Localized adiposity	6:18215072:T:C	2.223e-09	endocrine/metabolic	241	15077
+278.4	Abnormal weight gain	13:67580882:T:G	1.355e-06	endocrine/metabolic	689	15077
+279	Disorders involving the immune mechanism	6:109869235:T:C	1.416e-06	endocrine/metabolic	298	36009
+279.1	Immunity deficiency	2:143212847:T:A	7.516e-06	endocrine/metabolic	151	36009
+279.11	Deficiency of humoral immunity	9:137144511:C:T	5.000e-06	endocrine/metabolic	97	36009
+279.7	Other immunological findings	6:58404863:G:A	8.279e-08	endocrine/metabolic	354	36009
+280	Iron deficiency anemias	2:198165581:T:C	4.529e-07	hematopoietic	2493	22859
+280.1	Iron deficiency anemias, unspecified or not due to blood loss	4:46461682:T:C	4.305e-08	hematopoietic	2152	22859
+280.2	Iron deficiency anemia secondary to blood loss (chronic)	15:51515703:A:G	3.319e-07	hematopoietic	375	22859
+281	Other deficiency anemia	12:10724706:A:C	7.178e-07	hematopoietic	653	22859
+281.1	Megaloblastic anemia	7:97384303:A:G	9.954e-08	hematopoietic	582	22859
+281.11	Pernicious anemia	7:97384303:A:G	6.194e-07	hematopoietic	314	22859
+281.12	Other vitamin B12 deficiency anemia	9:25150444:G:A	1.294e-06	hematopoietic	257	22859
+282	Hereditary hemolytic anemias	11:4868798:C:T	4.699e-08	hematopoietic	116	22859
+282.8	Other hemoglobinopathies	11:4868798:C:T	5.035e-09	hematopoietic	89	22859
+284	Aplastic anemia	12:55958158:C:T	1.570e-06	hematopoietic	242	22859
+284.1	Pancytopenia	12:55958158:C:T	3.690e-06	hematopoietic	222	22859
+285	Other anemias	22:37074564:G:A	8.690e-08	hematopoietic	5094	22859
+285.1	Acute posthemorrhagic anemia	9:12206524:A:G	2.104e-06	hematopoietic	463	22859
+285.2	Anemia of chronic disease	2:112144253:A:G	2.280e-08	hematopoietic	978	22859
+285.21	Anemia in chronic kidney disease	21:25789099:G:C	4.613e-07	hematopoietic	691	22859
+285.22	Anemia in neoplastic disease	7:97423913:A:C	1.574e-05	hematopoietic	92	22859
+286	Coagulation defects	1:169191220:C:T	1.084e-85	hematopoietic	774	30110
+286.1	Congenital coagulation defects	1:169247174:C:G	1.862e-43	hematopoietic	171	30110
+286.12	Congenital deficiency of other clotting factors (including factor VII)	1:169247174:C:G	6.194e-44	hematopoietic	144	30110
+286.2	Encounter for long-term (current) use of anticoagulants	1:169191220:C:T	2.831e-20	hematopoietic	2301	30110
+286.7	Other and unspecified coagulation defects	1:169191220:C:T	2.564e-18	hematopoietic	193	30110
+286.8	Hypercoagulable state	1:169191220:C:T	9.528e-93	hematopoietic	435	30110
+286.81	Primary hypercoagulable state	1:169191220:C:T	5.458e-93	hematopoietic	431	30110
+286.9	Abnormal coagulation profile	19:29774434:G:A	4.178e-06	hematopoietic	96	30110
+287	Purpura and other hemorrhagic conditions	7:2688591:A:T	1.007e-08	hematopoietic	1029	30110
+287.3	Thrombocytopenia	7:2688591:A:T	9.204e-08	hematopoietic	971	30110
+287.31	Primary thrombocytopenia	7:52344816:G:A	1.462e-06	hematopoietic	175	30110
+287.32	Secondary thrombocytopenia	7:140279975:G:C	5.483e-06	hematopoietic	99	30110
+288	Diseases of white blood cells	7:3037242:C:T	6.486e-07	hematopoietic	338	30337
+288.1	Decreased white blood cell count	12:13174573:G:A	6.067e-07	hematopoietic	256	30337
+288.11	Neutropenia	3:25191532:T:C	2.455e-06	hematopoietic	189	30337
+288.2	Elevated white blood cell count	3:143799595:C:T	2.443e-06	hematopoietic	231	30337
+289	Other diseases of blood and blood-forming organs	21:34774058:A:T	3.281e-06	hematopoietic	231	30337
+289.4	Lymphadenitis	8:130551255:C:G	9.705e-07	hematopoietic	691	30337
+289.8	Polycythemia, secondary	2:124205626:C:A	2.477e-06	hematopoietic	159	30127
+290	Delirium dementia and amnestic and other cognitive disorders	19:44915533:T:C	2.355e-17	mental disorders	832	30503
+290.1	Dementias	19:44915533:T:C	1.858e-16	mental disorders	771	30503
+290.11	Alzheimer's disease	19:44915533:T:C	3.573e-11	mental disorders	271	30503
+290.3	Other persistent mental disorders due to conditions classified elsewhere	1:221057387:G:A	1.343e-05	mental disorders	146	30503
+291	Other specified nonpsychotic and/or transient mental disorders	3:187173846:A:C	2.203e-06	mental disorders	265	30503
+291.4	Specific nonpsychotic mental disorders due to brain damage	11:62661370:C:T	4.064e-06	mental disorders	197	30503
+292	Neurological disorders	1:121499532:C:T	1.439e-07	mental disorders	1780	30503
+292.1	Aphasia/speech disturbance	11:34270094:G:A	6.223e-06	mental disorders	152	30503
+292.2	Mild cognitive impairment	11:35375913:A:T	2.023e-06	mental disorders	124	30503
+292.3	Memory loss	19:44915533:T:C	1.279e-07	mental disorders	884	30503
+292.4	Altered mental status	5:6795271:G:A	2.529e-06	mental disorders	194	30503
+293.1	Swelling, mass, or lump in head and neck [Space-occupying lesion, intracranial NOS]	2:139939182:T:C	1.393e-06	mental disorders	310	35303
+295	Schizophrenia and other psychotic disorders	17:5796872:A:G	3.715e-07	mental disorders	281	12866
+295.1	Schizophrenia	14:87722542:T:C	1.330e-06	mental disorders	193	12866
+295.3	Psychosis	1:198436826:T:A	5.164e-05	mental disorders	55	12866
+296	Mood disorders	2:190203175:C:T	1.239e-08	mental disorders	10635	12866
+296.1	Bipolar	11:4845455:A:G	2.999e-07	mental disorders	1112	12866
+296.2	Depression	2:190203175:C:T	2.138e-08	mental disorders	9946	12866
+296.22	Major depressive disorder	8:38403297:T:C	3.698e-08	mental disorders	4935	12866
+297	Suicidal ideation or attempt	21:28907771:G:A	5.754e-07	mental disorders	173	12866
+297.1	Suicidal ideation	2:163874103:A:G	8.110e-06	mental disorders	120	12866
+300	Anxiety disorders	8:133519939:G:C	4.613e-08	mental disorders	9610	12866
+300.1	Anxiety disorder	8:133519939:G:C	6.653e-08	mental disorders	9075	12866
+300.11	Generalized anxiety disorder	21:16558173:C:T	3.963e-08	mental disorders	3533	12866
+300.12	Agorophobia, social phobia, and panic disorder	2:44321637:C:T	8.072e-08	mental disorders	856	12866
+300.3	Obsessive-compulsive disorders	2:66113316:A:G	3.802e-06	mental disorders	170	12866
+300.4	Dysthymic disorder	1:209049949:C:T	4.613e-08	mental disorders	312	12866
+300.8	Acute reaction to stress	4:65226145:C:T	5.333e-06	mental disorders	171	12866
+300.9	Posttraumatic stress disorder	19:19099963:C:G	6.166e-07	mental disorders	307	12866
+301	Personality disorders	11:19720524:C:G	3.873e-07	mental disorders	276	12866
+301.2	Antisocial/borderline personality disorder	20:11103774:G:A	1.560e-05	mental disorders	117	12866
+302	Sexual and gender identity disorders	9:103250874:A:G	4.581e-05	mental disorders	71	12866
+303	Psychogenic and somatoform disorders	16:23571242:G:A	8.851e-07	mental disorders	346	12866
+303.3	Psychogenic disorder	2:67594041:G:A	2.495e-05	mental disorders	72	12866
+303.4	Somatoform disorder	15:41738484:C:T	3.055e-08	mental disorders	257	12866
+304	Adjustment reaction	8:65473490:T:C	1.914e-07	mental disorders	3930	12866
+305.2	Eating disorder	4:79626507:A:T	6.295e-07	mental disorders	237	12866
+306	Other mental disorder	17:52082121:G:A	2.218e-07	mental disorders	2166	12866
+306.1	Mental disorders durring/after pregnancy	5:78778375:A:C	5.260e-06	mental disorders	359	12866
+306.9	Tension headache	22:46913351:C:T	1.239e-06	mental disorders	166	12866
+313	Pervasive developmental disorders	3:131107868:A:G	4.932e-07	mental disorders	630	36248
+313.1	Attention deficit hyperactivity disorder	11:120139944:G:C	1.012e-06	mental disorders	539	36248
+313.3	Autism	9:15159399:C:A	1.409e-06	mental disorders	56	36248
+315.3	Mental retardation	12:125198577:G:A	1.064e-05	mental disorders	95	36248
+316	Substance addiction and disorders	6:15346699:A:G	1.172e-07	mental disorders	903	22668
+316.1	Polyneuropathy due to drugs	14:21702506:C:T	7.228e-06	mental disorders	111	22668
+317	Alcohol-related disorders	9:108511467:T:C	4.121e-08	mental disorders	1012	22668
+317.1	Alcoholism	8:92131707:T:C	6.026e-07	mental disorders	654	22668
+317.11	Alcoholic liver damage	22:43945024:C:T	1.452e-06	mental disorders	235	22668
+318	Tobacco use disorder	2:57889182:C:T	3.133e-08	mental disorders	8955	22668
+320	Meningitis	11:100245413:G:T	4.732e-07	neurological	53	37721
+324	Other CNS infection and poliomyelitis	4:52709806:A:G	2.061e-05	neurological	51	37721
+327	Sleep disorders	22:43092808:G:C	1.038e-07	neurological	5914	21281
+327.1	Hypersomnia	3:74471760:T:C	1.466e-06	neurological	429	21281
+327.3	Sleep apnea	6:130246510:A:T	4.775e-08	neurological	6528	21281
+327.31	Central/nonobstroctive sleep apnea	11:6289857:T:G	1.040e-06	neurological	456	21281
+327.32	Obstructive sleep apnea	9:134250847:G:A	4.345e-08	neurological	4958	21281
+327.4	Insomnia	6:17864608:A:G	8.472e-08	neurological	3732	21281
+327.41	Organic or persistent insomnia	2:153969664:G:A	1.199e-07	neurological	607	21281
+327.5	Parasomnia	8:125282329:G:A	1.122e-05	neurological	95	21281
+327.6	Circadian rhythm sleep disorder	6:89407364:G:A	5.445e-06	neurological	115	21281
+327.7	Sleep related movement disorders	2:66572854:C:T	3.581e-10	neurological	1280	21281
+327.71	Restless legs syndrome	2:66572854:C:T	1.355e-10	neurological	1134	21281
+331	Other cerebral degenerations	3:28674942:C:T	7.870e-07	neurological	136	29356
+331.1	Hydrocephalus	21:16475039:A:C	1.387e-05	neurological	79	29356
+332	Parkinson's disease	4:161105493:G:C	6.152e-08	neurological	476	29356
+333	Extrapyramidal disease and abnormal movement disorders	1:42276262:G:A	2.239e-08	neurological	969	29356
+333.1	Essential tremor	6:6872280:C:T	1.486e-07	neurological	591	29356
+333.4	Torsion dystonia	14:30642513:A:G	2.673e-06	neurological	170	29356
+334	Degenerative disease of the spinal cord	17:61183767:G:A	1.052e-07	neurological	277	29356
+334.1	Spinocerebellar disease	5:26351840:G:A	4.498e-05	neurological	67	29356
+335	Multiple sclerosis	6:32399240:G:A	9.290e-18	neurological	398	29356
+337	Disorders of the autonomic nervous system	16:65553175:C:G	2.388e-08	neurological	97	29356
+338	Pain	2:184309842:A:T	4.831e-07	neurological	3536	27496
+338.1	Acute pain	9:119921532:A:G	3.251e-06	neurological	163	27496
+338.2	Chronic pain	18:29470724:T:G	7.413e-07	neurological	3268	27496
+339	Other headache syndromes	16:13260468:A:G	5.012e-07	neurological	1019	29131
+340	Migraine	12:130292182:G:A	1.005e-06	neurological	3823	29131
+340.1	Migrain with aura	4:113562696:G:T	1.081e-07	neurological	1208	29131
+341	Other demyelinating diseases of central nervous system	2:202788540:G:A	4.169e-06	neurological	115	29356
+342	Hemiplegia	16:86059967:C:T	9.661e-07	neurological	157	29356
+343	Infantile cerebral palsy	12:17626489:G:A	3.936e-05	neurological	52	29356
+344	Other paralytic syndromes	8:131935669:A:G	4.875e-06	neurological	105	29356
+345	Epilepsy, recurrent seizures, convulsions	12:30515177:T:A	1.312e-07	neurological	1322	29356
+345.1	Epilepsy	19:38988591:G:A	1.288e-07	neurological	656	29356
+345.11	Generalized convulsive epilepsy	6:114535090:G:A	7.674e-07	neurological	288	29356
+345.12	Partial epilepsy	4:164448151:A:G	2.999e-07	neurological	345	29356
+345.3	Convulsions	8:88699432:C:T	6.012e-08	neurological	808	29356
+346.1	Nonspecific abnormal findings on radiological and other examination of skull and head	18:64911115:G:C	1.459e-05	neurological	53	29356
+347	Cataplexy and narcolepsy	13:21499530:C:G	1.368e-05	neurological	58	29356
+348	Other conditions of brain	4:189773754:C:T	1.219e-07	neurological	362	29356
+348.2	Cerebral edema and compression of brain	1:204424215:A:C	2.393e-06	neurological	168	29356
+348.8	Encephalopathy, not elsewhere classified	11:384804:G:A	6.339e-06	neurological	139	29356
+349	Other and unspecified disorders of the nervous system	8:129119613:A:T	1.820e-06	neurological	108	29356
+350	Abnormal movement	3:61798113:T:C	2.056e-07	neurological	2030	30590
+350.1	Abnormal involuntary movements	17:1151175:G:A	7.211e-08	neurological	503	30590
+350.2	Abnormality of gait	5:166401897:T:A	2.992e-07	neurological	1335	30590
+350.6	Disturbances of sensation of smell and taste	1:102330285:G:T	1.016e-05	neurological	82	30590
+351	Other peripheral nerve disorders	3:188518108:C:G	3.069e-07	neurological	3307	27946
+352	Disorders of other cranial nerves	13:96519835:C:T	1.094e-06	neurological	434	27946
+352.1	Trigeminal nerve disorders [CN5]	10:55215660:G:A	1.089e-06	neurological	201	27946
+352.2	Facial nerve disorders [CN7]	2:66349646:T:C	6.683e-06	neurological	203	27946
+353	Nerve root and plexus disorders	8:80431730:C:T	6.053e-06	neurological	193	27946
+353.1	Nerve plexus lesions	21:31413912:C:T	8.630e-06	neurological	64	27946
+353.2	Nerve root lesions	3:6905729:T:C	1.845e-05	neurological	96	27946
+355	Complex regional/central pain syndrome	3:21065264:A:G	1.303e-05	neurological	166	27946
+355.1	Chronic pain syndrome	8:87028813:T:C	1.227e-06	neurological	488	27946
+356	Hereditary and idiopathic peripheral neuropathy	9:34532334:G:A	2.979e-07	neurological	636	32822
+357	Inflammatory and toxic neuropathy	1:92750926:G:A	2.388e-08	neurological	1504	32822
+358	Myoneural disorders	12:85299809:A:G	3.428e-06	neurological	87	32822
+359	Muscular dystrophies and other myopathies	8:2168121:T:C	1.285e-05	neurological	141	32822
+359.2	Myopathy	2:164000733:T:G	6.109e-06	neurological	101	32822
+360	Disorders of the globe	3:15878518:G:A	1.667e-06	sense organs	102	29425
+360.2	Progressive myopia	3:15878518:G:A	5.105e-06	sense organs	73	29425
+361	Retinal detachments and defects	2:35296960:T:G	1.321e-06	sense organs	478	29425
+361.1	Retinal detachment with retinal defect	9:80566962:T:C	9.572e-07	sense organs	281	29425
+362	Other retinal disorders	1:196713216:G:A	2.477e-10	sense organs	2651	28834
+362.2	Degeneration of macula and posterior pole of retina	1:196713216:G:A	4.864e-13	sense organs	1693	28834
+362.21	Macular degeneration, dry	1:196847013:A:G	4.853e-18	sense organs	587	28834
+362.22	Macular degeneration, wet	1:196924423:C:T	1.309e-12	sense organs	303	28834
+362.23	Cystoid macular degeneration of retina	7:77561725:C:G	2.371e-07	sense organs	236	28834
+362.26	Macular puckering of retina	9:27166999:T:C	5.309e-08	sense organs	528	28834
+362.29	Macular degeneration (senile) of retina NOS	1:196876391:T:G	2.133e-16	sense organs	449	28834
+362.3	Other nondiabetic retinopathy	7:140168:G:A	2.582e-07	sense organs	328	28834
+362.31	Separation of retinal layers	4:105379795:G:A	5.082e-06	sense organs	90	28834
+362.4	Retinal vascular changes and abnomalities	17:55406022:A:G	4.634e-07	sense organs	390	28834
+362.6	Peripheral retinal degenerations	3:178614744:C:T	1.730e-06	sense organs	81	28834
+362.8	Retinal hemorrhage/ischemia	10:54553582:T:C	1.803e-06	sense organs	128	28834
+362.9	Retinal edema	2:222469690:A:G	4.742e-07	sense organs	444	28834
+363	Chorioretinal inflammations, scars, and other disorders of choroid	2:8591601:G:A	3.639e-05	sense organs	57	29425
+364	Corneal opacity and other disorders of cornea	18:55967855:T:A	2.523e-10	sense organs	667	29425
+364.1	Corneal opacity	5:96334801:G:T	1.130e-06	sense organs	120	29425
+364.4	Corneal degenerations	10:8451819:T:C	2.805e-06	sense organs	187	29425
+364.41	Keratoconus	9:111748444:A:G	2.958e-05	sense organs	56	29425
+364.5	Corneal dystrophy	18:55967855:T:A	3.112e-14	sense organs	386	29425
+364.51	Fuchs' dystrophy	18:55967855:T:A	8.610e-20	sense organs	163	29425
+364.9	Cornea replaced by transplant	13:100843114:T:A	2.193e-05	sense organs	68	29425
+365	Glaucoma	22:49533180:G:A	7.998e-08	sense organs	2683	29425
+365.1	Open-angle glaucoma	5:118591521:A:T	4.842e-08	sense organs	871	29425
+365.11	Primary open angle glaucoma	18:68500889:C:T	5.559e-08	sense organs	705	29425
+365.2	Primary angle-closure glaucoma	2:64259365:A:G	6.808e-08	sense organs	469	29425
+366	Cataract	18:31876576:A:T	2.244e-08	sense organs	7464	26849
+366.2	Senile cataract	20:52116512:T:G	2.667e-07	sense organs	5396	26849
+367	Disorders of refraction and accommodation; blindness and low vision	8:6050833:A:G	3.119e-07	sense organs	3821	30096
+367.1	Myopia	18:10512490:C:T	1.211e-05	sense organs	70	30096
+367.4	Presbyopia	8:53923137:T:C	1.959e-07	sense organs	452	36452
+367.9	Blindness and low vision	13:112008725:G:A	5.902e-07	sense organs	248	30096
+368	Visual disturbances	4:116436583:C:T	3.055e-07	sense organs	1070	32037
+368.1	Amblyopia	10:98253355:T:C	1.334e-06	sense organs	162	32037
+368.2	Diplopia and disorders of binocular vision	5:147563438:T:C	4.315e-07	sense organs	241	32037
+368.4	Visual field defects	4:22225790:T:C	2.831e-06	sense organs	205	32037
+368.9	Subjective visual disturbances	17:76251535:C:G	1.186e-05	sense organs	100	32037
+369	Infection of the eye	11:78596590:G:C	2.393e-07	sense organs	873	25936
+369.2	Eye infection, viral	9:66279443:T:C	3.412e-06	sense organs	140	25936
+369.5	Conjunctivitis, infectious	3:144756227:G:A	6.266e-07	sense organs	648	25936
+370	Keratitis	2:20301069:C:T	7.031e-07	sense organs	571	25936
+370.1	Corneal ulcer	2:154310361:G:A	3.767e-06	sense organs	165	25936
+370.2	Superficial keratitis	11:119075795:G:A	8.017e-06	sense organs	91	25936
+370.3	Keratoconjunctivitis	8:92476987:G:A	9.057e-07	sense organs	309	25936
+370.31	Keratoconjunctivitis sicca	4:43961923:T:G	1.026e-06	sense organs	243	25936
+371	Inflammation of the eye	15:99136875:C:A	3.516e-07	sense organs	1711	25936
+371.1	Uveitis, noninfectious or NOS	18:71835586:G:A	2.891e-06	sense organs	274	25936
+371.2	Conjunctivitis, noninfectious	10:4366103:C:A	1.222e-06	sense organs	208	25936
+371.21	Allergic conjunctivitis	10:4366103:C:A	2.965e-06	sense organs	202	25936
+371.3	Inflammation of eyelids	10:83915527:G:A	1.213e-06	sense organs	1187	25936
+372	Disorders of conjunctiva	4:87062275:T:C	5.508e-07	sense organs	169	25936
+374	Other disorders of eyelids	4:171805975:C:T	5.754e-07	sense organs	1222	25936
+374.1	Ectropion or entropion	3:143829725:C:T	3.837e-06	sense organs	212	25936
+374.3	Ptosis of eyelid	12:32389829:G:A	3.981e-07	sense organs	356	25936
+374.6	Dermatochalasis	2:137317931:G:T	1.112e-06	sense organs	494	25936
+375.1	Dry eyes	16:2807087:T:G	1.303e-07	sense organs	1340	28664
+375.2	Epiphora	13:46210261:T:C	1.986e-05	sense organs	86	28664
+377	Disorders of optic nerve and visual pathways	17:69757804:G:A	6.109e-07	sense organs	592	28664
+377.1	Optic atrophy	11:69543370:G:C	4.111e-08	sense organs	266	28664
+377.3	Optic neuritis/neuropathy	12:74948186:T:C	5.598e-06	sense organs	189	28664
+378	Strabismus and other disorders of binocular eye movements	6:124221902:G:A	6.095e-09	sense organs	391	28664
+378.1	Strabismus (not specified as paralytic)	4:177295492:G:A	3.133e-07	sense organs	242	28664
+379	Other disorders of eye	7:95347692:C:T	3.365e-08	sense organs	1931	28664
+379.1	Scleritis and episcleritis	14:60225870:G:T	8.185e-06	sense organs	83	28664
+379.2	Disorders of vitreous body	7:95347692:C:T	1.012e-08	sense organs	1566	28664
+379.3	Aphakia and other disorders of lens	13:86121331:G:A	1.687e-05	sense organs	58	28664
+379.5	Disorders of iris and ciliary body	11:86409443:T:C	6.776e-07	sense organs	122	28664
+379.9	Pain, swelling or discharge of eye	2:133091743:C:T	6.067e-06	sense organs	72	28664
+380.1	Otitis externa	12:113088907:C:T	3.373e-07	sense organs	727	29225
+380.4	Impacted cerumen	6:136431798:G:A	1.795e-07	sense organs	1890	29225
+381	Otitis media and Eustachian tube disorders	11:67513109:T:C	1.352e-07	sense organs	2677	27233
+381.1	Otitis media	1:240122733:G:A	3.365e-07	sense organs	1762	27233
+381.11	Suppurative and unspecified otitis media	17:16049189:T:G	6.761e-07	sense organs	971	27233
+381.2	Eustachian tube disorders	14:41911667:C:G	1.164e-07	sense organs	599	27233
+381.3	Mastoiditis & related conditions	4:166540963:A:G	3.062e-05	sense organs	65	27233
+382	Otalgia	12:82670642:A:G	8.913e-08	sense organs	311	27233
+384	Other disorders of tympanic membrane	12:61000507:C:A	2.153e-06	sense organs	134	27233
+384.4	Perforation of tympanic membrane	5:27642625:G:T	1.633e-06	sense organs	108	27233
+386	Vertiginous syndromes and other disorders of vestibular system	2:62132710:G:A	5.649e-07	sense organs	887	26686
+386.1	Meniere's disease	10:35078614:A:G	1.466e-06	sense organs	149	26686
+386.2	Peripheral or central vertigo	2:62132710:G:A	1.742e-07	sense organs	586	26686
+386.9	Dizziness and giddiness (Light-headedness and vertigo)	7:51811451:G:C	1.459e-07	sense organs	2837	26686
+389	Hearing loss	2:159777552:A:C	6.998e-08	sense organs	2904	30046
+389.1	Sensorineural hearing loss	3:177031504:G:A	3.296e-07	sense organs	1343	30046
+389.4	Tinnitus	8:87491866:T:G	1.879e-07	sense organs	422	30046
+394	Rheumatic disease of the heart valves	5:13431309:C:T	9.863e-09	circulatory system	792	31498
+394.2	Mitral valve disease	9:114728777:A:T	2.291e-06	circulatory system	431	31498
+394.4	Acute rheumatic heart disease	1:120580974:A:G	3.690e-06	circulatory system	53	31498
+394.7	Disease of tricuspid valve	8:6912727:G:C	1.531e-06	circulatory system	246	31498
+395	Heart valve disorders	11:132134082:C:A	5.821e-07	circulatory system	3169	31498
+395.1	Nonrheumatic mitral valve disorders	2:181283425:G:A	2.851e-07	circulatory system	1411	31498
+395.2	Nonrheumatic aortic valve disorders	2:124829810:G:A	7.568e-08	circulatory system	1846	31498
+395.6	Heart valve replaced	14:97063957:G:A	1.219e-07	circulatory system	1003	31498
+396	Abnormal heart sounds	10:100048015:T:C	2.825e-06	circulatory system	217	31498
+401	Hypertension	2:140712843:T:C	1.786e-08	circulatory system	21263	13205
+401.1	Essential hypertension	2:140712843:T:C	1.109e-08	circulatory system	20900	13205
+401.2	Hypertensive heart and/or renal disease	13:42217346:T:C	7.852e-09	circulatory system	4746	13205
+401.21	Hypertensive heart disease	10:5355918:G:A	3.715e-07	circulatory system	1746	13205
+401.22	Hypertensive chronic kidney disease	4:125069602:A:G	1.936e-07	circulatory system	2779	13205
+401.3	Other hypertensive complications	16:73182195:G:A	5.821e-07	circulatory system	261	13205
+402	Elevated blood pressure reading without diagnosis of hypertension	9:89665197:C:T	2.630e-05	circulatory system	84	36862
+411	Ischemic Heart Disease	9:22092925:A:G	8.730e-15	circulatory system	8442	26279
+411.1	Unstable angina (intermediate coronary syndrome)	14:69095729:A:G	1.507e-07	circulatory system	503	26279
+411.2	Myocardial infarction	6:160589086:A:G	1.030e-10	circulatory system	2806	26279
+411.3	Angina pectoris	6:160589086:A:G	4.732e-09	circulatory system	1657	26279
+411.4	Coronary atherosclerosis	6:160589086:A:G	3.206e-14	circulatory system	7634	26279
+411.8	Other chronic ischemic heart disease, unspecified	9:99555448:G:A	1.161e-07	circulatory system	2307	26279
+414	Other forms of chronic heart disease	14:54403619:G:A	2.138e-07	circulatory system	1284	26279
+414.2	ASCVD	1:5779970:A:C	6.353e-07	circulatory system	925	26279
+415	Pulmonary heart disease	1:169191220:C:T	1.459e-09	circulatory system	1913	33805
+415.1	Acute pulmonary heart disease	1:169191220:C:T	3.548e-12	circulatory system	842	33805
+415.11	Pulmonary embolism and infarction, acute	1:169191220:C:T	2.037e-12	circulatory system	831	33805
+415.2	Chronic pulmonary heart disease	2:218816878:A:G	7.907e-09	circulatory system	989	33805
+415.21	Primary pulmonary hypertension	19:17273496:C:T	2.992e-07	circulatory system	463	33805
+416	Cardiomegaly	5:163178652:A:G	3.396e-07	circulatory system	200	33805
+418	Nonspecific chest pain	18:11157176:T:A	1.406e-07	circulatory system	6892	20639
+420	Carditis	19:42251102:G:A	4.236e-07	circulatory system	571	34898
+420.2	Pericarditis	6:146966582:A:C	2.158e-06	circulatory system	206	34898
+420.21	Acute pericarditis	13:22192807:T:C	2.133e-05	circulatory system	60	34898
+420.22	Chronic pericarditis	2:16855623:T:G	2.884e-05	circulatory system	79	34898
+420.3	Endocarditis	4:124863025:C:T	1.493e-06	circulatory system	364	34898
+425	Cardiomyopathy	5:136701845:C:T	7.178e-08	circulatory system	1162	34898
+425.1	Primary/intrinsic cardiomyopathies	5:136701845:C:T	7.145e-08	circulatory system	1024	34898
+425.11	Hypertrophic obstructive cardiomyopathy	14:27342918:T:C	1.503e-05	circulatory system	53	34898
+425.12	Other hypertrophic cardiomyopathy	3:26255169:C:T	9.840e-06	circulatory system	88	34898
+425.2	Secondary/extrinsic cardiomyopathies	1:74898112:C:T	1.671e-07	circulatory system	162	34898
+425.8	Other cardiomyopathy	10:91041640:G:A	9.705e-06	circulatory system	77	34898
+426	Cardiac conduction disorders	14:87631470:C:T	3.639e-08	circulatory system	2947	20490
+426.2	Atrioventricular [AV] block	4:180382384:G:A	2.084e-07	circulatory system	486	20490
+426.24	Atrioventricular block, complete	18:73796305:C:T	1.472e-06	circulatory system	258	20490
+426.3	Bundle branch block	5:12968977:C:T	3.141e-07	circulatory system	589	20490
+426.31	Right bundle branch block	1:84013294:G:C	4.721e-08	circulatory system	218	20490
+426.32	Left bundle branch block	12:128763885:T:G	1.866e-06	circulatory system	323	20490
+426.7	Abnormal electrocardiogram [ECG] [EKG]	5:131508913:T:C	1.493e-06	circulatory system	390	20490
+426.9	Cardiac pacemaker/device in situ	5:10045728:G:A	2.075e-07	circulatory system	1820	20490
+426.91	Cardiac pacemaker in situ	5:10045728:G:A	3.069e-07	circulatory system	881	20490
+426.92	Cardiac defibrillator in situ	10:66363874:A:T	4.102e-07	circulatory system	602	20490
+427	Cardiac dysrhythmias	4:110810958:G:A	1.854e-09	circulatory system	7896	20490
+427.1	Paroxysmal tachycardia, unspecified	20:48400790:C:T	1.832e-07	circulatory system	1138	20490
+427.11	Paroxysmal supraventricular tachycardia	10:71232360:T:G	2.576e-07	circulatory system	770	20490
+427.12	Paroxysmal ventricular tachycardia	16:20205457:C:T	8.091e-08	circulatory system	373	20490
+427.2	Atrial fibrillation and flutter	4:110736347:T:A	1.334e-15	circulatory system	4309	20490
+427.21	Atrial fibrillation	4:110736347:T:A	1.426e-14	circulatory system	4070	20490
+427.22	Atrial flutter	14:62242176:T:C	7.925e-07	circulatory system	1031	20490
+427.3	Other specified cardiac dysrhythmias	9:106760918:C:T	3.119e-07	circulatory system	652	20490
+427.4	Cardiac arrest and ventricular fibrillation	3:176622637:C:T	3.811e-06	circulatory system	105	20490
+427.5	Arrhythmia (cardiac) NOS	19:51039553:G:A	4.677e-07	circulatory system	150	20490
+427.6	Premature beats	17:32987003:T:C	5.984e-09	circulatory system	574	20490
+427.7	Tachycardia NOS	15:56670258:G:A	3.090e-07	circulatory system	420	20490
+427.8	Sinoatrial node dysfunction (Bradycardia)	12:16346128:G:A	6.966e-07	circulatory system	374	20490
+427.9	Palpitations	10:121324688:G:A	3.141e-07	circulatory system	1648	20490
+428	Congestive heart failure; nonhypertensive	18:60943155:C:T	1.683e-07	circulatory system	4201	28581
+428.1	Congestive heart failure (CHF) NOS	7:83303477:A:T	4.753e-07	circulatory system	2754	28581
+428.2	Heart failure NOS	19:18805179:A:G	1.012e-07	circulatory system	1132	28581
+428.3	Heart failure with reduced EF [Systolic or combined heart failure]	16:63769940:C:T	1.107e-07	circulatory system	1897	28581
+428.4	Heart failure with preserved EF [Diastolic heart failure]	5:155934922:C:T	8.356e-07	circulatory system	1644	28581
+429	Ill-defined descriptions and complications of heart disease	19:55507841:A:G	4.305e-07	circulatory system	574	28581
+429.1	Heart transplant/surgery	18:22071453:C:A	2.265e-05	circulatory system	59	28581
+429.2	Abnormal function study of cardiovascular system	8:11126425:T:C	1.035e-06	circulatory system	209	28581
+429.3	Symptoms involving cardiovascular system	2:83441499:C:T	4.808e-06	circulatory system	243	28581
+430	Intracranial hemorrhage	13:21032731:C:T	1.652e-07	circulatory system	330	30327
+430.1	Subarachnoid hemorrhage	10:25675431:G:A	6.683e-06	circulatory system	84	30327
+430.2	Intracerebral hemorrhage	10:69115659:T:C	1.064e-05	circulatory system	90	30327
+433	Cerebrovascular disease	12:64046511:G:A	4.236e-07	circulatory system	4608	30327
+433.1	Occlusion and stenosis of precerebral arteries	7:19005774:A:G	6.683e-08	circulatory system	2637	30327
+433.11	Occlusion of cerebral arteries, with cerebral infarction	15:37543596:G:A	2.673e-06	circulatory system	172	30327
+433.12	Cerebral atherosclerosis	5:157611031:G:T	1.879e-07	circulatory system	810	30327
+433.2	Occlusion of cerebral arteries	19:55663244:C:T	2.489e-06	circulatory system	762	30327
+433.21	Cerebral artery occlusion, with cerebral infarction	2:109332175:C:G	9.078e-07	circulatory system	742	30327
+433.3	Cerebral ischemia	1:117102574:G:A	4.943e-07	circulatory system	2201	30327
+433.31	Transient cerebral ischemia	2:95807539:G:A	3.342e-07	circulatory system	2159	30327
+433.5	Cerebral aneurysm	4:148950273:A:G	2.523e-06	circulatory system	228	30327
+433.6	Acute, but ill-defined cerebrovascular disease	11:39876032:G:C	8.770e-08	circulatory system	565	30327
+433.8	Late effects of cerebrovascular disease	12:99132661:A:G	3.097e-07	circulatory system	499	30327
+440	Atherosclerosis	6:160589086:A:G	4.315e-11	circulatory system	2712	27421
+440.1	Atherosclerosis of renal artery	20:10540318:A:G	9.795e-07	circulatory system	292	27421
+440.2	Atherosclerosis of the extremities	6:160589086:A:G	2.844e-08	circulatory system	1147	27421
+440.21	Atherosclerosis of native arteries of the extremities with ulceration or gangrene	10:68371506:C:T	1.334e-06	circulatory system	272	27421
+440.22	Atherosclerosis of native arteries of the extremities with intermittent claudication	2:19584774:G:A	3.776e-08	circulatory system	687	27421
+440.9	Atherosclerosis of aorta	3:47366573:C:T	6.730e-07	circulatory system	454	27421
+441	Vascular insufficiency of intestine	1:40495723:A:G	1.164e-06	circulatory system	200	27421
+441.2	Chronic vascular insufficiency of intestine	8:1754770:C:G	1.005e-05	circulatory system	84	27421
+442	Other aneurysm	2:181948534:A:G	2.275e-08	circulatory system	1881	27421
+442.1	Aortic aneurysm	6:160589086:A:G	3.184e-08	circulatory system	1673	27421
+442.11	Abdominal aortic aneurysm	10:52681373:C:T	2.944e-07	circulatory system	1188	27421
+442.8	Aneurysm of other specified artery	4:89133909:G:A	1.125e-05	circulatory system	81	27421
+443	Peripheral vascular disease	3:82926124:G:A	9.931e-08	circulatory system	2664	27421
+443.1	Raynaud's syndrome	21:40854240:A:T	2.512e-06	circulatory system	364	27421
+443.7	Peripheral angiopathy in diseases classified elsewhere	2:119295717:C:A	8.241e-07	circulatory system	414	27421
+443.9	Peripheral vascular disease, unspecified	3:82964384:C:A	6.918e-08	circulatory system	2054	27421
+444	Arterial embolism and thrombosis	6:95486322:A:G	1.945e-06	circulatory system	137	27421
+446	Polyarteritis nodosa and allied conditions	9:76144359:T:C	3.126e-06	circulatory system	242	27421
+446.5	Giant cell arteritis	6:91980397:C:A	4.121e-06	circulatory system	100	27421
+446.9	Arteritis NOS	6:15915576:G:A	3.802e-05	circulatory system	73	27421
+447	Other disorders of arteries and arterioles	7:76762128:A:G	6.471e-07	circulatory system	961	27421
+447.1	Stricture of artery	4:91705491:A:T	8.072e-06	circulatory system	108	27421
+447.7	Aortic ectasia	4:63263531:C:G	9.099e-07	circulatory system	251	27421
+450	Noninfectious disorders of lymphatic channels	12:4041158:G:A	4.977e-06	circulatory system	203	37551
+451	Phlebitis and thrombophlebitis	1:169191220:C:T	1.119e-18	circulatory system	478	24721
+451.2	Phlebitis and thrombophlebitis of lower extremities	1:169191220:C:T	1.355e-14	circulatory system	373	24721
+452	Other venous embolism and thrombosis	1:169247174:C:G	1.442e-29	circulatory system	1248	24721
+452.2	Deep vein thrombosis [DVT]	1:169191220:C:T	6.577e-11	circulatory system	584	24721
+453	Chronic venous hypertension	4:59753457:T:C	5.559e-06	circulatory system	93	24721
+454	Varicose veins	16:85794970:T:C	1.007e-07	circulatory system	1064	24721
+454.1	Varicose veins of lower extremity	16:85794970:T:C	3.141e-08	circulatory system	1019	24721
+454.11	Varicose veins of lower extremity, symptomtic	9:25377699:C:T	1.950e-08	circulatory system	685	24721
+455	Hemorrhoids	14:34053698:C:T	1.486e-07	circulatory system	1107	24721
+456	Chronic venous insufficiency [CVI]	19:33673255:T:C	2.032e-08	circulatory system	1212	24721
+457	Encounter for long-term (current) use of anticoagulants, antithrombotics, aspirin	16:709888:G:A	1.406e-07	circulatory system	513	24721
+457.3	Encounter for long-term (current) use of aspirin	5:142033893:C:T	1.652e-09	circulatory system	464	24721
+458	Hypotension	12:54257039:T:C	4.529e-07	circulatory system	705	31267
+458.1	Orthostatic hypotension	2:199272022:A:G	2.213e-06	circulatory system	277	31267
+458.9	Hypotension NOS	3:26031114:A:G	8.670e-07	circulatory system	245	31267
+459	Other disorders of circulatory system	1:221594755:G:A	7.638e-07	circulatory system	839	31267
+459.7	Blood vessel replaced	10:50282920:T:C	6.902e-06	circulatory system	124	31267
+459.9	Circulatory disease NEC	5:170426237:T:G	9.705e-07	circulatory system	687	31267
+464	Acute sinusitis	18:29607068:C:T	5.358e-08	respiratory	8862	14124
+465	Acute upper respiratory infections of multiple or unspecified sites	4:82306383:G:A	1.021e-07	respiratory	7391	14124
+465.2	Acute pharyngitis	5:37952925:C:T	1.038e-08	respiratory	2600	14124
+465.4	Acute laryngitis and tracheitis	15:97522671:T:C	1.282e-05	respiratory	76	14124
+470	Septal Deviations/Turbinate Hypertrophy	11:65382390:G:A	3.793e-07	respiratory	303	18976
+471	Nasal polyps	5:146728556:C:T	3.855e-06	respiratory	148	18976
+472	Chronic pharyngitis and nasopharyngitis	6:135411843:T:C	2.541e-07	respiratory	1454	18976
+473	Diseases of the larynx and vocal cords	20:36878306:C:T	1.019e-06	respiratory	771	18976
+473.3	Paralysis/spasm of vocal cords or larynx	9:105240737:T:G	1.169e-05	respiratory	90	18976
+473.4	Voice disturbance	1:20360233:C:G	6.683e-08	respiratory	395	18976
+474	Acute and chronic tonsillitis	12:125904470:T:C	7.278e-06	respiratory	207	18976
+474.1	Acute tonsillitis	7:10515716:T:C	2.723e-05	respiratory	56	18976
+475	Chronic sinusitis	11:72592986:G:A	2.891e-07	respiratory	1661	18976
+475.9	Postnasal drip	8:17031388:T:C	1.409e-06	respiratory	147	18976
+476	Allergic rhinitis	17:7094108:G:A	3.221e-08	respiratory	5256	18976
+477	Epistaxis or throat hemorrhage	3:160288643:A:G	1.189e-07	respiratory	395	18976
+479	Other upper respiratory disease	9:29697980:G:C	2.742e-07	respiratory	506	18976
+480	Pneumonia	3:120067403:C:T	2.438e-07	respiratory	1970	20210
+480.1	Bacterial pneumonia	1:49620213:A:G	2.173e-06	respiratory	523	20210
+480.11	Pneumococcal pneumonia	13:75586910:A:G	1.349e-05	respiratory	71	20210
+481	Influenza	9:120704782:T:C	1.866e-06	respiratory	128	20210
+483	Acute bronchitis and bronchiolitis	8:137420195:A:G	7.621e-08	respiratory	5018	20210
+495	Asthma	11:58890489:G:A	2.109e-07	respiratory	5085	20171
+495.1	Chronic obstructive asthma	7:81143752:C:T	1.265e-06	respiratory	218	20171
+495.2	Asthma with exacerbation	2:79524477:T:G	1.107e-07	respiratory	1165	20171
+496	Chronic airway obstruction	1:98010943:T:C	3.508e-08	respiratory	4436	20171
+496.1	Emphysema	8:137462264:G:A	1.009e-06	respiratory	981	20171
+496.2	Chronic bronchitis	13:72147738:A:G	3.365e-07	respiratory	1292	20171
+496.21	Obstructive chronic bronchitis	9:7320285:C:A	2.606e-07	respiratory	1165	20171
+496.3	Bronchiectasis	14:44278098:A:C	1.140e-06	respiratory	218	20171
+497	Bronchitis	6:1338439:C:T	8.851e-08	respiratory	2876	20171
+498	Acute bronchospasm	7:146874589:G:A	3.013e-05	respiratory	93	20171
+500	Lung disease due to external agents	13:43649395:G:A	6.368e-07	respiratory	125	30522
+501	Pneumonitis due to inhalation of food or vomitus	12:88688755:A:G	1.476e-05	respiratory	73	30522
+502	Postinflammatory pulmonary fibrosis	22:25872446:C:A	1.230e-06	respiratory	241	30522
+504	Other alveolar and parietoalveolar pneumonopathy	11:1214934:A:G	1.687e-08	respiratory	285	30522
+504.1	Idiopathic fibrosing alveolitis	3:182700551:G:A	5.861e-07	respiratory	147	30522
+506	Empyema and pneumothorax	7:68054039:G:A	4.498e-06	respiratory	102	30522
+507	Pleurisy; pleural effusion	6:96323897:T:C	1.995e-07	respiratory	508	30522
+508	Pulmonary collapse; interstitial and compensatory emphysema	2:143576391:G:A	2.612e-05	respiratory	83	30522
+509	Respiratory failure, insufficiency, arrest	15:49516154:G:A	1.052e-07	respiratory	1137	30522
+509.1	Respiratory failure	15:49516154:G:A	5.333e-08	respiratory	927	30522
+509.8	Dependence on respirator [Ventilator] or supplemental oxygen	5:172750094:C:A	6.266e-08	respiratory	270	30522
+510	Other diseases of lung	5:19866866:C:T	1.656e-06	respiratory	449	35741
+512	Other symptoms of respiratory system	20:54824023:C:T	1.122e-07	respiratory	11049	15599
+512.1	Wheezing	3:224195:G:A	4.150e-07	respiratory	410	15599
+512.2	Painful respiration	15:26642667:A:G	1.871e-06	respiratory	140	15599
+512.7	Shortness of breath	4:185837904:C:T	2.301e-08	respiratory	2783	15599
+512.8	Cough	21:30916631:A:T	1.334e-07	respiratory	4908	15599
+512.9	Other dyspnea	18:7691217:A:G	2.541e-08	respiratory	2882	15599
+513	Respiratory abnormalities	7:35301966:C:G	2.812e-06	respiratory	307	35888
+513.3	Hypoventilation	3:141654419:C:T	2.858e-06	respiratory	105	35888
+513.8	Disorders of diaphragm	1:53137656:G:A	2.661e-05	respiratory	57	35888
+514	Abnormal findings examination of lungs	12:127264563:C:T	1.419e-06	respiratory	631	33839
+514.2	Solitary pulmonary nodule	8:124822258:A:G	5.236e-07	respiratory	538	33839
+516	Abnormal sputum	16:16835651:T:C	9.638e-06	respiratory	128	37219
+516.1	Hemoptysis	1:229913723:G:A	1.007e-05	respiratory	125	37219
+519	Other diseases of respiratory system, not elsewhere classified	10:69401444:T:C	2.037e-07	respiratory	813	33884
+519.8	Other diseases of respiratory system, NEC	20:48330490:C:G	2.143e-05	respiratory	83	33884
+519.9	Symptoms involving respiratory system and other chest symptoms	4:181983546:A:C	2.636e-07	respiratory	670	33884
+520	Disorders of tooth development	5:58740263:C:A	9.616e-07	digestive	290	30250
+520.1	Hereditary disturbances in tooth structure	10:51220840:G:A	4.508e-07	digestive	96	30250
+520.2	Disturbances in tooth eruption	4:164865724:A:G	2.624e-06	digestive	182	30250
+521	Diseases of hard tissues of teeth	14:35372650:T:C	1.079e-06	digestive	1264	30250
+521.1	Dental caries	2:102855060:T:G	6.998e-07	digestive	1239	30250
+522	Diseases of pulp and periapical tissues	1:176570558:C:G	2.158e-06	digestive	507	30250
+522.5	Periapical abscess	2:79327902:A:G	2.084e-07	digestive	294	30250
+523	Gingival and periodontal diseases	12:48145125:G:A	6.637e-07	digestive	105	30250
+525	Other diseases of the teeth and supporting structures	9:79358208:C:T	1.225e-07	digestive	528	30250
+525.1	Loss of teeth or edentulism	15:41250898:C:T	2.432e-07	digestive	309	30250
+525.2	Atrophy of edentulous alveolar ridge	7:145101200:T:C	1.914e-06	digestive	59	30250
+526	Diseases of the jaws	17:45693026:T:A	7.345e-08	digestive	508	30250
+526.4	Temporomandibular joint disorders	17:45837485:C:T	6.653e-07	digestive	345	30250
+526.41	Temporomandibular joint disorder, unspecified	5:29703371:G:C	6.607e-07	digestive	261	30250
+527	Diseases of the salivary glands	14:49095714:T:C	9.616e-07	digestive	228	33160
+527.2	Sialoadenitis	12:14280254:G:T	9.036e-06	digestive	105	33160
+527.7	Disturbance of salivary secretion	17:57168401:G:A	1.062e-05	digestive	67	33160
+528	Diseases of the oral soft tissues, excluding lesions specific for gingiva and tongue	7:31885719:T:C	8.630e-08	digestive	564	33160
+528.1	Stomatitis and mucositis	18:73762831:G:A	4.217e-06	digestive	109	33160
+528.12	Oral aphthae	4:63254955:A:T	1.622e-05	digestive	61	33160
+528.5	Diseases of lips	11:95555158:A:G	2.280e-05	digestive	61	33160
+529	Diseases and other conditions of the tongue	3:100263765:T:A	1.030e-05	digestive	99	33160
+530	Diseases of esophagus	2:180627649:G:A	4.853e-07	digestive	13488	17013
+530.1	Esophagitis, GERD and related diseases	7:123420323:A:G	3.573e-07	digestive	13273	17013
+530.11	GERD	9:126604264:G:A	1.905e-07	digestive	12047	17013
+530.13	Barrett's esophagus	3:185117271:T:G	2.624e-07	digestive	632	17013
+530.14	Reflux esophagitis	2:100723812:T:C	1.738e-07	digestive	1736	17013
+530.2	Esophageal bleeding (varices/hemorrhage)	22:43945024:C:T	1.791e-07	digestive	181	17013
+530.3	Stricture and stenosis of esophagus	17:39009823:T:C	1.076e-05	digestive	174	17013
+530.5	Disorders of esophageal motility	6:95928570:C:T	1.489e-05	digestive	96	17013
+530.9	Heartburn	8:81477361:C:T	1.493e-07	digestive	304	17013
+531	Peptic ulcer (excl. esophageal)	5:156445027:C:T	2.244e-07	digestive	785	36007
+531.1	Hemorrhage from gastrointestinal ulcer	21:17017211:C:T	7.889e-06	digestive	57	36007
+531.2	Gastric ulcer	4:168491225:A:G	3.342e-06	digestive	164	36007
+531.3	Duodenal ulcer	11:62101969:C:T	3.733e-05	digestive	89	36007
+531.4	Peptic ulcer, site unspecified	5:156445027:C:T	3.908e-06	digestive	352	36007
+532	Dysphagia	12:117586522:G:A	1.358e-07	digestive	1022	17013
+535	Gastritis and duodenitis	16:84019711:G:A	2.046e-07	digestive	579	33193
+535.8	Other specified gastritis	20:61156757:G:A	2.046e-05	digestive	54	33193
+535.9	Gastritis and duodenitis, NOS	7:47589769:G:A	2.838e-07	digestive	358	33193
+536	Disorders of function of stomach	1:170650392:G:T	1.062e-07	digestive	610	33193
+536.3	Gastroparesis	2:71974317:G:C	3.664e-07	digestive	508	33193
+536.8	Dyspepsia and other specified disorders of function of stomach	10:76811608:G:A	1.567e-05	digestive	62	33193
+537	Other disorders of stomach and duodenum	3:179889387:T:C	1.028e-06	digestive	157	33193
+539	Bariatric surgery	16:53773852:A:G	3.192e-09	digestive	2201	35462
+540	Appendiceal conditions	2:41741106:C:T	3.459e-06	digestive	63	37702
+540.1	Appendicitis	2:41741106:C:T	3.581e-06	digestive	56	37702
+550	Abdominal hernia	4:5010736:G:A	4.159e-07	digestive	3223	31034
+550.1	Inguinal hernia	14:51921407:C:T	3.214e-07	digestive	781	31034
+550.2	Diaphragmatic hernia	22:32657654:T:C	1.021e-08	digestive	856	31034
+550.4	Umbilical hernia	12:116848502:A:G	1.067e-06	digestive	540	31034
+550.5	Ventral hernia	10:8237560:G:C	2.685e-07	digestive	435	31034
+550.6	Incisional hernia	8:41842660:A:G	2.113e-07	digestive	590	31034
+555	Inflammatory bowel disease and other gastroenteritis and colitis	4:107916915:G:T	3.837e-07	digestive	654	23405
+555.1	Regional enteritis	3:81508838:A:G	2.037e-06	digestive	337	23405
+555.2	Ulcerative colitis	4:55170926:G:A	2.061e-07	digestive	372	23405
+555.21	Ulcerative colitis (chronic)	13:103041682:A:G	1.648e-06	digestive	164	23405
+557	Intestinal malabsorption (non-celiac)	4:5191657:C:T	1.514e-06	digestive	233	23405
+557.1	Celiac disease	6:32706116:C:A	4.560e-22	digestive	180	23405
+558	Noninfectious gastroenteritis	5:13902136:G:C	1.028e-06	digestive	450	23405
+559	Ileostomy status	14:72616710:G:C	8.453e-07	digestive	141	23405
+560	Intestinal obstruction without mention of hernia	11:64908941:C:T	7.621e-07	digestive	370	23405
+560.4	Other intestinal obstruction	3:136693579:G:A	3.793e-06	digestive	257	23405
+561	Symptoms involving digestive system	12:84162321:C:T	9.226e-08	digestive	1147	23405
+561.1	Diarrhea	22:20737858:C:T	8.730e-08	digestive	511	34518
+561.2	Flatulence	11:80574282:G:A	2.249e-06	digestive	127	36787
+562	Diverticulosis and diverticulitis	5:2752099:C:T	3.350e-07	digestive	1719	23405
+562.1	Diverticulosis	6:30405977:A:G	8.831e-07	digestive	967	23405
+562.2	Diverticulitis	10:90044041:C:T	1.770e-07	digestive	775	23405
+563	Constipation	1:25612480:C:T	5.272e-07	digestive	794	34314
+564	Functional digestive disorders	18:8796978:A:G	7.568e-07	digestive	1752	23405
+564.1	Irritable Bowel Syndrome	13:83024410:C:T	1.419e-07	digestive	1365	23405
+564.9	Personal history of diseases of digestive system	6:135009920:G:A	2.028e-06	digestive	283	23405
+565	Anal and rectal conditions	3:189331256:G:A	3.304e-07	digestive	509	32163
+567	Peritonitis and retroperitoneal infections	17:31594234:A:G	1.538e-05	digestive	119	32163
+569	Other disorders of intestine	16:53773852:A:G	1.303e-10	digestive	2390	32163
+569.2	Gastrointestinal complications	16:53773852:A:G	2.183e-10	digestive	2259	32163
+571	Chronic liver disease and cirrhosis	22:43945024:C:T	1.600e-38	digestive	1972	27606
+571.5	Other chronic nonalcoholic liver disease	22:43945024:C:T	9.705e-37	digestive	1866	27606
+571.51	Cirrhosis of liver without mention of alcohol	22:43945024:C:T	8.299e-16	digestive	561	27606
+571.8	Liver abscess and sequelae of chronic liver disease	22:43945024:C:T	1.854e-13	digestive	276	27606
+571.81	Portal hypertension	22:43945024:C:T	2.168e-09	digestive	150	27606
+572	Ascites (non malignant)	22:43945024:C:T	2.213e-08	digestive	187	27606
+573	Other disorders of liver	17:20813759:G:A	8.260e-07	digestive	342	27606
+573.2	Liver replaced by transplant	3:196599154:G:T	1.167e-05	digestive	63	27606
+573.6	Nonspecific elevation of levels of transaminase or lactic acid dehydrogenase [LDH]	22:43945024:C:T	1.096e-08	digestive	377	27606
+573.7	Abnormal results of function study of liver	22:43945024:C:T	4.150e-12	digestive	707	27606
+573.9	Abnormal serum enzyme levels	16:86961566:A:G	2.301e-07	digestive	439	27606
+574	Cholelithiasis and cholecystitis	17:50241793:A:C	2.286e-08	digestive	1136	32781
+574.1	Cholelithiasis	7:142707208:A:T	7.194e-08	digestive	728	32781
+574.3	Cholecystitis without cholelithiasis	4:76289918:T:C	2.692e-06	digestive	158	32781
+575	Other biliary tract disease	8:128803444:G:A	3.999e-07	digestive	373	32781
+575.7	Other disorders of gallbladder	8:43477227:T:C	6.457e-06	digestive	132	32781
+575.8	Other disorders of biliary tract	14:20531989:A:G	3.105e-06	digestive	95	32781
+577	Diseases of pancreas	8:143686771:G:T	4.875e-07	digestive	536	36655
+577.1	Acute pancreatitis	5:58879345:C:T	2.371e-07	digestive	205	36655
+577.2	Chronic pancreatitis	15:79054514:T:C	1.941e-06	digestive	131	36655
+577.3	Cyst and pseudocyst of pancreas	4:142270968:T:G	2.099e-06	digestive	155	36655
+578	Gastrointestinal hemorrhage	8:4802772:C:T	1.076e-07	digestive	1125	28795
+578.2	Blood in stool	8:116865888:T:C	9.795e-07	digestive	144	28795
+578.8	Hemorrhage of rectum and anus	1:165669218:G:A	1.172e-06	digestive	316	28795
+578.9	Hemorrhage of gastrointestinal tract	7:41537857:C:T	4.325e-07	digestive	333	28795
+579	Other symptoms involving abdomen and pelvis	2:9359560:T:C	1.057e-07	digestive	266	28795
+579.2	Splenomegaly	14:34682437:C:T	2.163e-06	digestive	112	28795
+579.8	Nonspecific abnormal findings in stool contents	18:67458252:T:C	4.508e-06	digestive	138	28795
+580	Nephritis; nephrosis; renal sclerosis	11:130706124:T:C	5.420e-07	genitourinary	385	23835
+580.1	Glomerulonephritis	11:37855667:A:C	1.167e-05	genitourinary	95	23835
+580.2	Nephrotic syndrome without mention of glomerulonephritis	3:104376737:C:T	5.117e-05	genitourinary	85	23835
+580.3	Nephritis and nephropathy without mention of glomerulonephritis	12:75694407:A:G	1.208e-06	genitourinary	230	23835
+580.31	Nephritis and nephropathy in diseases classified elsewhere	12:75694407:A:G	4.989e-07	genitourinary	160	23835
+585	Renal failure	2:188640203:C:G	2.070e-08	genitourinary	8036	23835
+585.1	Acute renal failure	3:32153345:A:G	3.597e-08	genitourinary	1720	23835
+585.2	Renal failure NOS	15:58152584:A:G	1.164e-06	genitourinary	176	23835
+585.3	Chronic renal failure [CKD]	4:149025590:C:T	1.067e-07	genitourinary	7333	23835
+585.31	Renal dialysis	1:48735635:C:A	1.374e-06	genitourinary	430	23835
+585.32	End stage renal disease	21:24899574:C:T	8.892e-08	genitourinary	738	23835
+585.33	Chronic Kidney Disease, Stage III	11:7970738:C:T	1.288e-07	genitourinary	6572	23835
+585.34	Chronic Kidney Disease, Stage IV	5:55900634:T:A	1.148e-07	genitourinary	1193	23835
+585.4	Chronic kidney disease, Stage I or II	8:8263734:T:C	2.344e-06	genitourinary	268	23835
+586	Other disorders of the kidney and ureters	13:67667003:T:C	4.140e-07	genitourinary	1955	23835
+586.2	Cyst of kidney, acquired	11:100731718:A:G	1.750e-06	genitourinary	375	23835
+586.4	Stricture/obstruction of ureter	8:31831961:T:C	9.772e-07	genitourinary	939	23835
+587	Kidney replaced by transpant	3:23249695:G:A	1.687e-06	genitourinary	275	23835
+588	Disorders resulting from impaired renal function	22:15508331:G:A	7.780e-10	genitourinary	496	23835
+588.1	Renal osteodystrophy	4:5039700:T:C	1.104e-05	genitourinary	80	23835
+588.2	Secondary hyperparathyroidism (of renal origin)	2:111670216:G:A	5.559e-07	genitourinary	399	23835
+590	Pyelonephritis	18:73024508:C:T	1.503e-06	genitourinary	154	22902
+591	Urinary tract infection	9:107811447:G:A	6.839e-09	genitourinary	3242	22902
+592	Cystitis and urethritis	6:75779636:A:G	6.934e-08	genitourinary	1035	22902
+592.1	Cystitis	6:75779636:A:G	1.099e-07	genitourinary	1014	22902
+592.11	Acute cystitis	6:75252370:G:A	1.393e-07	genitourinary	753	22902
+592.13	Chronic interstitial cystitis	5:41155791:A:C	6.109e-06	genitourinary	96	22902
+593	Hematuria	19:6445931:A:C	1.866e-06	genitourinary	1656	22902
+593.1	Gross hematuria	21:27375391:G:A	5.998e-07	genitourinary	297	22902
+593.2	Microscopic hematuria	12:9476797:A:G	4.581e-06	genitourinary	187	22902
+594	Urinary calculus	3:25408581:C:T	2.070e-07	genitourinary	2314	33219
+594.1	Calculus of kidney	11:25133167:G:C	9.594e-08	genitourinary	1766	33219
+594.3	Calculus of ureter	6:95296191:C:A	1.303e-06	genitourinary	395	33219
+595	Hydronephrosis	4:186324302:A:G	1.069e-06	genitourinary	350	33219
+596	Other disorders of bladder	5:84677408:T:C	2.360e-07	genitourinary	827	33684
+596.5	Functional disorders of bladder	2:201567384:A:C	5.888e-08	genitourinary	564	33684
+597	Other disorders of urethra and urinary tract	7:18957807:G:C	3.690e-06	genitourinary	185	33684
+597.1	Urethral stricture (not specified as infectious)	6:141912961:A:G	6.281e-06	genitourinary	147	33684
+599	Other symptoms/disorders or the urinary system	3:140988370:G:A	1.959e-07	genitourinary	7267	19774
+599.1	Urinary obstruction	7:7392254:T:A	2.158e-07	genitourinary	1036	19774
+599.2	Retention of urine	12:93629053:G:A	4.083e-07	genitourinary	1096	19774
+599.3	Dysuria	14:27949466:A:C	2.767e-07	genitourinary	2075	19774
+599.4	Urinary incontinence	3:140988370:G:A	7.430e-08	genitourinary	1884	19774
+599.5	Frequency of urination and polyuria	5:67039694:A:C	6.531e-08	genitourinary	2384	19774
+599.8	Other symptoms involving urinary system	19:9187094:G:T	1.081e-05	genitourinary	126	19774
+599.9	Other abnormality of urination	2:54217068:G:C	7.379e-09	genitourinary	389	19774
+600	Hyperplasia of prostate	6:117797560:C:T	1.879e-07	genitourinary	3609	30466
+601	Inflammatory diseases of prostate	5:131451633:A:T	2.393e-07	genitourinary	541	30466
+601.1	Prostatitis	4:179024452:C:T	2.685e-06	genitourinary	338	30466
+601.11	Acute prostatitis	14:62849443:G:A	4.571e-07	genitourinary	106	30466
+601.12	Chronic prostatitis	12:16565347:A:G	4.227e-06	genitourinary	135	30466
+601.3	Orchitis and epididymitis	1:30629626:T:C	1.496e-05	genitourinary	120	30466
+602	Other disorders of prostate	19:36385363:G:C	5.082e-06	genitourinary	109	30466
+603.1	Hydrocele	13:28788025:C:T	3.055e-06	genitourinary	133	28818
+604	Disorders of penis	4:13428490:G:A	5.129e-06	genitourinary	145	28818
+604.1	Redundant prepuce and phimosis/BXO	16:75162592:T:G	1.466e-05	genitourinary	70	28818
+605	Erectile dysfunction [ED]	3:43935247:G:A	2.944e-07	genitourinary	2083	28818
+608	Other disorders of male genital organs	14:29016309:A:C	1.875e-06	genitourinary	186	28818
+610	Benign mammary dysplasias	9:112939914:T:A	2.254e-07	genitourinary	443	30851
+610.1	Cystic mastopathy	15:64132630:C:T	3.467e-07	genitourinary	367	30851
+610.4	Benign neoplasm of breast	9:101947060:G:T	5.333e-05	genitourinary	54	30851
+611	Abnormal findings on mammogram or breast exam	1:230608602:A:G	2.393e-07	genitourinary	975	30851
+611.1	Abnormal mammogram	4:129429221:C:T	1.419e-07	genitourinary	458	30851
+611.11	Mammographic microcalcification	8:8234734:C:G	1.050e-06	genitourinary	137	30851
+611.3	Lump or mass in breast	13:68746396:T:C	3.304e-07	genitourinary	375	30851
+612	Breast conditions, congenital or relating to hormones	1:70603664:G:A	3.656e-06	genitourinary	410	30851
+612.2	Hypertrophy of breast (Gynecomastia)	19:20764896:A:G	3.048e-06	genitourinary	341	30851
+613	Other nonmalignant breast conditions	9:114123019:A:G	5.689e-07	genitourinary	514	35234
+613.1	Inflammatory disease of breast	22:35943164:C:T	1.507e-05	genitourinary	101	35234
+613.5	Mastodynia	4:180858735:C:T	2.355e-06	genitourinary	165	35234
+613.8	Other specified disorders of breast	17:47725508:A:G	1.596e-05	genitourinary	76	35234
+614	Inflammatory diseases of female pelvic organs	9:108521330:C:G	1.012e-06	genitourinary	1022	33521
+614.5	Inflammatory disease of cervix, vagina, and vulva	11:96628199:A:G	1.549e-06	genitourinary	930	33521
+614.52	Vaginitis and vulvovaginitis	1:172050175:C:G	3.855e-07	genitourinary	783	33521
+615	Endometriosis	5:126622227:G:A	2.118e-06	genitourinary	202	33521
+617	Disorders secondary to childbirth, surgery, trauma	6:125688665:A:T	1.694e-05	genitourinary	110	36991
+618	Genital prolapse	6:21556795:G:A	2.296e-07	genitourinary	857	36351
+618.1	Prolapse of vaginal walls	9:78213128:C:T	1.614e-07	genitourinary	670	36351
+618.2	Uterine/Uterovaginal prolapse	3:177216534:C:T	1.222e-06	genitourinary	344	36351
+619	Noninflammatory female genital disorders	8:108627771:G:T	5.943e-07	genitourinary	702	34477
+619.3	Noninflammatory disorders of cervix	1:168633361:G:A	1.972e-05	genitourinary	73	34477
+619.4	Noninflammatory disorders of vagina	21:13893687:G:A	1.084e-05	genitourinary	147	34477
+619.5	Noninflammatory disorders of vulva and perineum	1:43961208:A:G	9.840e-05	genitourinary	55	34477
+621	Endometrial hyperplasia	10:131414960:T:C	1.236e-05	genitourinary	112	36663
+622	Polyp of female genital organs	3:112965710:G:A	3.508e-05	genitourinary	101	36663
+624	Symptoms involving female genital tract	3:45155264:C:T	2.518e-05	genitourinary	86	31767
+624.9	stress incontinence, female	3:85012408:A:G	3.648e-07	genitourinary	881	31767
+625	Pain and other symptoms associated with female genital organs	3:29124987:T:C	1.052e-07	genitourinary	870	31767
+625.1	Dyspareunia	2:111248820:G:C	5.188e-05	genitourinary	104	31767
+626	Disorders of menstruation and other abnormal bleeding from female genital tract	9:126962030:T:A	1.991e-07	genitourinary	3903	23927
+626.1	Irregular menstrual cycle/bleeding	19:42888764:T:C	5.649e-08	genitourinary	3058	23927
+626.11	Absent or infrequent menstruation	5:140976832:A:G	6.339e-07	genitourinary	598	23927
+626.12	Excessive or frequent menstruation	3:17912564:C:A	1.807e-07	genitourinary	838	23927
+626.13	Irregular menstrual cycle	1:41916863:G:A	2.133e-06	genitourinary	647	23927
+626.14	Irregular menstrual bleeding	6:88753334:T:A	1.156e-05	genitourinary	80	23927
+626.2	Dysmenorrhea	11:10040535:T:C	2.275e-06	genitourinary	355	23927
+626.4	Premenstrual tension syndromes	2:123239984:G:A	5.495e-06	genitourinary	147	23927
+626.8	Infertility, female	6:40702692:T:C	8.892e-07	genitourinary	294	23927
+627	Menopausal and postmenopausal disorders	2:147277166:T:C	1.811e-07	genitourinary	4311	23927
+627.1	Postmenopausal bleeding	7:54530632:A:G	7.362e-08	genitourinary	643	23927
+627.2	Symptomatic menopause	6:89617024:C:T	5.445e-07	genitourinary	2667	23927
+627.22	Need for Hormone replacement therapy (postmenopausal)	3:43911462:C:T	1.614e-06	genitourinary	578	23927
+627.3	Postmenopausal atrophic vaginitis	17:11790575:C:A	1.592e-07	genitourinary	869	23927
+627.4	Premenopausal menorrhagia	10:24757015:C:T	2.366e-05	genitourinary	58	23927
+627.5	Premature menopause and other ovarian failure	3:100035492:C:T	8.166e-06	genitourinary	62	23927
+628	Ovarian cyst	15:24849437:T:C	9.099e-07	genitourinary	513	23927
+634	Miscarriage; stillbirth	10:108925120:A:G	1.758e-06	pregnancy complications	226	36316
+635	Hemorrhage during pregnancy; childbirth and postpartum	22:19297423:G:C	3.273e-06	pregnancy complications	125	36316
+635.2	Antepartum hemorrhage, abruptio placentae, and placenta previa	20:49738015:T:G	6.950e-06	pregnancy complications	114	36316
+636	Early or threatened labor; hemorrhage in early pregnancy	10:29882063:T:C	4.426e-08	pregnancy complications	372	36316
+636.3	Hemorrhage in early pregnancy	17:72114907:C:T	1.219e-05	pregnancy complications	109	36316
+638	Other high-risk pregnancy	6:48458212:G:C	4.560e-07	pregnancy complications	769	37216
+642	Hypertension complicating pregnancy, childbirth, and the puerperium	12:98382212:G:A	8.710e-07	pregnancy complications	249	37509
+642.1	Preeclampsia and eclampsia	15:43195345:C:T	3.793e-06	pregnancy complications	53	37509
+643	Excessive vomiting in pregnancy	8:94130073:T:C	1.050e-05	pregnancy complications	57	37756
+644	Anemia during pregnancy	7:91189659:C:T	6.095e-07	pregnancy complications	184	37372
+646	Other complications of pregnancy NEC	5:137423584:G:T	4.130e-07	pregnancy complications	409	36896
+647.1	Infections of genitourinary tract during pregnancy	13:110665714:C:T	2.612e-06	pregnancy complications	105	37347
+649	Other conditions or status of the mother complicating pregnancy, childbirth, or the puerperium	4:176432032:C:T	5.808e-07	pregnancy complications	871	35788
+649.1	Diabetes or abnormal glucose tolerance complicating pregnancy	11:101870787:A:T	2.438e-07	pregnancy complications	549	35788
+653	Problems associated with amniotic cavity and membranes	1:68192616:G:A	6.012e-06	pregnancy complications	82	36872
+654	Other and unspecified complications of birth; puerperium affecting management of mother	18:52864218:C:G	4.943e-07	pregnancy complications	160	36872
+654.1	Abnormality of organs and soft tissues of pelvis complicating pregnancy, childbirth, or the puerperium	6:97960734:A:G	9.772e-07	pregnancy complications	181	36872
+654.2	Rhesus isoimmunization in pregnancy	1:25386743:A:T	1.722e-23	pregnancy complications	159	36872
+655	Known or suspected fetal abnormality affecting management of mother	20:60447424:T:A	2.061e-07	pregnancy complications	500	36459
+681	Superficial cellulitis and abscess	13:40339974:C:G	2.704e-08	dermatologic	3872	23867
+681.1	Cellulitis and abscess of fingers/toes	2:224865836:C:T	2.636e-07	dermatologic	424	23867
+681.2	Cellulitis and abscess of face/neck	2:234281839:G:A	2.679e-06	dermatologic	129	23867
+681.3	Cellulitis and abscess of arm/hand	5:123085392:G:T	2.735e-06	dermatologic	253	23867
+681.5	Cellulitis and abscess of leg, except foot	4:173726803:A:G	3.319e-07	dermatologic	1297	23867
+681.6	Cellulitis and abscess of foot, toe	7:78035884:C:T	3.565e-06	dermatologic	190	23867
+681.7	Cellulitis and abscess of trunk	1:245785133:C:T	1.321e-06	dermatologic	289	23867
+686	Other local infections of skin and subcutaneous tissue	11:94604090:C:G	2.685e-06	dermatologic	170	23867
+686.1	Carbuncle and furuncle	10:96541675:C:A	5.333e-09	dermatologic	437	23867
+687	Symptoms affecting skin	17:51118893:C:T	8.610e-07	dermatologic	256	24405
+687.1	Rash and other nonspecific skin eruption	21:37914525:G:T	4.018e-08	dermatologic	651	24405
+687.2	Localized superficial swelling, mass, or lump	11:122881450:A:T	1.312e-05	dermatologic	82	36870
+687.4	Disturbance of skin sensation	5:68773374:A:G	3.972e-08	dermatologic	1796	24405
+689	Disorder of skin and subcutaneous tissue NOS	2:3848303:C:T	1.096e-07	dermatologic	1197	30151
+690	Erythematosquamous dermatosis	4:34763925:A:C	8.551e-07	dermatologic	482	27200
+690.1	Seborrheic dermatitis	4:34763925:A:C	8.551e-07	dermatologic	482	27200
+691	Congenital anomalies of skin	5:138372745:C:T	4.385e-06	dermatologic	70	27200
+694	Dyschromia and Vitiligo	6:68025329:A:C	1.002e-06	dermatologic	380	27200
+694.1	Vitiligo	6:32065013:G:T	2.773e-05	dermatologic	75	27200
+694.2	Other dyschromia	6:112762376:G:T	4.266e-08	dermatologic	282	27200
+695	Erythematous conditions	15:101138830:A:G	1.026e-07	dermatologic	2012	27200
+695.2	Bullous dermatoses	21:24096539:G:A	1.047e-05	dermatologic	55	27200
+695.3	Rosacea	4:20330527:C:A	4.009e-07	dermatologic	943	27200
+695.4	Lupus (localized and systemic)	6:31736517:G:T	3.048e-07	dermatologic	326	26881
+695.41	Cutaneous lupus erythematosus	14:53087086:G:C	1.122e-06	dermatologic	145	26881
+695.42	Systemic lupus erythematosus	4:99879499:A:G	1.667e-06	dermatologic	268	26881
+695.7	Prurigo and Lichen	6:28036859:G:A	3.664e-07	dermatologic	338	27200
+695.8	Other specified erythematous conditions	17:20779717:C:T	9.484e-08	dermatologic	281	27200
+696	Psoriasis and related disorders	6:31066086:C:G	1.570e-22	dermatologic	998	25898
+696.4	Psoriasis	6:31066086:C:G	6.180e-23	dermatologic	980	25898
+696.41	Psoriasis vulgaris	6:31066086:C:G	1.374e-20	dermatologic	887	25898
+696.42	Psoriatic arthropathy	22:22797670:G:A	1.563e-07	dermatologic	226	25898
+697	Sarcoidosis	2:6843560:C:T	3.365e-06	dermatologic	186	27200
+698	Pruritus and related conditions	13:63104701:A:G	1.486e-10	dermatologic	446	34885
+700	Corns and callosities	15:31483609:C:T	4.498e-08	dermatologic	923	28552
+701	Other hypertrophic and atrophic conditions of skin	6:157585526:T:C	5.794e-07	dermatologic	2007	28552
+701.2	Scar conditions and fibrosis of skin	2:224003125:G:A	2.460e-07	dermatologic	725	28552
+701.3	Circumscribed scleroderma	12:104365528:C:T	9.290e-06	dermatologic	142	28552
+701.4	Keloid scar	11:131335685:C:T	1.671e-05	dermatologic	75	28552
+701.6	Acquired acanthosis nigricans	6:146423577:C:T	6.934e-05	dermatologic	65	28552
+702	Degenerative skin conditions and other dermatoses	6:396321:C:T	4.656e-24	dermatologic	5102	22728
+702.1	Actinic keratosis	6:396321:C:T	6.902e-40	dermatologic	3040	27486
+702.2	Seborrheic keratosis	5:1286401:C:A	5.702e-10	dermatologic	2732	27486
+703	Diseases of nail, NOS	11:90190156:C:T	6.209e-08	dermatologic	702	29688
+703.1	Ingrowing nail	19:33018717:C:A	9.795e-07	dermatologic	645	29688
+704	Diseases of hair and hair follicles	3:4303613:A:T	1.919e-07	dermatologic	764	29688
+704.1	Alopecia	20:22130782:G:T	7.780e-07	dermatologic	342	29688
+704.11	Alopecia Areata	7:154783491:C:T	1.016e-04	dermatologic	55	29688
+704.2	Hirsutism	20:18047938:T:G	4.046e-06	dermatologic	215	29688
+704.8	Other specified diseases of hair and hair follicles	3:4200340:C:A	2.051e-07	dermatologic	256	29688
+705	Disorders of sweat glands	11:48529637:C:T	4.989e-06	dermatologic	190	28482
+705.3	Hidradenitis	1:60006227:G:C	8.954e-06	dermatologic	139	28482
+705.8	Hyperhidrosis	3:75089478:C:T	2.168e-06	dermatologic	193	28482
+706	Diseases of sebaceous glands	3:38009720:G:A	6.982e-11	dermatologic	2253	28482
+706.1	Acne	6:142094549:T:C	2.123e-07	dermatologic	817	28482
+706.2	Sebaceous cyst	3:38009720:G:A	1.306e-09	dermatologic	1034	28482
+706.8	Other specified diseases of sebaceous glands	7:90751305:A:G	3.170e-06	dermatologic	139	28482
+707	Chronic ulcer of skin	1:168046175:C:A	1.081e-07	dermatologic	1715	34779
+707.1	Decubitus ulcer	19:17155426:C:G	5.546e-07	dermatologic	337	34779
+707.2	Chronic ulcer of leg or foot	7:10562761:T:C	1.496e-07	dermatologic	1350	34779
+707.3	Chronic ulcer of unspecified site	10:64432924:T:G	2.203e-06	dermatologic	303	34779
+709	Diffuse diseases of connective tissue	6:31352387:G:A	8.395e-08	dermatologic	596	26715
+709.2	Sicca syndrome	1:226508708:G:A	1.005e-06	dermatologic	347	26715
+709.7	Unspecified diffuse connective tissue disease	17:77456242:C:T	7.413e-06	dermatologic	160	26715
+710	Osteomyelitis, periostitis, and other infections involving bone	19:56180505:C:T	1.648e-06	musculoskeletal	374	29178
+710.1	Osteomyelitis	19:56180505:C:T	2.328e-06	musculoskeletal	355	29178
+710.11	Acute osteomyelitis	8:6615608:G:A	2.541e-05	musculoskeletal	62	29178
+710.19	Unspecified osteomyelitis	19:56180505:C:T	1.026e-07	musculoskeletal	258	29178
+711	Arthropathy associated with infections	2:33049225:C:T	5.768e-06	musculoskeletal	131	29178
+711.1	Pyogenic arthritis	19:8436150:T:G	2.143e-05	musculoskeletal	87	29178
+713	Arthropathy associated with other disorders classified elsewhere	2:24451256:T:C	2.838e-06	musculoskeletal	151	29178
+713.5	Arthropathy associated with neurological disorders	1:244893035:A:G	1.845e-06	musculoskeletal	137	29178
+714	Rheumatoid arthritis and other inflammatory polyarthropathies	6:32712863:T:A	2.748e-23	musculoskeletal	1431	28683
+714.1	Rheumatoid arthritis	6:32712863:T:A	6.012e-26	musculoskeletal	1229	28683
+715	Other inflammatory spondylopathies	6:147336695:A:G	1.406e-06	musculoskeletal	1343	28683
+715.1	Sacroiliitis NEC	20:761593:G:A	1.986e-07	musculoskeletal	931	28683
+715.2	Ankylosing spondylitis	6:31368220:C:T	2.410e-15	musculoskeletal	61	28683
+715.3	Spinal enthesopathy	6:82555171:G:A	8.974e-06	musculoskeletal	92	28683
+716	Other arthropathies	22:41686155:G:A	4.406e-07	musculoskeletal	1548	29178
+716.1	Unspecified polyarthropathy or polyarthritis	1:11460658:C:A	2.004e-07	musculoskeletal	460	29178
+716.9	Arthropathy NOS	13:53640116:A:G	2.234e-07	musculoskeletal	1036	29178
+717	Polymyalgia Rheumatica	5:61704254:G:A	1.945e-07	musculoskeletal	442	37518
+720	Spinal stenosis	22:28057698:T:C	1.854e-07	musculoskeletal	2692	23940
+720.1	Spinal stenosis of lumbar region	1:29397096:G:T	1.652e-07	musculoskeletal	2134	23940
+721	Spondylosis and allied disorders	8:71178553:C:T	3.622e-09	musculoskeletal	2335	23940
+721.1	Spondylosis without myelopathy	8:71178553:C:T	8.128e-10	musculoskeletal	2161	23940
+721.2	Spondylosis with myelopathy	9:24789732:T:G	2.735e-06	musculoskeletal	112	23940
+721.8	Other allied disorders of spine	3:118606559:A:G	7.925e-06	musculoskeletal	57	23940
+722	Intervertebral disc disorders	17:10191499:T:C	1.514e-07	musculoskeletal	6462	23940
+722.1	Displacement of intervertebral disc	6:16077356:G:A	1.236e-08	musculoskeletal	2931	23940
+722.6	Degeneration of intervertebral disc	5:77310738:C:G	2.477e-07	musculoskeletal	3313	23940
+722.7	Intervertebral disc disorder with myelopathy	2:237932217:T:C	9.772e-07	musculoskeletal	130	23940
+722.8	Postlaminectomy syndrome	2:35944178:G:A	1.888e-07	musculoskeletal	765	23940
+722.9	Other and unspecified disc disorder	20:42797017:T:C	2.649e-08	musculoskeletal	1343	23940
+723	Other disorders of cervical region	6:136770158:T:C	4.613e-07	musculoskeletal	330	23940
+724	Other and unspecified disorders of back	4:134712898:C:T	3.724e-06	musculoskeletal	426	23940
+724.1	Disorders of sacrum	3:144361836:A:C	2.234e-06	musculoskeletal	171	23940
+724.2	Disorders of coccyx	3:188413123:T:C	7.656e-06	musculoskeletal	143	23940
+724.8	Other symptoms referable to back	14:87146546:C:T	3.296e-05	musculoskeletal	79	23940
+724.9	Other unspecified back disorders	4:159287563:A:G	1.259e-05	musculoskeletal	113	23940
+726	Peripheral enthesopathies and allied syndromes	6:23705541:A:T	4.467e-07	musculoskeletal	6491	17796
+726.1	Enthesopathy	12:114979154:A:T	7.311e-08	musculoskeletal	2528	17796
+726.2	Synoviopathy	8:33605149:C:T	2.723e-06	musculoskeletal	138	17796
+726.3	Bursitis	20:34042230:C:T	4.074e-07	musculoskeletal	656	17796
+726.4	Calcaneal spur; Exostosis NOS	4:71910968:G:T	2.904e-05	musculoskeletal	68	17796
+727	Other disorders of synovium, tendon, and bursa	4:57256636:A:G	6.339e-08	musculoskeletal	3287	17796
+727.1	Synovitis and tenosynovitis	4:83505602:C:T	6.516e-08	musculoskeletal	1679	17796
+727.2	Bursitis disorders	5:160740184:C:G	3.750e-06	musculoskeletal	159	17796
+727.4	Ganglion and cyst of synovium, tendon, and bursa	15:53857569:A:G	4.875e-07	musculoskeletal	322	17796
+727.5	Rupture of synovium	20:57505459:T:C	1.117e-04	musculoskeletal	52	17796
+727.6	Rupture of tendon, nontraumatic	13:35070457:A:G	5.998e-07	musculoskeletal	542	17796
+728.7	Fasciitis	1:234762708:C:T	6.871e-08	musculoskeletal	1082	17796
+728.71	Contracture of palmar fascia [Dupuytren's disease]	12:128926617:A:G	1.954e-05	musculoskeletal	127	17796
+729	Other disorders of soft tissues	1:103330661:C:A	3.020e-06	musculoskeletal	120	17796
+729.3	Panniculitis	1:14660824:A:G	1.807e-06	musculoskeletal	374	17796
+733	Other disorders of bone and cartilage	2:116334863:A:G	3.767e-06	musculoskeletal	173	28897
+733.4	Aseptic necrosis of bone	8:107061298:T:A	4.634e-06	musculoskeletal	146	28897
+733.6	Costochondritis	3:181651887:C:T	2.018e-06	musculoskeletal	146	28897
+733.8	Malunion and nonunion of fracture	7:64276557:C:T	1.429e-05	musculoskeletal	51	28897
+735	Acquired foot deformities	2:41203823:G:A	6.138e-07	musculoskeletal	998	31459
+735.1	Flat foot	11:65205290:C:T	1.081e-06	musculoskeletal	147	31459
+735.2	Acquired toe deformities	19:42419115:C:G	2.350e-07	musculoskeletal	305	31459
+735.21	Hammer toe (acquired)	19:42419115:C:G	2.138e-07	musculoskeletal	220	31459
+735.3	Hallux valgus (Bunion)	13:73172671:A:G	1.047e-06	musculoskeletal	314	31459
+736	Other acquired deformities of limbs	6:34244965:C:T	4.009e-06	musculoskeletal	106	31459
+736.2	Acquired deformities of finger	7:4802277:G:A	5.321e-06	musculoskeletal	61	31459
+737	Curvature of spine	7:101554636:T:C	1.879e-06	musculoskeletal	407	31459
+737.3	Kyphoscoliosis and scoliosis	1:67104675:A:T	2.931e-06	musculoskeletal	361	31459
+738	Other acquired musculoskeletal deformity	14:84756180:G:A	2.780e-07	musculoskeletal	377	31459
+738.4	Acquired spondylolisthesis	7:157610747:C:T	2.099e-06	musculoskeletal	254	31459
+740	Osteoarthrosis	10:16870217:T:A	4.487e-08	musculoskeletal	9959	21951
+740.1	Osteoarthritis; localized	2:137279418:C:T	5.728e-08	musculoskeletal	6136	21951
+740.11	Osteoarthrosis, localized, primary	2:137279418:C:T	9.705e-08	musculoskeletal	5611	21951
+740.12	Osteoarthrosis, localized, secondary	2:18348584:T:G	7.129e-06	musculoskeletal	62	21951
+740.2	Osteoarthrosis, generalized	1:244645700:G:A	1.807e-07	musculoskeletal	3509	21951
+740.9	Osteoarthrosis NOS	12:72706421:G:A	3.027e-09	musculoskeletal	5542	21951
+741	Symptoms and disorders of the joints	3:159805907:C:G	9.099e-07	musculoskeletal	723	33239
+741.3	Difficulty in walking	4:175645442:C:G	1.104e-08	musculoskeletal	365	33239
+741.4	Joint effusions	6:154241931:G:A	4.217e-06	musculoskeletal	159	33239
+742	Derangement of joint, non-traumatic	1:104612930:G:A	1.119e-05	musculoskeletal	66	33239
+743	Osteoporosis, osteopenia and pathological fracture	9:78812397:G:A	2.323e-07	musculoskeletal	4579	30362
+743.1	Osteoporosis	11:126163411:G:A	1.774e-07	musculoskeletal	4183	30362
+743.11	Osteoporosis NOS	11:126163411:G:A	2.228e-07	musculoskeletal	3677	30362
+743.12	Senile osteoporosis	10:65428856:T:C	2.339e-07	musculoskeletal	490	30362
+743.13	Other specified osteoporosis	4:141617205:G:A	6.383e-08	musculoskeletal	1029	30362
+743.2	Pathologic fracture	12:98712759:C:T	8.670e-07	musculoskeletal	430	30362
+743.21	Pathologic fracture of vertebrae	8:37333092:A:G	4.764e-07	musculoskeletal	350	30362
+743.9	Osteopenia or other disorder of bone and cartilage	3:7643976:T:C	1.862e-06	musculoskeletal	301	30362
+745	Pain in joint	8:69072833:G:T	5.000e-08	musculoskeletal	13963	14234
+747	Cardiac and circulatory congenital anomalies	20:62527365:C:T	1.309e-08	congenital anomalies	767	36443
+747.1	Cardiac congenital anomalies	3:1967804:T:C	4.667e-07	congenital anomalies	568	36443
+747.11	Cardiac shunt/ heart septal defect	4:170166862:C:T	3.034e-07	congenital anomalies	305	36443
+747.12	Valvular heart disease/ heart chambers	1:50194256:A:G	2.109e-06	congenital anomalies	225	36443
+747.2	Congenital anomalies of peripheral vascular system	8:134747747:C:T	1.690e-06	congenital anomalies	152	36443
+750	Digestive congenital anomalies	5:95650764:T:C	1.493e-06	congenital anomalies	125	35847
+750.2	Lower gastrointestinal congenital anomalies	17:59437838:T:G	5.420e-06	congenital anomalies	63	35847
+751	Genitourinary congenital anomalies	1:14114277:G:A	4.699e-07	congenital anomalies	440	35847
+751.2	Congenital anomalies of urinary system	2:204231598:G:A	9.397e-07	congenital anomalies	349	35847
+751.21	Cystic kidney disease	1:78775535:G:A	2.612e-06	congenital anomalies	224	35847
+751.22	Other specified congenital anomalies of kidney	1:176255526:G:A	2.432e-06	congenital anomalies	110	35847
+752	Nervous system congenital anomalies	4:103924072:C:A	1.413e-05	congenital anomalies	150	36524
+752.1	Neural tube defects	14:25884516:C:T	3.289e-05	congenital anomalies	57	36524
+752.2	Other specified congenital anomalies of nervous system	11:73302255:A:G	2.438e-05	congenital anomalies	85	36524
+753	Congenital anomalies of the eye	16:27060962:T:A	7.211e-07	congenital anomalies	76	36524
+754	Congenital musculoskeletal deformities of spine	4:48222579:T:C	4.966e-06	congenital anomalies	375	36418
+754.2	Spondylolisthesis, congenital	12:70378910:T:C	1.309e-06	congenital anomalies	331	36418
+756	Other congenital musculoskeletal anomalies	10:14942859:C:T	1.754e-05	congenital anomalies	62	36418
+759	Other and unspecified congenital anomalies	4:47199626:A:G	1.459e-05	congenital anomalies	99	36892
+760	Back pain	1:149930450:C:T	1.239e-07	symptoms	9232	19439
+761	Cervicalgia	11:110674636:A:G	2.477e-07	symptoms	3667	28154
+763	Thoracic or lumbosacral neuritis or radiculitis, unspecified	3:30923645:C:T	4.634e-08	symptoms	3023	26003
+764	Sciatica	4:108118823:A:T	4.721e-08	symptoms	2591	26003
+765	Cervical radiculitis	10:18344720:G:A	1.387e-06	symptoms	779	26003
+766	Neuralgia, neuritis, and radiculitis NOS	9:94484117:C:G	4.083e-07	symptoms	466	26003
+769	Nonallopathic lesions NEC	10:107447118:A:C	2.649e-06	symptoms	385	36783
+770	Myalgia and myositis unspecified	9:1559785:G:A	1.104e-07	symptoms	3373	29375
+771	Musculoskeletal symptoms referable to limbs	12:8168900:T:C	1.042e-07	symptoms	268	31398
+771.1	Swelling of limb	19:58486951:C:T	2.825e-06	symptoms	233	31398
+771.2	Cramp of limb	2:22779162:G:A	6.457e-06	symptoms	166	31398
+772	Symptoms of the muscles	10:6210959:C:T	7.194e-05	symptoms	60	29309
+772.2	Spasm of muscle	11:97250758:A:G	5.702e-07	symptoms	962	29309
+772.3	Muscle weakness	13:64688854:A:G	2.624e-07	symptoms	414	29309
+773	Pain in limb	18:55041343:G:A	5.445e-08	symptoms	2361	28669
+781	Symptoms involving nervous and musculoskeletal systems	17:61183767:G:A	2.710e-10	symptoms	388	35253
+782.3	Edema	5:2337046:G:C	2.218e-08	symptoms	4224	27321
+783	Fever of unknown origin	5:75817695:C:A	8.054e-07	symptoms	568	32890
+785	Abdominal pain	9:22492585:T:C	1.510e-07	symptoms	8329	19612
+788	Syncope and collapse	13:69726424:A:G	5.023e-07	symptoms	1282	32687
+789	Nausea and vomiting	10:89210103:T:G	1.596e-07	symptoms	2837	28101
+790.6	Other abnormal blood chemistry	22:26237870:T:C	1.288e-06	symptoms	1189	31134
+791	Gangrene	5:59649693:T:A	3.076e-06	symptoms	94	37784
+792	Abnormal Papanicolaou smear of cervix and cervical HPV	22:38506359:G:C	3.273e-07	genitourinary	444	33139
+792.1	Papanicolaou smear of cervix or vagina with atypical squamous cells	15:54890017:C:T	3.396e-06	genitourinary	173	33139
+793.2	Nonspecific abnormal findings on radiological and other examination of other intrathoracic organs (echocardiogram, etc)	6:41166712:T:A	1.076e-05	symptoms	87	36923
+796	Elevated prostate specific antigen [PSA]	19:50862184:C:T	1.294e-10	genitourinary	1406	30466
+798	Malaise and fatigue	9:79266227:C:T	4.064e-08	symptoms	5694	20672
+798.1	Chronic fatigue syndrome	3:12677709:A:T	1.211e-05	symptoms	114	20672
+800	Fracture of lower limb	7:88873957:T:C	4.169e-07	injuries & poisonings	1011	25185
+800.1	Fracture of neck of femur	12:14626719:T:G	4.550e-07	injuries & poisonings	299	25185
+800.2	Fracture of unspecified part of femur	5:10222248:G:A	2.173e-06	injuries & poisonings	108	25185
+800.3	Fracture of tibia and fibula	10:31277767:C:T	8.531e-07	injuries & poisonings	288	25185
+800.4	Fracture of patella	2:127106620:G:A	6.209e-06	injuries & poisonings	89	25185
+801	Fracture of ankle and foot	12:112886423:G:A	1.641e-07	injuries & poisonings	668	25185
+801.1	Fracture of foot	2:6091520:T:C	1.303e-06	injuries & poisonings	315	25185
+802	Fracture of pelvis	18:9572542:G:C	6.138e-06	injuries & poisonings	122	25185
+803	Fracture of upper limb	2:51723180:T:C	9.419e-09	injuries & poisonings	1210	25185
+803.1	Fracture of humerus	13:37194319:G:A	3.724e-07	injuries & poisonings	336	25185
+803.2	Fracture of radius and ulna	14:70735206:C:T	6.808e-07	injuries & poisonings	489	25185
+803.3	Fracture of clavicle or scapula	16:73529064:A:C	7.031e-06	injuries & poisonings	118	25185
+804	Fracture of hand or wrist	16:24234298:A:G	1.901e-06	injuries & poisonings	316	25185
+805	Fracture of vertebral column without mention of spinal cord injury	4:88512833:C:T	1.429e-07	injuries & poisonings	643	25185
+807	Fracture of ribs	13:32472633:C:T	1.845e-06	injuries & poisonings	151	25185
+809	Fracture of unspecified bones	4:28478092:T:C	9.638e-08	injuries & poisonings	1713	25185
+817	Concussion	2:24454834:G:A	1.570e-05	injuries & poisonings	71	36472
+819	Skull and face fracture and other intercranial injury	5:174058180:A:G	1.445e-06	injuries & poisonings	255	36472
+830	Dislocation	19:44267291:T:C	2.612e-06	injuries & poisonings	388	34131
+835	Internal derangement of knee	8:75571001:T:C	8.017e-07	injuries & poisonings	480	34131
+840	Sprains and strains	12:75298102:T:G	2.729e-07	injuries & poisonings	1751	25550
+840.2	Rotator cuff (capsule) sprain	7:137327189:G:C	2.838e-07	injuries & poisonings	425	25550
+840.3	Joint/ligament sprain	1:240317077:C:T	4.487e-06	injuries & poisonings	121	25550
+841	Sprains and strains of back and neck	10:22096664:C:G	3.373e-07	injuries & poisonings	781	25550
+842	Other sprains and strains	18:72313161:G:A	8.166e-06	injuries & poisonings	66	25550
+850	Hemorrhage or hematoma complicating a procedure	7:155425:G:A	4.305e-06	injuries & poisonings	155	34264
+854	Complications of cardiac/vascular device, implant, and graft	11:75105445:C:G	3.499e-06	injuries & poisonings	101	34264
+858	Complication of internal orthopedic device	17:38498915:C:T	5.715e-06	injuries & poisonings	161	34264
+870	Open wounds of head; neck; and trunk	4:18758302:G:A	7.907e-07	injuries & poisonings	505	28597
+870.3	Other open wound of head and face	5:140768357:T:C	2.576e-05	injuries & poisonings	77	28597
+871	Open wounds of extremities	2:3860187:G:T	5.129e-07	injuries & poisonings	1007	28597
+871.1	Open wound of hand except finger(s)	10:125971722:C:G	4.335e-06	injuries & poisonings	85	28597
+871.2	Open wound of finger(s)	13:28810978:G:A	2.742e-06	injuries & poisonings	108	28597
+871.3	Open wound of foot except toe(s) alone	9:122406501:G:A	2.951e-06	injuries & poisonings	98	28597
+872	Traumatic amputation	10:82130194:A:G	3.034e-06	injuries & poisonings	135	28597
+912	Insect bite	15:89203186:C:A	1.754e-06	injuries & poisonings	184	34246
+913	Toxic effect of venom	13:92149229:G:T	4.898e-06	injuries & poisonings	151	34246
+916	Contusion	2:26553734:A:G	2.799e-09	injuries & poisonings	1852	27530
+930	Allergic reaction to food	1:155697722:C:T	1.303e-05	injuries & poisonings	103	19269
+931	Contact dermatitis and other eczema due to plants [except food]	3:194800349:C:T	1.340e-06	dermatologic	296	19269
+938	Dermatitis due to solar radiation	16:88695193:C:T	4.227e-09	dermatologic	251	19269
+938.2	Chronic dermatitis due to solar radiation	16:88742230:G:A	6.653e-08	dermatologic	183	19269
+939	Atopic/contact dermatitis due to other or unspecified	2:94606419:G:A	7.586e-08	dermatologic	5667	19269
+946	Anaphylactic shock NOS	5:172068736:G:C	9.594e-06	injuries & poisonings	110	19269
+947	Urticaria	8:81638228:A:C	6.966e-07	dermatologic	485	19269
+949	Allergies, other	5:146687752:G:T	2.193e-07	injuries & poisonings	345	19269
+960	Poisoning by antibiotics	16:82167502:T:A	2.339e-05	injuries & poisonings	73	30924
+963	Poisoning by primarily systemic agents	15:91043214:C:T	2.113e-05	injuries & poisonings	63	30924
+963.1	Antineoplastic and immunosuppressive drugs causing adverse effects	4:120201254:C:T	7.129e-06	injuries & poisonings	56	30924
+977	Personal history of allergy to medicinal agents	11:72771740:G:A	1.148e-06	injuries & poisonings	243	30924
+979	Adverse drug events and drug allergies	10:132545899:C:T	5.610e-07	injuries & poisonings	299	30924
+990	Effects radiation NOS	2:179349637:C:T	7.079e-06	injuries & poisonings	161	34262
+994	Sepsis and SIRS	18:50530623:T:C	1.837e-08	injuries & poisonings	510	34741
+994.2	Sepsis	18:50530623:T:C	1.175e-08	injuries & poisonings	470	34741
