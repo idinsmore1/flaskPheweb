@@ -2,7 +2,6 @@ import json
 
 import MySQLdb
 import plotly
-import pandas as pd
 from flask import Flask, render_template, request, Response, redirect
 
 from static.utilites.gwas_class import GwasData
