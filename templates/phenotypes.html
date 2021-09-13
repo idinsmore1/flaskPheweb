@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+{% block content %}
+    <table id="topResultsTable" class="cell-border stripe hover">
+        <thead>
+            <tr>
+                {% for col in column_names %}
+                <th>{{ col }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in row_data %}
+                <tr>
+                {% for col, row_ in zip(column_names, row) %}
+                    {% if col == variant_col %}
+                        <td> <a href="/variant/{{ row_ }}">{{ row_ }}</a></td>
+                    {% elif col == pheno_col %}
+                        <td> <a href="/pheno/{{ row_ }}">{{ row_ }}</a></td>
+                    {% else %}
+                        <td> {{ row_ }}</td>
+                    {% endif %}
+                {% endfor %}
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+    <script>
+            /* Initialization of datatable */
+            $(document).ready(function() {
+                $('#topResultsTable').DataTable({
+                  "order": [[3, 'asc']]
+                });
+            });
+        </script>
+{% endblock %}

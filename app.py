@@ -4,6 +4,7 @@ import traceback
 
 import MySQLdb
 import plotly
+import pandas as pd
 from flask import Flask, render_template, request, Response, redirect, flash, abort
 
 from gwas_class import GwasData
@@ -61,7 +62,7 @@ def phenotype_page(pheno):
     df = data.top_results
     pheno_info = data.pheno_info()
     graphjson = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    return render_template('gwas_base.html',
+    return render_template('gwas_extend.html',
                            phenotype=pheno_info['phenotype'],
                            phecode=pheno_info['PHECODE'],
                            cases=pheno_info['cases'],
@@ -72,8 +73,29 @@ def phenotype_page(pheno):
                            row_data=list(df.values.tolist()),
                            id_col='VarID',
                            gene_col='Gene',
+                           ref_col='HGVSc',
                            zip=zip)
 
+# @app.route('/pheno/test')
+# def pheno_ext():
+#     data = GwasData('571', conn)
+#     fig = data.manhattan_plot()
+#     df = data.top_results
+#     pheno_info = data.pheno_info()
+#     graphjson = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+#     return render_template('gwas_extend.html',
+#                            phenotype=pheno_info['phenotype'],
+#                            phecode=pheno_info['PHECODE'],
+#                            cases=pheno_info['cases'],
+#                            controls=pheno_info['controls'],
+#                            category=pheno_info['category'],
+#                            graphJSON=graphjson,
+#                            column_names=df.columns.values,
+#                            row_data=list(df.values.tolist()),
+#                            id_col='VarID',
+#                            gene_col='Gene',
+#                            ref_col='HGVSc',
+#                            zip=zip)
 
 @app.route('/variant/<variant>')
 def variation(variant):
@@ -82,7 +104,7 @@ def variation(variant):
     info = var.variant_info
     df = var.top_results
     graphjson = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    return render_template('phewas_base.html',
+    return render_template('phewas_extend.html',
                            variant=info['VAR_ID'],
                            gene=info['GENE'],
                            impact=info['IMPACT'],
@@ -94,6 +116,37 @@ def variation(variant):
                            pheno_dict=var.phecode_dict,
                            zip=zip)
 
+
+@app.route('/phenotypes')
+def phenotypes():
+    data = pd.read_csv('./static/topset.tsv',
+                       sep='\t',
+                       dtype={'Phecode': str})
+    data['Pvalue'] = ["{:.3e}".format(x) for x in data['Pvalue']]
+    return render_template("phenotypes.html",
+                           column_names=data.columns.values,
+                           row_data=list(data.values.tolist()),
+                           pheno_col='Phecode',
+                           variant_col='Top Variant',
+                           zip=zip)
+# @app.route('/variant/test')
+# def variant_ext():
+#     var = PhewasData(f'22:43928075:T:C', conn)
+#     fig = var.phewas_plot()
+#     info = var.variant_info
+#     df = var.top_results
+#     graphjson = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+#     return render_template('phewas_extend.html',
+#                            variant=info['VAR_ID'],
+#                            gene=info['GENE'],
+#                            impact=info['IMPACT'],
+#                            effect=info['EFFECT'],
+#                            graphJSON=graphjson,
+#                            column_names=df.columns.values,
+#                            row_data=list(df.values.tolist()),
+#                            pheno_col='phenotype',
+#                            pheno_dict=var.phecode_dict,
+#                            zip=zip)
 
 # @app.route('/')
 # def table():

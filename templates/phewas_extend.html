@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+{% block content %}
+    <div class="pheno-info">
+        <h1> {{ variant }} </h1>
+        Nearest Gene: <b> {{ gene }} </b><br>
+        Impact: <b> {{ impact.title() }} </b><br>
+        Consequence: <b> {{ effect.replace('_', ' ').title() }}</b>
+    </div>
+
+    <div id="chart" class="chart">
+        <script type="text/javascript">
+
+            var graphs = {{graphJSON | safe}};
+
+            Plotly.plot('chart', graphs, {});
+
+        </script>
+    </div>
+    <div class="top-results">
+        <div id="table-header" class="table-header">
+            <p><b>Top Phenotypes</b></p>
+            <span><button class="btn"><i class="fa fa-download"></i> Download</button></span>
+        </div>
+        <table id="phewasTable" class="cell-border stripe hover">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Phenotype</th>
+                    <th>P-value</th>
+                    <th>Effectsize(SE)</th>
+                    <th>Cases/Controls</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for row in row_data %}
+                <tr>
+                {% for col, row_ in zip(column_names, row) %}
+                    {% if col == pheno_col %}
+                    <td> <a href="/pheno/{{ pheno_dict[row_] }}">{{ row_ }}</a></td>
+                    {% else %}
+                    <td> {{ row_ | safe}}</td>
+                    {% endif %}
+                {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <script>
+            /* Initialization of datatable */
+            $(document).ready(function() {
+                $('#phewasTable').DataTable({
+                "order": [[2, 'asc']]
+                });
+            });
+        </script>
+    </div>
+{% endblock %}
