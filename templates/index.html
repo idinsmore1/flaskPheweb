@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mirshahi Pheweb</title>
+    <title>{% block title %}{{ page_title }}{% endblock %}</title>
     <meta content="initial-scale=1, maximum-scale=1,
     user-scalable=0" name="viewport" /><meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -22,6 +22,10 @@
     <!-- Datatable plugin JS library file -->
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script  type="text/javascript" src="{{ url_for('static', filename='js/typeahead.bundle.js') }}"></script>
+
+    <!-- Any other files can be downloaded based on the page you're on -->
+    {% block links %}
+    {% endblock %}
     <script>
         $(document).ready(function(){
             // Constructs the suggestion engine

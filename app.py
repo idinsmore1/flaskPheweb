@@ -49,7 +49,8 @@ def go():
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    return render_template('index.html')
+    return render_template('index.html',
+                           page_title='Pheweb')
 
 
 @app.route('/pheno/<pheno>')
@@ -97,7 +98,7 @@ def variation(variant):
 
 @app.route('/phenotypes')
 def phenotypes():
-    data = pd.read_csv('./static/topset.tsv',
+    data = pd.read_csv('static/data/topset.tsv',
                        sep='\t',
                        dtype={'Phecode': str})
     data['Pvalue'] = ["{:.3e}".format(x) for x in data['Pvalue']]

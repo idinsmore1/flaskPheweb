@@ -1,6 +1,13 @@
 {% extends "index.html" %}
+{% block title %}Phenotypes{% endblock %}
+{% block links %}
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js", type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js", type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css"/>
+{% endblock %}
+
 {% block content %}
-    <table id="topResultsTable" class="cell-border stripe hover">
+    <table id="topResultsTable" class="display">
         <thead>
             <tr>
                 {% for col in column_names %}
@@ -25,11 +32,15 @@
         </tbody>
     </table>
     <script>
-            /* Initialization of datatable */
-            $(document).ready(function() {
-                $('#topResultsTable').DataTable({
-                  "order": [[3, 'asc']]
-                });
+        /* Initialization of datatable */
+        $(document).ready(function() {
+            $('#topResultsTable').DataTable({
+                "order": [[3, 'asc']],
+                "dom": 'Blfrtip',
+                "buttons": ['csv'],
+                "pageLength": [100],
+                "lengthMenu": [ [10, 25, 100, -1], [10, 25, 100, "All"] ]
             });
-        </script>
+        });
+    </script>
 {% endblock %}
