@@ -98,16 +98,17 @@ def variation(variant):
 
 @app.route('/phenotypes')
 def phenotypes():
-    data = pd.read_csv('static/data/topset.tsv',
-                       sep='\t',
-                       dtype={'Phecode': str})
-    data['Pvalue'] = ["{:.3e}".format(x) for x in data['Pvalue']]
-    return render_template("phenotypes.html",
-                           column_names=data.columns.values,
-                           row_data=list(data.values.tolist()),
-                           pheno_col='Phecode',
-                           variant_col='Top Variant',
-                           zip=zip)
+    # data = pd.read_csv('static/data/topset.tsv',
+    #                    sep='\t',
+    #                    dtype={'Phecode': str})
+    # data['Pvalue'] = ["{:.3e}".format(x) for x in data['Pvalue']]
+    # return render_template("phenotypes.html",
+    #                        column_names=data.columns.values,
+    #                        row_data=list(data.values.tolist()),
+    #                        pheno_col='Phecode',
+    #                        variant_col='Top Variant',
+    #                        zip=zip)
+    return render_template('phenotypes_rendered.html')
 
 # @app.route('/')
 # def table():

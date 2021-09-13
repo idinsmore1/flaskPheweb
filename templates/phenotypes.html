@@ -7,6 +7,10 @@
 {% endblock %}
 
 {% block content %}
+    <div class="pheno-info">
+        <h1>All Phenotypes Tested</h1>
+    </div>
+    <br>
     <table id="topResultsTable" class="display">
         <thead>
             <tr>
@@ -36,10 +40,17 @@
         $(document).ready(function() {
             $('#topResultsTable').DataTable({
                 "order": [[3, 'asc']],
-                "dom": 'Blfrtip',
-                "buttons": ['csv'],
+                dom: '<"top"fBl>rt<"bottom"ip><"clear">',
+                "buttons": [{
+                    "extend": 'csvHtml5',
+                    "title": "phenotypes_TM90K.csv"
+                }],
                 "pageLength": [100],
-                "lengthMenu": [ [10, 25, 100, -1], [10, 25, 100, "All"] ]
+                "lengthMenu": [ [10, 25, 100, -1], [10, 25, 100, "All"] ],
+                "language": {
+                    "search": '',
+                    "searchPlaceholder": 'Search FTO, Type 2 Diabetes, etc...'
+                }
             });
         });
     </script>

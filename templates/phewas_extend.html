@@ -54,9 +54,13 @@
             /* Initialization of datatable */
             $(document).ready(function() {
                 $('#phewasTable').DataTable({
-                "order": [[2, 'asc']],
-                "dom": 'Blfrtip',
-                "buttons": ['csv']
+                    "order": [[2, 'asc']],
+                    "dom": 'Blfrtip',
+                    "buttons": ['csv'],
+                    "language": {
+                        "search": '',
+                        "searchPlaceholder": 'Search FTO, Type 2 Diabetes, etc...'
+                    }
                 });
             });
         </script>

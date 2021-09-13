@@ -53,7 +53,11 @@
             $(document).ready(function() {
                 $('#gwasTable').DataTable({
                     "order": [[6, 'asc']],
-                    dom: 'Blfrtip'
+                    dom: '<"top"fBl>rt<"bottom"ip><"clear">',
+                    "language": {
+                        "search": '',
+                        "searchPlaceholder": 'Search FTO, Type 2 Diabetes, etc...'
+                    }
                 });
             });
         </script>
