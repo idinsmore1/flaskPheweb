@@ -1,15 +1,13 @@
 import json
-import csv
-import traceback
 
 import MySQLdb
 import plotly
 import pandas as pd
-from flask import Flask, render_template, request, Response, redirect, flash, abort
+from flask import Flask, render_template, request, Response, redirect
 
-from gwas_class import GwasData
-from phewas import PhewasData
-from autocompletion import Autocompleter
+from static.utilites.gwas_class import GwasData
+from static.utilites.phewas import PhewasData
+from static.utilites.autocompletion import Autocompleter
 
 app = Flask(__name__)
 conn = MySQLdb.connect(user='dash_readonly', password='dashtest', host='ghsmfgwesdblx1v')
@@ -76,26 +74,6 @@ def phenotype_page(pheno):
                            ref_col='HGVSc',
                            zip=zip)
 
-# @app.route('/pheno/test')
-# def pheno_ext():
-#     data = GwasData('571', conn)
-#     fig = data.manhattan_plot()
-#     df = data.top_results
-#     pheno_info = data.pheno_info()
-#     graphjson = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-#     return render_template('gwas_extend.html',
-#                            phenotype=pheno_info['phenotype'],
-#                            phecode=pheno_info['PHECODE'],
-#                            cases=pheno_info['cases'],
-#                            controls=pheno_info['controls'],
-#                            category=pheno_info['category'],
-#                            graphJSON=graphjson,
-#                            column_names=df.columns.values,
-#                            row_data=list(df.values.tolist()),
-#                            id_col='VarID',
-#                            gene_col='Gene',
-#                            ref_col='HGVSc',
-#                            zip=zip)
 
 @app.route('/variant/<variant>')
 def variation(variant):
@@ -129,24 +107,6 @@ def phenotypes():
                            pheno_col='Phecode',
                            variant_col='Top Variant',
                            zip=zip)
-# @app.route('/variant/test')
-# def variant_ext():
-#     var = PhewasData(f'22:43928075:T:C', conn)
-#     fig = var.phewas_plot()
-#     info = var.variant_info
-#     df = var.top_results
-#     graphjson = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-#     return render_template('phewas_extend.html',
-#                            variant=info['VAR_ID'],
-#                            gene=info['GENE'],
-#                            impact=info['IMPACT'],
-#                            effect=info['EFFECT'],
-#                            graphJSON=graphjson,
-#                            column_names=df.columns.values,
-#                            row_data=list(df.values.tolist()),
-#                            pheno_col='phenotype',
-#                            pheno_dict=var.phecode_dict,
-#                            zip=zip)
 
 # @app.route('/')
 # def table():

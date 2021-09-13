@@ -2,7 +2,7 @@ name: flaskPheweb
 channels:
   - defaults
 dependencies:
-  - python=3.9
+  - utilities=3.9
   - flask
   - mysqlclient
   - pandas
