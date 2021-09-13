@@ -49,7 +49,7 @@ def go():
 @app.route('/', methods=['POST', 'GET'])
 def index():
     return render_template('index.html',
-                           page_title='Pheweb')
+                           page_title='UNGATED')
 
 
 @app.route('/pheno/<pheno>')

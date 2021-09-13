@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{ page_title }}{% endblock %}</title>
+    <meta content="initial-scale=1, maximum-scale=1,
+    user-scalable=0" name="viewport" /><meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="data:,">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <!-- Datatable plugin CSS file -->
+    <link rel="stylesheet" href=
+    "https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- jQuery library file -->
+    <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+
+    <!-- Datatable plugin JS library file -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/typeahead.bundle.js') }}"></script>
+
+    <!-- Any other files can be downloaded based on the page you're on -->
+    {% block links %}
+    {% endblock %}
+    <script>
+        $(document).ready(function(){
+            // Constructs the suggestion engine
+            var phenotypes = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.obj.whitespace(['value', 'pheno']),
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                // Testing now for prefetch
+                prefetch: {
+                    url: " {{ url_for('static', filename='data/phenotypes_revised.json') }}",
+                    filter: function(data) {
+                        return $.map(data, function(item){
+                            return {
+                                value: item.value,
+                                pheno: item.pheno,
+                                suggest: item
+                            }
+                        })
+                    }
+                }
+
+            });
+            phenotypes.clearPrefetchCache();
+            phenotypes.initialize();
+            // Initializing the typeahead with remote dataset
+            $('.typeahead').typeahead(null, {
+                name: 'phenotypes',
+                display: "value",
+                source: phenotypes.ttAdapter(),
+                limit: 10,
+                templates: {
+                    empty: '<div class="tt-suggestion">No Matches Found!</div>',
+                    suggestion: function(data) {
+                        return '<div>' + data.suggest.pheno + ' (' + data.suggest.value + ')</div>'
+                    }
+                }
+            }).on('typeahead:selected', function(e) {
+                e.target.form.submit();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar-flex">
+        <div class="navlink home"><a href="/">Home</a></div>
+        <div class="navsearch">
+            <form action="{{ url_for('.go') }}">
+                    <input name="query" class="typeahead tt-query" autocomplete="off" type="text" placeholder="Search for a phenotype (working on variant search)" spellcheck="false">
+            </form>
+        </div>
+        <div class="right-bar">
+            <div class="navlink topres"><a href="#TopRes">Top Results</a></div>
+            <div class="navlink pheno"><a href="/phenotypes">Phenotypes</a></div>
+            <div class="navlink about"><a href="#TopRes">About</a></div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
