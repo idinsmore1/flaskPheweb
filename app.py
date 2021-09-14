@@ -1,8 +1,8 @@
 import json
-
+import os
 import MySQLdb
 import plotly
-from flask import Flask, render_template, request, Response, redirect
+from flask import Flask, render_template, request, Response, redirect, send_from_directory
 
 from static.utilites.gwas_class import GwasData
 from static.utilites.phewas import PhewasData
@@ -97,49 +97,7 @@ def variation(variant):
 
 @app.route('/phenotypes')
 def phenotypes():
-    # data = pd.read_csv('static/data/topset.tsv',
-    #                    sep='\t',
-    #                    dtype={'Phecode': str})
-    # data['Pvalue'] = ["{:.3e}".format(x) for x in data['Pvalue']]
-    # return render_template("phenotypes.html",
-    #                        column_names=data.columns.values,
-    #                        row_data=list(data.values.tolist()),
-    #                        pheno_col='Phecode',
-    #                        variant_col='Top Variant',
-    #                        zip=zip)
     return render_template('phenotypes_rendered.html')
-
-# @app.route('/')
-# def table():
-#     data = GwasData(f'571', conn)
-#     df = data.top_results
-#     return render_template('table_structure.html',
-#                            column_names=df.columns.values,
-#                            row_data=list(df.values.tolist()),
-#                            id_col='VarID',
-#                            gene_col='Gene',
-#                            zip=zip)
-
-
-# @app.route('/download/<pheno>', methods=['GET'])
-# def download(pheno):
-#     pheno = pheno.replace('-', '.')
-#     query = f"""SELECT v.*, g.MAF, g.EFFECTSIZE, g.SE, g.LOG10P
-#                             FROM private_dash.TM90K_LOGP_gt2 g
-#                             INNER JOIN private_dash.TM90K_variants v
-#                             USING(VAR_ID)
-#                             WHERE PHECODE = '{pheno}'"""
-#     data = cursor.execute(query)
-#     (file_basename, server_path, file_size) = create_csv(data, pheno)
-#
-#     return_file = open(server_path + file_basename, 'r')
-#     response = make_response(return_file, 200)
-#     response.headers['Content-Description'] = 'File Transfer'
-#     response.headers['Cache-Control'] = 'no-cache'
-#     response.headers['Content-Type'] = 'text/csv'
-#     response.headers['Content-Disposition'] = 'attachment; filename=%s' % file_basename
-#     response.headers['Content-Length'] = file_size
-#     return response
 
 
 if __name__ == '__main__':

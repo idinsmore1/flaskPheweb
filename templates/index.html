@@ -1,1 +1,78 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNGATED</title>
+    <link rel="stylesheet" href=
+    "https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/typeahead.bundle.js') }}"></script>
+    <script>
+        $(document).ready(function(){
+            // Constructs the suggestion engine
+            var phenotypes = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.obj.whitespace(['value', 'pheno']),
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                // Testing now for prefetch
+                prefetch: {
+                    url: " {{ url_for('static', filename='data/phenotypes_revised.json') }}",
+                    filter: function(data) {
+                        return $.map(data, function(item){
+                            return {
+                                value: item.value,
+                                pheno: item.pheno,
+                                suggest: item
+                            }
+                        })
+                    }
+                }
+
+            });
+            phenotypes.clearPrefetchCache();
+            phenotypes.initialize();
+            // Initializing the typeahead with remote dataset
+            $('.typeahead').typeahead(null, {
+                name: 'phenotypes',
+                display: "value",
+                source: phenotypes.ttAdapter(),
+                limit: 10,
+                templates: {
+                    empty: '<div class="tt-suggestion">No Matches Found!</div>',
+                    suggestion: function(data) {
+                        return '<div>' + data.suggest.pheno + ' (' + data.suggest.value + ')</div>'
+                    }
+                }
+            }).on('typeahead:selected', function(e) {
+                e.target.form.submit();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar-flex" style="gap: 5vw">
+        <div class="navlink"><a href="/">Home</a></div>
+        <div class="navlink topres"><a href="#TopRes">Top Results</a></div>
+        <div class="navlink pheno"><a href="/phenotypes">Phenotypes</a></div>
+        <div class="navlink about"><a href="#TopRes">About</a></div>
+    </div>
+    <div class="home">
+        <div class="description" style="flex-grow: 1">
+            <h1>UNGATED</h1>
+            <p style="font-weight: 600; font-size: 20px; color: #191B1E;">
+                Unified Nexus of Genetic Association Tests on EHR Data
+            </p>
+            <p style="font-weight: 400; font-size: 16px; color: #191B1E;">
+                Current Dataset: TOPMed Imputed Data for Fz60K
+            </p>
+        </div>
+        <div class="home-search">
+            <div>
+                <form action="{{ url_for('.go') }}">
+                        <input name="query" class="typeahead tt-query" autocomplete="off" type="text" placeholder="Search for a phenotype (working on variant search)" spellcheck="false">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

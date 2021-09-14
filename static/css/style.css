@@ -1,10 +1,12 @@
-* {
+*, *:before, *:after {
     margin: 0px;
     padding: 0px;
     font-family: Verdana, "Trebuchet MS";
+    box-sizing: inherit;
 }
 body {
     padding-bottom: 50px;
+    background-color: #fff;
 }
 .pheno-info{
     margin-top: 10px;
@@ -106,31 +108,50 @@ div.dt-buttons {
     float: right;
 }
 
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=search] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-
-*, *:before, *:after {
-    margin: 0px;
-    padding: 0px;
-    font-family: Verdana, "Trebuchet MS";
-    box-sizing: inherit;
-}
-
 html {
   box-sizing: border-box
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.description, .home-search {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.home-search .typeahead,
+.tt-query,
+.tt-hint {
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 30px;
+    width: 100%;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    outline: none;
+}
+
+.typeahead {
+  background-color: #FFFFFF;
 }
 
 .navbar-flex {
@@ -169,50 +190,6 @@ html {
     height: 50px;
     align-items: center;
 }
-
-/*.typeahead, .tt-query, .tt-hint {*/
-/*	border: 2px solid #0068B;*/
-/*	border-radius: 5px;*/
-/*	font-size: 18px; !* Set input font size *!*/
-/*	height: 30px;*/
-/*	line-height: 30px;*/
-/*	outline: medium none;*/
-/*!* 	padding: 8px 12px; *!*/
-/*	width: 50vw;*/
-/*}*/
-/*.typeahead {*/
-/*	background-color: #FFFFFF;*/
-/*}*/
-/*.typeahead:focus {*/
-/*	border: 2px solid #0097CF;*/
-/*}*/
-/*.tt-query {*/
-/*	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) outset;*/
-/*}*/
-/*.tt-hint {*/
-/*	color: #999999;*/
-/*}*/
-/*.tt-menu {*/
-/*	background-color: #FFFFFF;*/
-/*	border: 1px solid rgba(0, 0, 0, 0.2);*/
-/*	border-radius: 8px;*/
-/*	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/
-/*	margin-top: 12px;*/
-/*	padding: 8px 0;*/
-/*	width: 422px;*/
-/*}*/
-/*.tt-suggestion {*/
-/*	font-size: 18px;  !* Set suggestion dropdown font size *!*/
-/*	padding: 3px 20px;*/
-/*}*/
-/*.tt-suggestion:hover {*/
-/*	cursor: pointer;*/
-/*	background-color: #0097CF;*/
-/*	color: #FFFFFF;*/
-/*}*/
-/*.tt-suggestion p {*/
-/*	margin: 0;*/
-/*}*/
 
 .typeahead,
 .tt-query,
