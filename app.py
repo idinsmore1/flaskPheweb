@@ -1,5 +1,5 @@
 import json
-import os
+import pandas as pd
 import MySQLdb
 import plotly
 from flask import Flask, render_template, request, Response, redirect, send_from_directory
@@ -97,7 +97,16 @@ def variation(variant):
 
 @app.route('/phenotypes')
 def phenotypes():
-    return render_template('phenotypes_rendered.html')
+    data = pd.read_csv('static/data/topset.tsv',
+                       sep='\t',
+                       dtype={'Phecode': str})
+    data['Pvalue'] = ["{:.3e}".format(x) for x in data['Pvalue']]
+    return render_template("phenotypes.html",
+                           column_names=data.columns.values,
+                           row_data=list(data.values.tolist()),
+                           pheno_col='Phecode',
+                           variant_col='Top Variant',
+                           zip=zip)
 
 
 if __name__ == '__main__':
