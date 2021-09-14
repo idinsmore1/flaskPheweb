@@ -1,4 +1,5 @@
-# Mirshahi Phenome Browser
+# UNGATED
+## Unified Nexus for Genetic Assocation Tests on EHR Data
 #### A fully fledged, interactive GWAS/PheWAS results browser
 
 * Backend supported by MariaDB and Flask
