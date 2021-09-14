@@ -18,9 +18,9 @@
     <div class="top-results">
         <div id="table-header" class="table-header">
             <p><b>Top Results</b></p>
-            <span>
-                <button class="btn"><i class="fa fa-download"></i><a href="/download/{{ phecode.replace('.', '-') }}">Download</a></button>
-            </span>
+{#            <span>#}
+{#                <button class="btn"><i class="fa fa-download"></i><a href="/download/{{ phecode.replace('.', '-') }}">Download</a></button>#}
+{#            </span>#}
         </div>
         <table id="gwasTable" class="display">
             <thead>
@@ -37,9 +37,9 @@
                     {% if col == id_col %}
                         <td> <a href="/variant/{{ row_ }}">{{ row_ }}</a></td>
                     {% elif col == gene_col %}
-                        <td> <a href="https://www.ebi.ac.uk/gwas/search?query={{ row_ }}">{{ row_ }}</a></td>
+                        <td> <a href="https://www.ebi.ac.uk/gwas/search?query={{ row_ }}" target="_blank" rel="noopener noreferrer">{{ row_ }}</a></td>
                     {% elif col == ref_col %}
-                        <td> <a href="https://www.ncbi.nlm.nih.gov/clinvar/?term={{ row_ }}">{{ row_ }}</a></td>
+                        <td> <a href="https://www.ncbi.nlm.nih.gov/clinvar/?term={{ row_ }}" target="_blank" rel="noopener noreferrer">{{ row_ }}</a></td>
                     {% else %}
                         <td> {{ row_ }}</td>
                     {% endif %}
